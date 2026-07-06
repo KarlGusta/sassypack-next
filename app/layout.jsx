@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import "./globals.css";
 import "aos/dist/aos.css";
 import Header from "@/components/layout/Header";
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col" suppressHydrationWarning>
-        <Analytics />
+        <Suspense fallback={null}><Analytics /></Suspense>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
