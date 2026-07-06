@@ -88,7 +88,7 @@ export default function PricingPage() {
                 ))}
               </ul>
 
-              
+              <a
                 href={plan.link}
                 target="_blank"
                 rel="noopener noreferrer"
