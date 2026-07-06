@@ -1,0 +1,555 @@
+{
+  "usecases": [
+    {
+      "id": "b2b-saas",
+      "slug": "/use-cases/b2b-saas",
+      "name": "B2B SaaS",
+      "template": "TemplateD",
+      "meta": {
+        "title": "Build B2B SaaS with SassyPack | Team & Enterprise Features",
+        "description": "Launch B2B SaaS with team management, role-based access, admin tools, and enterprise features. MERN or Next.js starter included.",
+        "keywords": [
+          "b2b saas starter kit",
+          "enterprise saas template",
+          "team management saas",
+          "multi-tenant saas",
+          "b2b saas boilerplate"
+        ],
+        "canonical": "https://sassypack.collabtower.com/use-cases/b2b-saas"
+      },
+      "content": {
+        "h1": "Build B2B SaaS with SassyPack",
+        "hero": {
+          "valueProp": "Launch B2B SaaS with team collaboration, role-based access, admin controls, and enterprise features built-in.",
+          "cta": {
+            "text": "Compare Options",
+            "link": "/vs"
+          }
+        },
+        "builtForWorkflow": {
+          "heading": "Built For B2B Requirements",
+          "painPoints": [
+            "Teams need multiple user accounts with different permissions",
+            "Admins require tools to manage users and monitor activity",
+            "Enterprise customers expect security and compliance features",
+            "Billing needs to support team plans and seat-based pricing",
+            "You need audit logs and activity tracking"
+          ]
+        },
+        "perfectFor": {
+          "heading": "Perfect For",
+          "useCases": [
+            {
+              "title": "Team Collaboration Tools",
+              "description": "Project management, CRM, communication platforms"
+            },
+            {
+              "title": "Enterprise Software",
+              "description": "Analytics, reporting, workflow automation"
+            },
+            {
+              "title": "Developer Tools",
+              "description": "APIs, monitoring, deployment platforms"
+            },
+            {
+              "title": "Business Applications",
+              "description": "HR, finance, operations software"
+            }
+          ]
+        },
+        "featuresThatMatter": {
+          "heading": "B2B Features Included",
+          "features": [
+            {
+              "title": "Team Management",
+              "description": "Invite members, manage roles, remove access",
+              "link": "/features/user-management"
+            },
+            {
+              "title": "Role-Based Access Control",
+              "description": "Admin, manager, member, custom roles with permissions",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Team Billing",
+              "description": "Seat-based pricing, team plans, usage tracking",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Admin Dashboard",
+              "description": "User management, analytics, system monitoring",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Activity Logs",
+              "description": "Track user actions for compliance and debugging",
+              "link": "/features/analytics"
+            },
+            {
+              "title": "API Access",
+              "description": "RESTful API for integrations and automation",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "technicalRequirements": {
+          "heading": "B2B Technical Requirements Met",
+          "requirements": [
+            "Multi-tenancy: Isolated data per organization",
+            "Security: HTTPS, encryption, rate limiting, CORS",
+            "Scalability: Handle growing teams and data",
+            "Integrations: Webhooks, API endpoints, third-party auth",
+            "Compliance: Audit logs, data export, GDPR-ready",
+            "Uptime: Production-ready deployment configs"
+          ]
+        },
+        "stackChoice": {
+          "heading": "Choose Your Stack",
+          "description": "Both stacks support B2B requirements.",
+          "options": [
+            {
+              "name": "MERN Stack",
+              "description": "Flexible backend for complex business logic",
+              "link": "/mern-saas-starter-kit"
+            },
+            {
+              "name": "Next.js",
+              "description": "Fast, modern UI for professional B2B apps",
+              "link": "/nextjs-saas-starter-kit"
+            }
+          ]
+        },
+        "cta": {
+          "heading": "Launch Your B2B SaaS Today",
+          "subheading": "All the enterprise features you need to compete.",
+          "button": {
+            "text": "Compare Options",
+            "link": "/vs"
+          }
+        }
+      },
+      "relatedPages": [
+        "/vs"
+      ]
+    },
+    {
+      "id": "marketplace-app",
+      "slug": "/use-cases/marketplace-app",
+      "name": "Marketplace App",
+      "template": "TemplateD",
+      "meta": {
+        "title": "Build Marketplace Apps with SassyPack | Multi-User Platform",
+        "description": "Launch two-sided marketplaces with user authentication, seller accounts, payment processing, and admin tools. MERN or Next.js included.",
+        "keywords": [
+          "marketplace saas starter",
+          "two-sided marketplace",
+          "marketplace platform template",
+          "seller buyer platform",
+          "marketplace boilerplate"
+        ],
+        "canonical": "https://sassypack.collabtower.com/use-cases/marketplace-app"
+      },
+      "content": {
+        "h1": "Build Marketplace Apps with SassyPack",
+        "hero": {
+          "valueProp": "Launch two-sided marketplaces with user authentication, seller accounts, payment processing, and admin moderation tools.",
+          "cta": {
+            "text": "Compare Options",
+            "link": "/vs"
+          }
+        },
+        "builtForWorkflow": {
+          "heading": "Built For Marketplace Needs",
+          "painPoints": [
+            "Need separate buyer and seller experiences",
+            "Payment splitting between platform and sellers",
+            "User-generated content requires moderation",
+            "Reviews and ratings system needed",
+            "Admin tools to manage listings and users"
+          ]
+        },
+        "perfectFor": {
+          "heading": "Perfect For",
+          "useCases": [
+            {
+              "title": "Service Marketplaces",
+              "description": "Freelancers, consultants, gig workers"
+            },
+            {
+              "title": "Product Marketplaces",
+              "description": "E-commerce, handmade goods, digital products"
+            },
+            {
+              "title": "Rental Platforms",
+              "description": "Property, equipment, vehicles"
+            },
+            {
+              "title": "Booking Platforms",
+              "description": "Appointments, reservations, events"
+            }
+          ]
+        },
+        "featuresThatMatter": {
+          "heading": "Marketplace Features",
+          "features": [
+            {
+              "title": "User Roles",
+              "description": "Buyers, sellers, admins with different permissions",
+              "link": "/features/user-management"
+            },
+            {
+              "title": "Seller Accounts",
+              "description": "Profile pages, listings management, earnings tracking",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Payment Processing",
+              "description": "Stripe Connect for marketplace payments and splits",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Admin Moderation",
+              "description": "Review listings, manage users, handle disputes",
+              "link": "/features/user-management"
+            },
+            {
+              "title": "Search & Filters",
+              "description": "Find listings by category, price, location",
+              "link": "/features/api-structure"
+            },
+            {
+              "title": "Messaging System",
+              "description": "Buyers and sellers can communicate (extend with Socket.io)",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "howToExtend": {
+          "heading": "Easy to Extend For Your Marketplace",
+          "extensions": [
+            "Add listing creation forms and image uploads",
+            "Implement reviews and ratings system",
+            "Build search with Elasticsearch or Algolia",
+            "Add real-time messaging with Socket.io",
+            "Integrate payment splits with Stripe Connect",
+            "Create email notifications for transactions"
+          ]
+        },
+        "stackChoice": {
+          "heading": "Choose Your Stack",
+          "description": "Both stacks support marketplace features.",
+          "options": [
+            {
+              "name": "MERN Stack",
+              "description": "Great for complex marketplace logic and APIs",
+              "link": "/mern-saas-starter-kit"
+            },
+            {
+              "name": "Next.js",
+              "description": "Fast SEO-friendly marketplace listings",
+              "link": "/nextjs-saas-starter-kit"
+            }
+          ]
+        },
+        "cta": {
+          "heading": "Launch Your Marketplace Today",
+          "subheading": "Start with a solid foundation, customize for your niche.",
+          "button": {
+            "text": "Compare Options",
+            "link": "/vs"
+          }
+        }
+      },
+      "relatedPages": [
+        "/vs"
+      ]
+    },
+    {
+      "id": "subscription-service",
+      "slug": "/use-cases/subscription-service",
+      "name": "Subscription Service",
+      "template": "TemplateD",
+      "meta": {
+        "title": "Build Subscription Services with SassyPack | Recurring Revenue",
+        "description": "Launch subscription-based SaaS with recurring billing, plan management, trial periods, and customer portals. Stripe integration included.",
+        "keywords": [
+          "subscription saas starter",
+          "recurring billing template",
+          "subscription service platform",
+          "membership site boilerplate",
+          "subscription management"
+        ],
+        "canonical": "https://sassypack.collabtower.com/use-cases/subscription-service"
+      },
+      "content": {
+        "h1": "Build Subscription Services with SassyPack",
+        "hero": {
+          "valueProp": "Launch subscription-based services with recurring billing, plan tiers, trial periods, and customer self-service portals.",
+          "cta": {
+            "text": "Compare Options",
+            "link": "/vs"
+          }
+        },
+        "builtForWorkflow": {
+          "heading": "Built For Recurring Revenue",
+          "painPoints": [
+            "Need to handle monthly/annual billing automatically",
+            "Multiple pricing tiers with different features",
+            "Trial periods and promotional offers",
+            "Failed payment recovery to reduce churn",
+            "Customer portal for plan upgrades and cancellations"
+          ]
+        },
+        "perfectFor": {
+          "heading": "Perfect For",
+          "useCases": [
+            {
+              "title": "SaaS Products",
+              "description": "Tools, analytics, automation, APIs"
+            },
+            {
+              "title": "Membership Sites",
+              "description": "Premium content, courses, communities"
+            },
+            {
+              "title": "Digital Services",
+              "description": "Design tools, file storage, email marketing"
+            },
+            {
+              "title": "Content Platforms",
+              "description": "News, research, data access"
+            }
+          ]
+        },
+        "featuresThatMatter": {
+          "heading": "Subscription Features",
+          "features": [
+            {
+              "title": "Recurring Billing",
+              "description": "Automatic monthly or annual charges via Stripe",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Plan Management",
+              "description": "Free, Basic, Pro, Enterprise tiers with feature gating",
+              "link": "/features/user-management"
+            },
+            {
+              "title": "Trial Periods",
+              "description": "14-day free trials with automatic conversion",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Customer Portal",
+              "description": "Users can upgrade, downgrade, or cancel subscriptions",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Failed Payment Recovery",
+              "description": "Automatic retries and email notifications",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Usage Tracking",
+              "description": "Monitor feature usage and enforce limits",
+              "link": "/features/analytics"
+            }
+          ]
+        },
+        "pricingStrategies": {
+          "heading": "Pricing Models Supported",
+          "models": [
+            "Monthly subscriptions (e.g., $29/month)",
+            "Annual subscriptions with discount (e.g., $290/year)",
+            "Freemium with paid upgrades",
+            "Usage-based pricing (metered billing)",
+            "Seat-based pricing for teams",
+            "Tiered plans (Free, Pro, Enterprise)"
+          ]
+        },
+        "stackChoice": {
+          "heading": "Choose Your Stack",
+          "description": "Both stacks support subscription billing.",
+          "options": [
+            {
+              "name": "MERN Stack",
+              "description": "Flexible for custom billing logic",
+              "link": "/mern-saas-starter-kit"
+            },
+            {
+              "name": "Next.js",
+              "description": "Modern UI for pricing pages and checkout",
+              "link": "/nextjs-saas-starter-kit"
+            }
+          ]
+        },
+        "cta": {
+          "heading": "Start Earning Recurring Revenue",
+          "subheading": "Launch your subscription service in hours.",
+          "button": {
+            "text": "Compare Options",
+            "link": "/vs"
+          }
+        }
+      },
+      "relatedPages": [
+        "/vs"
+      ]
+    },
+    {
+      "id": "client-projects",
+      "slug": "/use-cases/client-projects",
+      "name": "Client Projects",
+      "template": "TemplateD",
+      "meta": {
+        "title": "Deliver Client SaaS Projects Faster | Agency Template",
+        "description": "Ship client SaaS projects 10x faster with SassyPack. White-label ready, reusable code, unlimited projects. Perfect for agencies and freelancers.",
+        "keywords": [
+          "client saas projects",
+          "agency saas template",
+          "freelance saas starter",
+          "white label saas",
+          "client project boilerplate"
+        ],
+        "canonical": "https://sassypack.collabtower.com/use-cases/client-projects"
+      },
+      "content": {
+        "h1": "Deliver Client SaaS Projects Faster",
+        "hero": {
+          "valueProp": "Ship client SaaS projects 10x faster with white-label ready code. Protect margins, win more contracts, deliver faster.",
+          "cta": {
+            "text": "Compare Options",
+            "link": "/vs"
+          }
+        },
+        "builtForWorkflow": {
+          "heading": "Built For Client Work",
+          "painPoints": [
+            "Clients want custom SaaS but budgets are limited",
+            "You're rebuilding authentication for every project",
+            "Fixed-price contracts suffer from scope creep",
+            "Junior developers need quality starting points",
+            "Handoff to clients needs clean, documented code"
+          ]
+        },
+        "perfectFor": {
+          "heading": "Perfect For",
+          "useCases": [
+            {
+              "title": "Agency SaaS Builds",
+              "description": "Custom SaaS for multiple clients",
+              "link": "/for/dev-agencies"
+            },
+            {
+              "title": "Freelance Projects",
+              "description": "Deliver faster, charge more",
+              "link": "/for/freelance-developers"
+            },
+            {
+              "title": "White-Label Products",
+              "description": "Rebrand and resell to clients",
+              "link": "/solutions/reduce-development-time"
+            },
+            {
+              "title": "MVP Development",
+              "description": "Build client MVPs in days",
+              "link": "/solutions/launch-saas-fast"
+            }
+          ]
+        },
+        "featuresThatMatter": {
+          "heading": "What Agencies Need",
+          "features": [
+            {
+              "title": "White-Label Ready",
+              "description": "Remove SassyPack branding, add client's identity",
+              "link": "/features/ui-components"
+            },
+            {
+              "title": "Unlimited Projects",
+              "description": "One license, use for all client work",
+              "link": "/vs"
+            },
+            {
+              "title": "Clean Codebase",
+              "description": "Professional code clients can maintain",
+              "link": "/features/api-structure"
+            },
+            {
+              "title": "Fast Customization",
+              "description": "Modify UI, features, and branding quickly",
+              "link": "/features/ui-components"
+            },
+            {
+              "title": "Documentation",
+              "description": "Easy handoff to client teams",
+              "link": "/solutions/production-ready-saas"
+            },
+            {
+              "title": "Team Collaboration",
+              "description": "Multiple developers can work together",
+              "link": "/features/user-management"
+            }
+          ]
+        },
+        "workflow": {
+          "heading": "Typical Client Project Workflow",
+          "steps": [
+            {
+              "number": "1",
+              "title": "Discovery & Proposal",
+              "description": "Understand client needs, quote 50% less time with SassyPack"
+            },
+            {
+              "number": "2",
+              "title": "Setup & Branding",
+              "description": "Clone SassyPack, customize colors, logo, copy (2-4 hours)"
+            },
+            {
+              "number": "3",
+              "title": "Custom Features",
+              "description": "Build client-specific functionality (focus your time here)"
+            },
+            {
+              "number": "4",
+              "title": "Testing & QA",
+              "description": "Test with client, iterate quickly"
+            },
+            {
+              "number": "5",
+              "title": "Deployment & Handoff",
+              "description": "Deploy, document, train client team"
+            }
+          ]
+        },
+        "stackChoice": {
+          "heading": "Both Stacks Included",
+          "description": "Switch between MERN and Next.js per client needs.",
+          "options": [
+            {
+              "name": "MERN Stack",
+              "description": "For clients who need backend flexibility",
+              "link": "/mern-saas-starter-kit"
+            },
+            {
+              "name": "Next.js",
+              "description": "For clients who want fast, modern UX",
+              "link": "/nextjs-saas-starter-kit"
+            }
+          ]
+        },
+        "cta": {
+          "heading": "Win More Client Projects",
+          "subheading": "Deliver faster, protect margins, scale your agency.",
+          "button": {
+            "text": "Compare Options",
+            "link": "/vs"
+          }
+        }
+      },
+      "relatedPages": [
+        "/vs"
+      ]
+    }
+  ]
+}

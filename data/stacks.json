@@ -1,0 +1,557 @@
+{
+  "stacks": [
+    {
+      "id": "mern-stack-boilerplate",
+      "slug": "/mern-stack/boilerplate",
+      "name": "MERN Stack Boilerplate",
+      "template": "TemplateA",
+      "meta": {
+        "title": "MERN Stack Boilerplate | Production-Ready Template",
+        "description": "Complete MERN stack boilerplate with MongoDB, Express, React, Node.js. Authentication, payments, dashboards, and API structure included.",
+        "keywords": [
+          "mern stack boilerplate",
+          "mongodb express react node template",
+          "mern saas code",
+          "full stack mern starter",
+          "mern production template"
+        ],
+        "canonical": "https://sassypack.collabtower.com/mern-stack/boilerplate"
+      },
+      "content": {
+        "h1": "MERN Stack Boilerplate | Production-Ready",
+        "hero": {
+          "heading": "Complete MERN Stack Foundation",
+          "subheading": "MongoDB, Express, React, Node.js with authentication, payments, and dashboards. Production-ready code, not tutorials.",
+          "cta": {
+            "text": "Get MERN Stack",
+            "link": "/pricing"
+          }
+        },
+        "whatsIncluded": {
+          "heading": "What's Included",
+          "features": [
+            "Complete MERN stack setup (MongoDB, Express.js, React, Node.js)",
+            "JWT authentication with refresh tokens",
+            "Express middleware for auth, validation, error handling",
+            "MongoDB schemas with Mongoose",
+            "React hooks and context for state management",
+            "RESTful API with best practices",
+            "Stripe payment integration",
+            "Admin dashboard with user management"
+          ]
+        },
+        "techStack": {
+          "heading": "Technologies Used",
+          "backend": [
+            "Node.js (Runtime)",
+            "Express.js (Web framework)",
+            "MongoDB (Database)",
+            "Mongoose (ODM)",
+            "JWT (Authentication)",
+            "bcrypt (Password hashing)",
+            "Stripe SDK (Payments)"
+          ],
+          "frontend": [
+            "React 18+ (UI library)",
+            "React Router (Navigation)",
+            "Axios (HTTP client)",
+            "Context API (State management)",
+            "Tailwind CSS (Styling)",
+            "Chart.js (Visualizations)"
+          ]
+        },
+        "architecture": {
+          "heading": "Project Architecture",
+          "structure": [
+            "Backend: MVC pattern with controllers, models, routes",
+            "Frontend: Component-based with custom hooks",
+            "Modular folder structure for scalability",
+            "Environment-based configuration",
+            "Error handling middleware",
+            "API versioning support"
+          ]
+        },
+        "keyFeatures": {
+          "heading": "Key Features",
+          "items": [
+            {
+              "title": "Authentication System",
+              "description": "JWT tokens, refresh logic, password reset, email verification",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Payment Processing",
+              "description": "Stripe integration with webhook handling",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Admin Dashboard",
+              "description": "User management, analytics, revenue tracking",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "RESTful API",
+              "description": "Clean endpoints with validation and documentation",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "deployment": {
+          "heading": "Deployment Options",
+          "options": [
+            "Heroku (easy deployment)",
+            "DigitalOcean (droplet or app platform)",
+            "AWS EC2 (full control)",
+            "Render (modern alternative)",
+            "Docker (containerized deployment)",
+            "PM2 (process management)"
+          ]
+        },
+        "cta": {
+          "heading": "Get the MERN Stack Boilerplate",
+          "subheading": "Production-ready MERN code included in SassyPack.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/mern-saas-starter-kit",
+        "/mern-stack/authentication",
+        "/mern-stack/payment-integration",
+        "/features/api-structure"
+      ]
+    },
+    {
+      "id": "mern-stack-authentication",
+      "slug": "/mern-stack/authentication",
+      "name": "MERN Stack Authentication",
+      "template": "TemplateB",
+      "meta": {
+        "title": "MERN Stack Authentication | JWT & User Management",
+        "description": "Pre-built MERN authentication with JWT, refresh tokens, password reset, and email verification. Express middleware and MongoDB schemas included.",
+        "keywords": [
+          "mern authentication",
+          "jwt authentication mern",
+          "express authentication middleware",
+          "mongodb user authentication",
+          "mern stack login system"
+        ],
+        "canonical": "https://sassypack.collabtower.com/mern-stack/authentication"
+      },
+      "content": {
+        "h1": "MERN Stack Authentication",
+        "hero": {
+          "subheading": "Complete JWT authentication system for MERN stack applications.",
+          "cta": {
+            "text": "Get MERN Auth",
+            "link": "/pricing"
+          }
+        },
+        "problem": {
+          "heading": "The Challenge",
+          "description": "Building secure authentication in MERN requires JWT token management, Express middleware, MongoDB user schemas, password hashing, session handling, and security best practices. It takes weeks to get right."
+        },
+        "solution": {
+          "heading": "What's Included",
+          "points": [
+            "Express routes for register, login, logout, password reset",
+            "JWT access and refresh token generation",
+            "MongoDB User schema with password hashing (bcrypt)",
+            "Express middleware for route protection",
+            "Email verification with unique tokens",
+            "Password reset flow with expiring tokens",
+            "Role-based access control (admin, user)",
+            "Rate limiting on auth endpoints"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "details": [
+            "JWT tokens stored in httpOnly cookies",
+            "Refresh token rotation for security",
+            "Express middleware validates tokens on protected routes",
+            "MongoDB stores user credentials and tokens",
+            "bcrypt hashes passwords with salt rounds",
+            "Email service integration (SendGrid/Mailgun)",
+            "CORS configured for frontend-backend communication"
+          ]
+        },
+        "codeExample": {
+          "heading": "Example: Protected Route Middleware",
+          "description": "Express middleware that validates JWT tokens on protected routes."
+        },
+        "demo": {
+          "heading": "See It Working",
+          "cta": {
+            "text": "View Demo",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included in SassyPack",
+          "cta": {
+            "text": "Get MERN Stack",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/authentication",
+        "/mern-stack/boilerplate",
+        "/solutions/skip-authentication-setup"
+      ]
+    },
+    {
+      "id": "mern-stack-payment-integration",
+      "slug": "/mern-stack/payment-integration",
+      "name": "MERN Stack Payment Integration",
+      "template": "TemplateB",
+      "meta": {
+        "title": "MERN Stack Payment Integration | Stripe & PayPal",
+        "description": "Pre-built Stripe and PayPal integration for MERN. Express webhook handlers, MongoDB subscription schemas, and payment flows included.",
+        "keywords": [
+          "mern stripe integration",
+          "stripe mern stack",
+          "express payment integration",
+          "mongodb subscription schema",
+          "mern payment webhooks"
+        ],
+        "canonical": "https://sassypack.collabtower.com/mern-stack/payment-integration"
+      },
+      "content": {
+        "h1": "MERN Stack Payment Integration",
+        "hero": {
+          "subheading": "Stripe and PayPal integration built for MERN applications.",
+          "cta": {
+            "text": "Get Payment Setup",
+            "link": "/pricing"
+          }
+        },
+        "problem": {
+          "heading": "The Challenge",
+          "description": "Integrating Stripe with MERN requires Express endpoints for checkout, webhook handlers with signature verification, MongoDB subscription tracking, failed payment logic, and secure API key management."
+        },
+        "solution": {
+          "heading": "What's Included",
+          "points": [
+            "Express routes for Stripe Checkout session creation",
+            "Webhook endpoint with signature verification",
+            "MongoDB Subscription schema synced with Stripe",
+            "Payment status tracking (active, canceled, past_due)",
+            "Failed payment recovery with email notifications",
+            "Customer portal for subscription management",
+            "PayPal integration as alternative payment method",
+            "Invoice generation and email delivery"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "details": [
+            "Stripe SDK integrated on backend",
+            "Express webhook route handles subscription events",
+            "MongoDB stores subscription and payment data",
+            "Frontend Checkout flow with Stripe Elements",
+            "Webhook events: checkout.session.completed, subscription updated, payment failed",
+            "Automatic user access gating based on subscription status",
+            "Environment variables for API keys"
+          ]
+        },
+        "demo": {
+          "heading": "See It Working",
+          "cta": {
+            "text": "View Demo",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included in SassyPack",
+          "cta": {
+            "text": "Get MERN Stack",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/payment-integration",
+        "/mern-stack/boilerplate",
+        "/solutions/avoid-payment-integration-headaches"
+      ]
+    },
+    {
+      "id": "nextjs-saas-template",
+      "slug": "/nextjs/saas-template",
+      "name": "Next.js SaaS Template",
+      "template": "TemplateA",
+      "meta": {
+        "title": "Next.js SaaS Template | Production-Ready Starter",
+        "description": "Complete Next.js 14+ SaaS template with App Router, TypeScript, Prisma. Authentication, payments, dashboards, and API routes included.",
+        "keywords": [
+          "nextjs saas template",
+          "next.js app template",
+          "nextjs starter boilerplate",
+          "react saas framework",
+          "nextjs production starter"
+        ],
+        "canonical": "https://sassypack.collabtower.com/nextjs/saas-template"
+      },
+      "content": {
+        "h1": "Next.js SaaS Template | Production-Ready",
+        "hero": {
+          "heading": "Complete Next.js 14+ SaaS Foundation",
+          "subheading": "App Router, TypeScript, Prisma, NextAuth.js. Authentication, payments, and dashboards. Deploy to Vercel in one click.",
+          "cta": {
+            "text": "Get Next.js Template",
+            "link": "/pricing"
+          }
+        },
+        "whatsIncluded": {
+          "heading": "What's Included",
+          "features": [
+            "Next.js 14+ with App Router",
+            "TypeScript throughout the codebase",
+            "Prisma ORM for database management",
+            "NextAuth.js authentication with OAuth",
+            "API routes with middleware and validation",
+            "Server and client components",
+            "Stripe payment integration",
+            "shadcn/ui component library"
+          ]
+        },
+        "techStack": {
+          "heading": "Technologies Used",
+          "stack": [
+            "Next.js 14+ (Framework)",
+            "React 18+ (UI library)",
+            "TypeScript (Type safety)",
+            "Prisma (ORM)",
+            "NextAuth.js (Authentication)",
+            "Stripe SDK (Payments)",
+            "Tailwind CSS (Styling)",
+            "shadcn/ui (Components)",
+            "Zod (Validation)",
+            "PostgreSQL (Database)"
+          ]
+        },
+        "architecture": {
+          "heading": "Project Architecture",
+          "structure": [
+            "App Router file-based routing",
+            "Server components for data fetching",
+            "Client components for interactivity",
+            "API routes with type-safe handlers",
+            "Middleware for authentication and redirects",
+            "Server actions for mutations",
+            "Environment-based configuration",
+            "Edge runtime ready"
+          ]
+        },
+        "keyFeatures": {
+          "heading": "Key Features",
+          "items": [
+            {
+              "title": "NextAuth.js Authentication",
+              "description": "OAuth, magic links, credentials, session management",
+              "link": "/nextjs/authentication-setup"
+            },
+            {
+              "title": "Stripe Integration",
+              "description": "Checkout, subscriptions, webhooks, customer portal",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Server Components",
+              "description": "Fast initial loads with server-side rendering",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Type-Safe API",
+              "description": "API routes with Zod validation and TypeScript",
+              "link": "/nextjs/api-routes"
+            }
+          ]
+        },
+        "deployment": {
+          "heading": "Deployment Options",
+          "options": [
+            "Vercel (one-click, recommended)",
+            "Netlify (alternative edge platform)",
+            "AWS Amplify (full AWS integration)",
+            "Docker (containerized deployment)",
+            "Self-hosted (Node.js server)",
+            "Edge runtime on Cloudflare Workers"
+          ]
+        },
+        "cta": {
+          "heading": "Get the Next.js SaaS Template",
+          "subheading": "Production-ready Next.js code included in SassyPack.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/nextjs-saas-starter-kit",
+        "/nextjs/authentication-setup",
+        "/nextjs/api-routes",
+        "/features/deployment"
+      ]
+    },
+    {
+      "id": "nextjs-authentication-setup",
+      "slug": "/nextjs/authentication-setup",
+      "name": "Next.js Authentication Setup",
+      "template": "TemplateB",
+      "meta": {
+        "title": "Next.js Authentication Setup | NextAuth.js Complete",
+        "description": "Pre-built NextAuth.js authentication for Next.js 14+. OAuth providers, magic links, credentials, session management, and protected routes.",
+        "keywords": [
+          "nextauth.js setup",
+          "next.js authentication",
+          "nextjs oauth",
+          "nextauth protected routes",
+          "next.js session management"
+        ],
+        "canonical": "https://sassypack.collabtower.com/nextjs/authentication-setup"
+      },
+      "content": {
+        "h1": "Next.js Authentication Setup",
+        "hero": {
+          "subheading": "Complete NextAuth.js implementation with multiple authentication methods.",
+          "cta": {
+            "text": "Get NextAuth Setup",
+            "link": "/pricing"
+          }
+        },
+        "problem": {
+          "heading": "The Challenge",
+          "description": "Setting up NextAuth.js requires configuring providers, database adapters, session strategies, protected routes, middleware, and handling edge cases. Documentation is scattered."
+        },
+        "solution": {
+          "heading": "What's Included",
+          "points": [
+            "NextAuth.js configured with multiple providers (Google, GitHub, Email)",
+            "Credentials provider for custom login",
+            "Magic link authentication via email",
+            "Prisma adapter for database sessions",
+            "Middleware for protected routes",
+            "Server-side session validation",
+            "Role-based access control",
+            "Custom login and signup pages"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "details": [
+            "NextAuth.js API route configured in app/api/auth/[...nextauth]",
+            "Multiple OAuth providers with environment variables",
+            "Prisma adapter stores sessions in database",
+            "Middleware checks authentication on protected routes",
+            "Server components can access session server-side",
+            "Client components use useSession hook",
+            "JWT strategy for stateless authentication",
+            "Database strategy for persistent sessions"
+          ]
+        },
+        "demo": {
+          "heading": "See It Working",
+          "cta": {
+            "text": "View Demo",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included in SassyPack",
+          "cta": {
+            "text": "Get Next.js Stack",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/authentication",
+        "/nextjs/saas-template",
+        "/solutions/skip-authentication-setup"
+      ]
+    },
+    {
+      "id": "nextjs-api-routes",
+      "slug": "/nextjs/api-routes",
+      "name": "Next.js API Routes",
+      "template": "TemplateB",
+      "meta": {
+        "title": "Next.js API Routes | Type-Safe REST API",
+        "description": "Pre-built Next.js API routes with TypeScript, Zod validation, error handling, and authentication middleware. Production-ready endpoints included.",
+        "keywords": [
+          "nextjs api routes",
+          "next.js rest api",
+          "nextjs api typescript",
+          "next.js server actions",
+          "nextjs api middleware"
+        ],
+        "canonical": "https://sassypack.collabtower.com/nextjs/api-routes"
+      },
+      "content": {
+        "h1": "Next.js API Routes",
+        "hero": {
+          "subheading": "Type-safe API routes with validation, error handling, and authentication.",
+          "cta": {
+            "text": "Get API Setup",
+            "link": "/pricing"
+          }
+        },
+        "problem": {
+          "heading": "The Challenge",
+          "description": "Building production-ready API routes in Next.js requires type safety, request validation, error handling, authentication middleware, and proper response formatting. Easy to make mistakes."
+        },
+        "solution": {
+          "heading": "What's Included",
+          "points": [
+            "API routes in app/api with TypeScript",
+            "Zod schemas for request validation",
+            "Middleware for authentication checks",
+            "Error handling with consistent responses",
+            "CORS configuration for frontend requests",
+            "Rate limiting on sensitive endpoints",
+            "Server actions for mutations",
+            "Edge runtime support"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "details": [
+            "Route handlers with GET, POST, PUT, DELETE methods",
+            "Zod validates request body and query params",
+            "NextAuth middleware protects authenticated routes",
+            "Error handler returns consistent JSON responses",
+            "Type-safe with TypeScript throughout",
+            "Server actions for form submissions and mutations",
+            "Prisma client for database operations",
+            "Edge runtime for fast global responses"
+          ]
+        },
+        "demo": {
+          "heading": "See It Working",
+          "cta": {
+            "text": "View Demo",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included in SassyPack",
+          "cta": {
+            "text": "Get Next.js Stack",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/api-structure",
+        "/nextjs/saas-template",
+        "/solutions/production-ready-saas"
+      ]
+    }
+  ]
+}

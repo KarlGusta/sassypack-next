@@ -1,0 +1,698 @@
+{
+  "features": [
+    {
+      "id": "authentication",
+      "slug": "/features/authentication",
+      "name": "Authentication",
+      "template": "TemplateB",
+      "meta": {
+        "title": "Pre-Built Authentication | SassyPack SaaS Starter Kit",
+        "description": "Skip weeks of auth setup. JWT authentication, user management, password reset, email verification built into SassyPack. Production-ready in hours.",
+        "keywords": [
+          "saas authentication boilerplate",
+          "pre-built user authentication",
+          "saas login system",
+          "jwt authentication setup",
+          "user management saas"
+        ],
+        "canonical": "https://sassypack.collabtower.com/features/authentication"
+      },
+      "content": {
+        "h1": "Authentication Built Into SassyPack",
+        "hero": {
+          "subheading": "Skip the complexity of building secure authentication from scratch.",
+          "cta": {
+            "text": "Try Demo",
+            "link": "/demo"
+          }
+        },
+        "problem": {
+          "heading": "The Problem",
+          "description": "Building authentication takes 2-3 weeks. You need JWT tokens, refresh logic, password hashing, email verification, session management, and security audits. One mistake and your users are at risk."
+        },
+        "solution": {
+          "heading": "How SassyPack Solves It",
+          "points": [
+            "JWT-based authentication with refresh tokens out of the box",
+            "Secure password hashing with bcrypt",
+            "Email verification and password reset flows",
+            "Role-based access control (RBAC) for admin and user roles",
+            "Session management with automatic token refresh",
+            "Security best practices: rate limiting, CORS, helmet.js"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "mern": [
+            "Express middleware for protected routes",
+            "MongoDB user schema with encrypted passwords",
+            "JWT token generation and validation",
+            "Refresh token rotation"
+          ],
+          "nextjs": [
+            "NextAuth.js integration with multiple providers",
+            "Server-side session validation",
+            "OAuth support (Google, GitHub, etc.)",
+            "Magic link authentication"
+          ]
+        },
+        "compatibleWith": {
+          "heading": "Compatible With",
+          "integrations": [
+            "Stripe (for paid user gating)",
+            "SendGrid / Mailgun (email delivery)",
+            "Redis (session storage)",
+            "PostgreSQL / MongoDB"
+          ]
+        },
+        "demo": {
+          "heading": "See It In Action",
+          "cta": {
+            "text": "View Demo",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included In All Plans",
+          "cta": {
+            "text": "View Pricing",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/solutions/skip-authentication-setup",
+        "/mern-stack/authentication",
+        "/nextjs/authentication-setup",
+        "/features/user-management"
+      ]
+    },
+    {
+      "id": "payment-integration",
+      "slug": "/features/payment-integration",
+      "name": "Payment Integration",
+      "template": "TemplateB",
+      "meta": {
+        "title": "Pre-Built Payment Integration | SassyPack SaaS Starter Kit",
+        "description": "Stripe and PayPal integration built-in. Subscription billing, webhooks, and payment flows ready to go. Launch paid SaaS in hours.",
+        "keywords": [
+          "saas payment integration",
+          "stripe integration boilerplate",
+          "payment setup saas",
+          "subscription billing template",
+          "recurring payments setup"
+        ],
+        "canonical": "https://sassypack.collabtower.com/features/payment-integration"
+      },
+      "content": {
+        "h1": "Payment Integration Built Into SassyPack",
+        "hero": {
+          "subheading": "Accept payments and manage subscriptions from day one.",
+          "cta": {
+            "text": "Try Demo",
+            "link": "/demo"
+          }
+        },
+        "problem": {
+          "heading": "The Problem",
+          "description": "Payment integration is complex. Stripe docs are 1000+ pages. You need checkout flows, subscription management, webhook handling, failed payment recovery, and invoice generation. Most founders spend 2-4 weeks on payments alone."
+        },
+        "solution": {
+          "heading": "How SassyPack Solves It",
+          "points": [
+            "Stripe Checkout integration with one-time and recurring payments",
+            "PayPal alternative for broader payment options",
+            "Webhook handlers for subscription events (created, canceled, failed)",
+            "Automatic invoice generation and email delivery",
+            "Failed payment retry logic",
+            "Customer portal for subscription management"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "mern": [
+            "Express webhook endpoints with signature verification",
+            "MongoDB subscription schema synced with Stripe",
+            "Payment status tracking and user gating",
+            "Stripe SDK integration"
+          ],
+          "nextjs": [
+            "API routes for Stripe Checkout sessions",
+            "Server-side webhook validation",
+            "Prisma schema for subscription data",
+            "Client-side payment UI components"
+          ]
+        },
+        "compatibleWith": {
+          "heading": "Compatible With",
+          "integrations": [
+            "Stripe (primary)",
+            "PayPal (alternative)",
+            "Paddle (coming soon)",
+            "LemonSqueezy (coming soon)"
+          ]
+        },
+        "demo": {
+          "heading": "See It In Action",
+          "cta": {
+            "text": "View Demo",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included In All Plans",
+          "cta": {
+            "text": "View Pricing",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/solutions/avoid-payment-integration-headaches",
+        "/mern-stack/payment-integration",
+        "/nextjs/payment-integration",
+        "/use-cases/subscription-service"
+      ]
+    },
+    {
+      "id": "dashboard-templates",
+      "slug": "/features/dashboard-templates",
+      "name": "Dashboard Templates",
+      "template": "TemplateB",
+      "meta": {
+        "title": "Pre-Built SaaS Dashboards | SassyPack Starter Kit",
+        "description": "Admin and user dashboards with charts, tables, and analytics. Responsive, accessible, production-ready. Built with React and Tailwind CSS.",
+        "keywords": [
+          "saas dashboard template",
+          "admin dashboard boilerplate",
+          "saas analytics dashboard",
+          "pre-built saas ui",
+          "react dashboard template"
+        ],
+        "canonical": "https://sassypack.collabtower.com/features/dashboard-templates"
+      },
+      "content": {
+        "h1": "Dashboard Templates Built Into SassyPack",
+        "hero": {
+          "subheading": "Beautiful, functional dashboards for admins and users.",
+          "cta": {
+            "text": "Try Demo",
+            "link": "/demo"
+          }
+        },
+        "problem": {
+          "heading": "The Problem",
+          "description": "Building dashboards from scratch takes weeks. You need responsive layouts, charts, tables, filters, real-time data, and mobile support. Design and UX decisions slow you down."
+        },
+        "solution": {
+          "heading": "How SassyPack Solves It",
+          "points": [
+            "Admin dashboard with user management, analytics, and revenue tracking",
+            "User dashboard with account settings, usage stats, and billing",
+            "Interactive charts (line, bar, pie) with Chart.js / Recharts",
+            "Data tables with sorting, filtering, and pagination",
+            "Responsive design for mobile, tablet, and desktop",
+            "Dark mode support built-in"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "mern": [
+            "React components with hooks for data fetching",
+            "Chart.js for visualizations",
+            "Tailwind CSS for styling",
+            "API integration for real-time data"
+          ],
+          "nextjs": [
+            "Server components for fast initial load",
+            "Recharts for charts",
+            "shadcn/ui components",
+            "Client-side data fetching with SWR"
+          ]
+        },
+        "compatibleWith": {
+          "heading": "Compatible With",
+          "integrations": [
+            "Google Analytics",
+            "Mixpanel",
+            "Amplitude",
+            "Custom analytics APIs"
+          ]
+        },
+        "demo": {
+          "heading": "See It In Action",
+          "cta": {
+            "text": "View Demo",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included In All Plans",
+          "cta": {
+            "text": "View Pricing",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/analytics",
+        "/features/ui-components",
+        "/mern-stack/boilerplate",
+        "/nextjs/saas-template"
+      ]
+    },
+    {
+      "id": "api-structure",
+      "slug": "/features/api-structure",
+      "name": "API Structure",
+      "template": "TemplateB",
+      "meta": {
+        "title": "Production-Ready API Structure | SassyPack Starter Kit",
+        "description": "RESTful API with middleware, error handling, validation, and documentation. Built for scalability and security. MERN and Next.js supported.",
+        "keywords": [
+          "restful api boilerplate",
+          "api structure template",
+          "express api starter",
+          "nextjs api routes",
+          "production api setup"
+        ],
+        "canonical": "https://sassypack.collabtower.com/features/api-structure"
+      },
+      "content": {
+        "h1": "API Structure Built Into SassyPack",
+        "hero": {
+          "subheading": "Production-ready REST API with best practices baked in.",
+          "cta": {
+            "text": "Try Demo",
+            "link": "/demo"
+          }
+        },
+        "problem": {
+          "heading": "The Problem",
+          "description": "Setting up a scalable API requires planning. You need route organization, middleware, validation, error handling, rate limiting, and documentation. Poor structure leads to technical debt."
+        },
+        "solution": {
+          "heading": "How SassyPack Solves It",
+          "points": [
+            "RESTful API with clear endpoint naming conventions",
+            "Middleware for authentication, validation, and error handling",
+            "Request validation with Joi / Zod",
+            "Centralized error handling with custom error classes",
+            "Rate limiting to prevent abuse",
+            "API documentation with Swagger / OpenAPI"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "mern": [
+            "Express router with modular route files",
+            "Controller pattern for business logic",
+            "Mongoose models with validation",
+            "JWT middleware for protected routes"
+          ],
+          "nextjs": [
+            "App Router API routes",
+            "Server actions for mutations",
+            "Type-safe with Zod validation",
+            "Edge-ready API endpoints"
+          ]
+        },
+        "compatibleWith": {
+          "heading": "Compatible With",
+          "integrations": [
+            "GraphQL (easy migration)",
+            "tRPC (for Next.js)",
+            "Webhooks (Stripe, etc.)",
+            "Third-party APIs"
+          ]
+        },
+        "demo": {
+          "heading": "See It In Action",
+          "cta": {
+            "text": "View Demo",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included In All Plans",
+          "cta": {
+            "text": "View Pricing",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/solutions/scalable-saas-architecture",
+        "/mern-stack/boilerplate",
+        "/nextjs/api-routes"
+      ]
+    },
+    {
+      "id": "user-management",
+      "slug": "/features/user-management",
+      "name": "User Management",
+      "template": "TemplateB",
+      "meta": {
+        "title": "User Management System | SassyPack Starter Kit",
+        "description": "Complete user management with roles, permissions, invitations, and team features. Admin controls built-in.",
+        "keywords": [
+          "saas user management",
+          "role based access control",
+          "user administration",
+          "team management saas",
+          "user invite system"
+        ],
+        "canonical": "https://sassypack.collabtower.com/features/user-management"
+      },
+      "content": {
+        "h1": "User Management Built Into SassyPack",
+        "hero": {
+          "subheading": "Manage users, roles, and permissions with ease.",
+          "cta": {
+            "text": "Try Demo",
+            "link": "/demo"
+          }
+        },
+        "problem": {
+          "heading": "The Problem",
+          "description": "User management is more than just login. You need roles, permissions, team invitations, user deactivation, and admin controls. Building this takes weeks."
+        },
+        "solution": {
+          "heading": "How SassyPack Solves It",
+          "points": [
+            "Role-based access control (admin, user, team member)",
+            "User invitation system with email confirmations",
+            "Team management with member roles",
+            "User profile editing and account settings",
+            "Admin panel for user management (view, edit, deactivate)",
+            "Activity logs and audit trails"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "mern": [
+            "MongoDB user and team schemas",
+            "Middleware for role-based route protection",
+            "Email invitations with unique tokens",
+            "Admin API endpoints"
+          ],
+          "nextjs": [
+            "Prisma relations for users and teams",
+            "Server actions for user mutations",
+            "Protected routes with middleware",
+            "Real-time updates with SWR"
+          ]
+        },
+        "compatibleWith": {
+          "heading": "Compatible With",
+          "integrations": [
+            "SCIM (enterprise SSO)",
+            "SAML (enterprise auth)",
+            "Active Directory",
+            "Slack (notifications)"
+          ]
+        },
+        "demo": {
+          "heading": "See It In Action",
+          "cta": {
+            "text": "View Demo",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included In All Plans",
+          "cta": {
+            "text": "View Pricing",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/authentication",
+        "/use-cases/b2b-saas",
+        "/for/dev-agencies"
+      ]
+    },
+    {
+      "id": "analytics",
+      "slug": "/features/analytics",
+      "name": "Analytics",
+      "template": "TemplateB",
+      "meta": {
+        "title": "Built-In Analytics | SassyPack Starter Kit",
+        "description": "Track user behavior, feature usage, and revenue. Pre-integrated with Google Analytics, Mixpanel, and custom event tracking.",
+        "keywords": [
+          "saas analytics",
+          "user tracking",
+          "event tracking saas",
+          "analytics integration",
+          "product analytics"
+        ],
+        "canonical": "https://sassypack.collabtower.com/features/analytics"
+      },
+      "content": {
+        "h1": "Analytics Built Into SassyPack",
+        "hero": {
+          "subheading": "Understand your users from day one.",
+          "cta": {
+            "text": "Try Demo",
+            "link": "/demo"
+          }
+        },
+        "problem": {
+          "heading": "The Problem",
+          "description": "Without analytics, you're flying blind. You need to track signups, feature usage, churn, and revenue. Setting up event tracking and dashboards takes days."
+        },
+        "solution": {
+          "heading": "How SassyPack Solves It",
+          "points": [
+            "Google Analytics 4 integration out of the box",
+            "Custom event tracking for key actions (signup, upgrade, feature use)",
+            "Revenue tracking synced with payment data",
+            "User segmentation and cohort analysis",
+            "Funnel tracking for conversion optimization",
+            "Export data to CSV or API"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "mern": [
+            "Event tracking middleware",
+            "MongoDB analytics collection",
+            "API endpoints for analytics queries",
+            "Client-side tracking with custom hooks"
+          ],
+          "nextjs": [
+            "Server-side event tracking",
+            "Vercel Analytics integration",
+            "Client component tracking",
+            "Edge analytics support"
+          ]
+        },
+        "compatibleWith": {
+          "heading": "Compatible With",
+          "integrations": [
+            "Google Analytics 4",
+            "Mixpanel",
+            "Amplitude",
+            "PostHog",
+            "Segment"
+          ]
+        },
+        "demo": {
+          "heading": "See It In Action",
+          "cta": {
+            "text": "View Demo",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included In All Plans",
+          "cta": {
+            "text": "View Pricing",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/dashboard-templates",
+        "/use-cases/b2b-saas",
+        "/solutions/production-ready-saas"
+      ]
+    },
+    {
+      "id": "ui-components",
+      "slug": "/features/ui-components",
+      "name": "UI Components",
+      "template": "TemplateB",
+      "meta": {
+        "title": "UI Component Library | SassyPack Starter Kit",
+        "description": "50+ pre-built React components. Forms, modals, buttons, cards, tables. Accessible, responsive, and customizable with Tailwind CSS.",
+        "keywords": [
+          "react ui components",
+          "saas component library",
+          "tailwind components",
+          "pre-built react components",
+          "ui kit saas"
+        ],
+        "canonical": "https://sassypack.collabtower.com/features/ui-components"
+      },
+      "content": {
+        "h1": "UI Components Built Into SassyPack",
+        "hero": {
+          "subheading": "50+ components to build your UI faster.",
+          "cta": {
+            "text": "View Components",
+            "link": "/demo"
+          }
+        },
+        "problem": {
+          "heading": "The Problem",
+          "description": "Building UI from scratch is slow. Forms, modals, dropdowns, and tables all need accessibility, responsive design, and consistent styling."
+        },
+        "solution": {
+          "heading": "How SassyPack Solves It",
+          "points": [
+            "50+ pre-built React components (buttons, forms, modals, cards)",
+            "Fully accessible (WCAG 2.1 AA compliant)",
+            "Responsive design out of the box",
+            "Dark mode support",
+            "Customizable with Tailwind CSS",
+            "TypeScript definitions included"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "mern": [
+            "React functional components with hooks",
+            "Tailwind CSS for styling",
+            "Storybook for component documentation",
+            "Prop validation with PropTypes"
+          ],
+          "nextjs": [
+            "shadcn/ui components",
+            "Radix UI primitives",
+            "Client and server component support",
+            "Full TypeScript support"
+          ]
+        },
+        "compatibleWith": {
+          "heading": "Compatible With",
+          "integrations": [
+            "Tailwind CSS",
+            "CSS Modules",
+            "Styled Components",
+            "Emotion"
+          ]
+        },
+        "demo": {
+          "heading": "See It In Action",
+          "cta": {
+            "text": "View Component Library",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included In All Plans",
+          "cta": {
+            "text": "View Pricing",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/dashboard-templates",
+        "/nextjs/saas-template",
+        "/mern-stack/boilerplate"
+      ]
+    },
+    {
+      "id": "deployment",
+      "slug": "/features/deployment",
+      "name": "Deployment",
+      "template": "TemplateB",
+      "meta": {
+        "title": "One-Click Deployment | SassyPack Starter Kit",
+        "description": "Deploy to Vercel, Netlify, or AWS in minutes. Docker support, CI/CD pipelines, and environment configs included.",
+        "keywords": [
+          "saas deployment",
+          "vercel deployment",
+          "docker saas",
+          "ci/cd pipeline",
+          "production deployment"
+        ],
+        "canonical": "https://sassypack.collabtower.com/features/deployment"
+      },
+      "content": {
+        "h1": "Deployment Built Into SassyPack",
+        "hero": {
+          "subheading": "Go from code to production in minutes.",
+          "cta": {
+            "text": "Try Demo",
+            "link": "/demo"
+          }
+        },
+        "problem": {
+          "heading": "The Problem",
+          "description": "Deployment is complex. You need environment configs, build scripts, CI/CD pipelines, and hosting setup. First-time deployments often fail."
+        },
+        "solution": {
+          "heading": "How SassyPack Solves It",
+          "points": [
+            "One-click Vercel deployment for Next.js",
+            "Docker configs for containerized deployment",
+            "GitHub Actions CI/CD pipeline included",
+            "Environment variable management",
+            "Database migration scripts",
+            "Deployment guides for AWS, DigitalOcean, Heroku"
+          ]
+        },
+        "technicalDetails": {
+          "heading": "Technical Implementation",
+          "mern": [
+            "Dockerfile and docker-compose.yml",
+            "PM2 for process management",
+            "Nginx reverse proxy config",
+            "MongoDB connection pooling"
+          ],
+          "nextjs": [
+            "vercel.json configuration",
+            "Edge runtime support",
+            "Static asset optimization",
+            "Automatic preview deployments"
+          ]
+        },
+        "compatibleWith": {
+          "heading": "Compatible With",
+          "integrations": [
+            "Vercel",
+            "Netlify",
+            "AWS (EC2, ECS)",
+            "DigitalOcean",
+            "Heroku",
+            "Render"
+          ]
+        },
+        "demo": {
+          "heading": "See It In Action",
+          "cta": {
+            "text": "View Deployment Guide",
+            "link": "/demo"
+          }
+        },
+        "pricing": {
+          "heading": "Included In All Plans",
+          "cta": {
+            "text": "View Pricing",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/solutions/production-ready-saas",
+        "/mern-stack/boilerplate",
+        "/nextjs/saas-template"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,673 @@
+{
+  "audiences": [
+    {
+      "id": "indie-developers",
+      "slug": "/for/indie-developers",
+      "name": "Indie Developers",
+      "template": "TemplateD",
+      "meta": {
+        "title": "SaaS Starter Kit for Indie Developers | SassyPack",
+        "description": "Built for solo developers. Launch your SaaS idea in hours. Pre-built auth, payments, dashboards. One-time payment, no subscriptions.",
+        "keywords": [
+          "saas starter kit for indie developers",
+          "solo developer saas boilerplate",
+          "indie hacker starter kit",
+          "one person saas template",
+          "bootstrap saas quickly"
+        ],
+        "canonical": "https://sassypack.collabtower.com/for/indie-developers"
+      },
+      "content": {
+        "h1": "SaaS Starter Kit for Indie Developers",
+        "hero": {
+          "valueProp": "Launch your SaaS idea in hours, not months. No team needed. No subscriptions. Just you and production-ready code.",
+          "cta": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        },
+        "builtForWorkflow": {
+          "heading": "Built For Your Workflow",
+          "painPoints": [
+            "You're building solo and need to move fast",
+            "You can't afford a team or expensive consultants",
+            "You want to validate your idea quickly without burning months",
+            "You need production-ready code, not toy examples",
+            "You're tired of tutorial hell and want to ship"
+          ]
+        },
+        "perfectFor": {
+          "heading": "Perfect For",
+          "useCases": [
+            {
+              "title": "Side Projects",
+              "description": "Launch your nights-and-weekends SaaS idea",
+              "link": "/use-cases/subscription-service"
+            },
+            {
+              "title": "Indie SaaS",
+              "description": "Bootstrap a profitable one-person business",
+              "link": "/solutions/launch-saas-fast"
+            },
+            {
+              "title": "MVP Testing",
+              "description": "Validate your idea with real paying customers",
+              "link": "/solutions/reduce-development-time"
+            },
+            {
+              "title": "Learning Projects",
+              "description": "Study production-grade code and best practices",
+              "link": "/mern-saas-starter-kit"
+            }
+          ]
+        },
+        "featuresThatMatter": {
+          "heading": "Features That Matter to You",
+          "features": [
+            {
+              "title": "Solo-Friendly Setup",
+              "description": "Install and launch in one evening. No DevOps team needed.",
+              "link": "/features/deployment"
+            },
+            {
+              "title": "Monetization Ready",
+              "description": "Stripe integration so you can charge from day one.",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Simple Admin Tools",
+              "description": "Manage users and track revenue without complexity.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Self-Service Auth",
+              "description": "Users can register, login, and reset passwords without your help.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Documentation",
+              "description": "Clear guides so you're not stuck googling for hours.",
+              "link": "/features/api-structure"
+            },
+            {
+              "title": "One-Time Payment",
+              "description": "Pay once, use forever. No monthly subscriptions.",
+              "link": "/pricing"
+            }
+          ]
+        },
+        "testimonial": {
+          "quote": "I launched my SaaS in 3 days using SassyPack. As a solo dev, I can't waste weeks on auth and payments. This saved me months.",
+          "author": "Alex Chen",
+          "role": "Indie Developer",
+          "product": "TaskFlow SaaS"
+        },
+        "stackChoice": {
+          "heading": "Your Stack, Your Way",
+          "description": "Choose the stack you know best. Both are production-ready.",
+          "options": [
+            {
+              "name": "MERN Stack",
+              "description": "MongoDB, Express, React, Node.js",
+              "link": "/mern-saas-starter-kit"
+            },
+            {
+              "name": "Next.js",
+              "description": "Next.js 14+, React, TypeScript, Prisma",
+              "link": "/nextjs-saas-starter-kit"
+            }
+          ]
+        },
+        "cta": {
+          "heading": "Launch Your Indie SaaS Today",
+          "subheading": "Join hundreds of solo developers shipping faster with SassyPack.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/mern-saas-starter-kit",
+        "/nextjs-saas-starter-kit",
+        "/solutions/launch-saas-fast",
+        "/solutions/reduce-development-time",
+        "/pricing"
+      ]
+    },
+    {
+      "id": "startup-founders",
+      "slug": "/for/startup-founders",
+      "name": "Startup Founders",
+      "template": "TemplateD",
+      "meta": {
+        "title": "SaaS Starter Kit for Startup Founders | SassyPack",
+        "description": "Launch your startup's MVP in hours. Pre-built infrastructure lets you focus on product-market fit, not coding auth. Perfect for non-technical founders.",
+        "keywords": [
+          "saas starter kit for founders",
+          "non-technical founder saas",
+          "mvp starter kit",
+          "startup saas boilerplate",
+          "founder friendly template"
+        ],
+        "canonical": "https://sassypack.collabtower.com/for/startup-founders"
+      },
+      "content": {
+        "h1": "SaaS Starter Kit for Startup Founders",
+        "hero": {
+          "valueProp": "Launch your MVP and start talking to customers in days, not months. Pre-built infrastructure means you focus on product-market fit, not technical debt.",
+          "cta": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        },
+        "builtForWorkflow": {
+          "heading": "Built For Your Reality",
+          "painPoints": [
+            "You're racing to find product-market fit before runway ends",
+            "You can't afford 6 months of development before validation",
+            "You need to test pricing and features with real users now",
+            "Your developer time is expensive and limited",
+            "You're non-technical but need to move fast with your dev"
+          ]
+        },
+        "perfectFor": {
+          "heading": "Perfect For",
+          "useCases": [
+            {
+              "title": "MVP Launch",
+              "description": "Get to market in weeks, not quarters",
+              "link": "/solutions/launch-saas-fast"
+            },
+            {
+              "title": "Pivot Testing",
+              "description": "Test new directions without rebuilding from scratch",
+              "link": "/solutions/reduce-development-time"
+            },
+            {
+              "title": "Seed Funding Demos",
+              "description": "Show investors a working product, not slides",
+              "link": "/use-cases/b2b-saas"
+            },
+            {
+              "title": "Early Customer Validation",
+              "description": "Start charging and learning from real users",
+              "link": "/features/payment-integration"
+            }
+          ]
+        },
+        "featuresThatMatter": {
+          "heading": "What Founders Care About",
+          "features": [
+            {
+              "title": "Fast Time to Market",
+              "description": "Launch in days, start validating immediately.",
+              "link": "/solutions/launch-saas-fast"
+            },
+            {
+              "title": "Payment Integration",
+              "description": "Start charging customers from day one.",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Analytics Built-In",
+              "description": "Track user behavior and make data-driven decisions.",
+              "link": "/features/analytics"
+            },
+            {
+              "title": "Investor-Ready Code",
+              "description": "Production-grade foundation that scales with funding.",
+              "link": "/solutions/production-ready-saas"
+            },
+            {
+              "title": "Team Collaboration",
+              "description": "Add developers as you grow without rewrites.",
+              "link": "/features/user-management"
+            },
+            {
+              "title": "Cost Effective",
+              "description": "One-time payment vs. months of developer salary.",
+              "link": "/pricing"
+            }
+          ]
+        },
+        "testimonial": {
+          "quote": "We used SassyPack to launch our MVP in 2 weeks. We're now at $15k MRR and raised our seed round. The speed to market was everything.",
+          "author": "Sarah Martinez",
+          "role": "Co-Founder",
+          "product": "DataSync"
+        },
+        "stackChoice": {
+          "heading": "Choose Your Stack",
+          "description": "Pick the stack your team knows. Both are production-ready and investor-approved.",
+          "options": [
+            {
+              "name": "MERN Stack",
+              "description": "Popular, flexible, great for custom features",
+              "link": "/mern-saas-starter-kit"
+            },
+            {
+              "name": "Next.js",
+              "description": "Modern, fast, perfect for landing pages + app",
+              "link": "/nextjs-saas-starter-kit"
+            }
+          ]
+        },
+        "cta": {
+          "heading": "Stop Building, Start Validating",
+          "subheading": "Launch your MVP and find product-market fit faster.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/solutions/launch-saas-fast",
+        "/features/analytics",
+        "/use-cases/b2b-saas",
+        "/pricing"
+      ]
+    },
+    {
+      "id": "dev-agencies",
+      "slug": "/for/dev-agencies",
+      "name": "Dev Agencies",
+      "template": "TemplateD",
+      "meta": {
+        "title": "SaaS Starter Kit for Dev Agencies | SassyPack",
+        "description": "White-label SaaS starter for agencies. Ship client projects 10x faster. Reusable foundation for multiple projects. One-time license, unlimited use.",
+        "keywords": [
+          "saas starter kit for agencies",
+          "white label saas template",
+          "client project boilerplate",
+          "agency saas starter",
+          "reusable saas code"
+        ],
+        "canonical": "https://sassypack.collabtower.com/for/dev-agencies"
+      },
+      "content": {
+        "h1": "SaaS Starter Kit for Dev Agencies",
+        "hero": {
+          "valueProp": "Ship client SaaS projects 10x faster. White-label ready. Reuse across unlimited projects. One license, endless value.",
+          "cta": {
+            "text": "Get Agency License",
+            "link": "/pricing"
+          }
+        },
+        "builtForWorkflow": {
+          "heading": "Built For Agency Reality",
+          "painPoints": [
+            "Clients want custom SaaS but budgets are tight",
+            "You're rebuilding auth and payments for every project",
+            "Project margins suffer when you code from scratch",
+            "Junior devs need production-quality starting points",
+            "You need consistent code quality across client projects"
+          ]
+        },
+        "perfectFor": {
+          "heading": "Perfect For",
+          "useCases": [
+            {
+              "title": "Client SaaS Projects",
+              "description": "Deliver custom SaaS in weeks, not months",
+              "link": "/use-cases/client-projects"
+            },
+            {
+              "title": "White-Label Products",
+              "description": "Rebrand and resell as your own solution",
+              "link": "/solutions/production-ready-saas"
+            },
+            {
+              "title": "Fixed-Price Contracts",
+              "description": "Protect margins with faster delivery",
+              "link": "/solutions/reduce-development-time"
+            },
+            {
+              "title": "Team Onboarding",
+              "description": "Give juniors a solid foundation to build on",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "featuresThatMatter": {
+          "heading": "What Agencies Need",
+          "features": [
+            {
+              "title": "White-Label Ready",
+              "description": "Remove branding, add client's identity.",
+              "link": "/features/ui-components"
+            },
+            {
+              "title": "Reusable Foundation",
+              "description": "Use for unlimited client projects.",
+              "link": "/pricing"
+            },
+            {
+              "title": "Client-Ready Demos",
+              "description": "Show working features in sales meetings.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Team Collaboration",
+              "description": "Multiple devs can work on the codebase.",
+              "link": "/features/user-management"
+            },
+            {
+              "title": "Production-Grade Code",
+              "description": "Impress technical clients with quality.",
+              "link": "/solutions/production-ready-saas"
+            },
+            {
+              "title": "Documentation",
+              "description": "Easy handoff to client teams after project.",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "testimonial": {
+          "quote": "SassyPack transformed our agency. We deliver SaaS projects in 1/3 the time. Our margins doubled and clients are happier with faster delivery.",
+          "author": "Marcus Thompson",
+          "role": "CTO",
+          "product": "DevCraft Agency"
+        },
+        "stackChoice": {
+          "heading": "Both Stacks Included",
+          "description": "Switch between MERN and Next.js based on client needs. One license covers both.",
+          "options": [
+            {
+              "name": "MERN Stack",
+              "description": "For clients who need backend flexibility",
+              "link": "/mern-saas-starter-kit"
+            },
+            {
+              "name": "Next.js",
+              "description": "For clients who want modern, fast UX",
+              "link": "/nextjs-saas-starter-kit"
+            }
+          ]
+        },
+        "cta": {
+          "heading": "Scale Your Agency's SaaS Delivery",
+          "subheading": "Ship more projects, protect margins, delight clients.",
+          "button": {
+            "text": "Get Agency License",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/use-cases/client-projects",
+        "/solutions/reduce-development-time",
+        "/pricing"
+      ]
+    },
+    {
+      "id": "freelance-developers",
+      "slug": "/for/freelance-developers",
+      "name": "Freelance Developers",
+      "template": "TemplateD",
+      "meta": {
+        "title": "SaaS Starter Kit for Freelance Developers | SassyPack",
+        "description": "Deliver client SaaS projects faster. Pre-built auth, payments, dashboards. Charge more, deliver in half the time. Perfect for freelancers.",
+        "keywords": [
+          "saas starter kit for freelancers",
+          "freelance developer boilerplate",
+          "client saas projects",
+          "freelancer starter kit",
+          "faster project delivery"
+        ],
+        "canonical": "https://sassypack.collabtower.com/for/freelance-developers"
+      },
+      "content": {
+        "h1": "SaaS Starter Kit for Freelance Developers",
+        "hero": {
+          "valueProp": "Deliver client SaaS projects in half the time. Charge more by focusing on custom features, not rebuilding auth. Win more contracts with faster estimates.",
+          "cta": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        },
+        "builtForWorkflow": {
+          "heading": "Built For Freelance Reality",
+          "painPoints": [
+            "You're competing on price and speed",
+            "Clients want SaaS but underestimate complexity",
+            "You lose bids because custom builds take too long",
+            "Your hourly rate suffers when building boilerplate",
+            "You need to juggle multiple client projects"
+          ]
+        },
+        "perfectFor": {
+          "heading": "Perfect For",
+          "useCases": [
+            {
+              "title": "Client SaaS Builds",
+              "description": "Deliver faster without sacrificing quality",
+              "link": "/use-cases/client-projects"
+            },
+            {
+              "title": "Fixed-Price Projects",
+              "description": "Protect margins with pre-built infrastructure",
+              "link": "/solutions/reduce-development-time"
+            },
+            {
+              "title": "Rapid Prototypes",
+              "description": "Show clients working demos in days",
+              "link": "/solutions/launch-saas-fast"
+            },
+            {
+              "title": "Maintenance Contracts",
+              "description": "Hand off clean, documented code to clients",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "featuresThatMatter": {
+          "heading": "What Freelancers Need",
+          "features": [
+            {
+              "title": "Faster Delivery",
+              "description": "Ship projects in half the time, take more contracts.",
+              "link": "/solutions/reduce-development-time"
+            },
+            {
+              "title": "Higher Rates",
+              "description": "Charge for custom work, not auth setup.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Client Demos",
+              "description": "Show working features to close deals.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Clean Handoff",
+              "description": "Documented code clients can maintain.",
+              "link": "/features/api-structure"
+            },
+            {
+              "title": "Competitive Edge",
+              "description": "Win bids with faster, cheaper estimates.",
+              "link": "/solutions/launch-saas-fast"
+            },
+            {
+              "title": "Unlimited Projects",
+              "description": "One purchase, use for all client work.",
+              "link": "/pricing"
+            }
+          ]
+        },
+        "testimonial": {
+          "quote": "SassyPack doubled my effective hourly rate. I deliver SaaS projects in half the time and clients love the professional quality.",
+          "author": "Priya Sharma",
+          "role": "Freelance Full-Stack Developer",
+          "product": null
+        },
+        "stackChoice": {
+          "heading": "Work With Your Stack",
+          "description": "Choose the stack you're most productive with. Both are client-ready.",
+          "options": [
+            {
+              "name": "MERN Stack",
+              "description": "Flexible, familiar, great for custom backends",
+              "link": "/mern-saas-starter-kit"
+            },
+            {
+              "name": "Next.js",
+              "description": "Modern, fast, clients love the UX",
+              "link": "/nextjs-saas-starter-kit"
+            }
+          ]
+        },
+        "cta": {
+          "heading": "Win More Contracts, Deliver Faster",
+          "subheading": "Join freelancers earning more with SassyPack.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/use-cases/client-projects",
+        "/solutions/reduce-development-time",
+        "/pricing"
+      ]
+    },
+    {
+      "id": "non-technical-founders",
+      "slug": "/for/non-technical-founders",
+      "name": "Non-Technical Founders",
+      "template": "TemplateD",
+      "meta": {
+        "title": "SaaS Starter Kit for Non-Technical Founders | SassyPack",
+        "description": "Launch your SaaS without a technical co-founder. Work with freelancers faster. Clear documentation and pre-built infrastructure included.",
+        "keywords": [
+          "saas for non-technical founders",
+          "no-code saas alternative",
+          "founder without developer",
+          "saas without technical skills",
+          "hire developer faster"
+        ],
+        "canonical": "https://sassypack.collabtower.com/for/non-technical-founders"
+      },
+      "content": {
+        "h1": "SaaS Starter Kit for Non-Technical Founders",
+        "hero": {
+          "valueProp": "Launch your SaaS without a technical co-founder. Hire freelancers who can start building immediately. Clear documentation makes working with developers easier.",
+          "cta": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        },
+        "builtForWorkflow": {
+          "heading": "Built For Non-Technical Founders",
+          "painPoints": [
+            "You can't find or afford a technical co-founder",
+            "Developers quote 6 months and $100k for an MVP",
+            "You don't know if developers are building things right",
+            "No-code tools are too limited for your vision",
+            "You need to move fast but lack technical knowledge"
+          ]
+        },
+        "perfectFor": {
+          "heading": "Perfect For",
+          "useCases": [
+            {
+              "title": "Solo Founders",
+              "description": "Launch without a technical co-founder",
+              "link": "/solutions/launch-saas-fast"
+            },
+            {
+              "title": "Hiring Freelancers",
+              "description": "Give developers a head start to reduce costs",
+              "link": "/for/freelance-developers"
+            },
+            {
+              "title": "MVP Validation",
+              "description": "Test your idea before heavy investment",
+              "link": "/for/startup-founders"
+            },
+            {
+              "title": "Investor Demos",
+              "description": "Show working product, not just mockups",
+              "link": "/features/dashboard-templates"
+            }
+          ]
+        },
+        "featuresThatMatter": {
+          "heading": "What You Need",
+          "features": [
+            {
+              "title": "Clear Documentation",
+              "description": "Understand what's built and how it works.",
+              "link": "/features/api-structure"
+            },
+            {
+              "title": "Pre-Built Infrastructure",
+              "description": "No debates about auth or payment setup.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Lower Developer Costs",
+              "description": "Hire for customization, not foundational work.",
+              "link": "/solutions/reduce-development-time"
+            },
+            {
+              "title": "Faster Hiring",
+              "description": "Developers can start immediately with clear code.",
+              "link": "/features/deployment"
+            },
+            {
+              "title": "Production Quality",
+              "description": "Professional code that won't embarrass you.",
+              "link": "/solutions/production-ready-saas"
+            },
+            {
+              "title": "Support Resources",
+              "description": "Guides to help you work with developers.",
+              "link": "/pricing"
+            }
+          ]
+        },
+        "testimonial": {
+          "quote": "As a non-technical founder, SassyPack saved me. I hired a freelancer for $5k instead of $50k because 90% was already built. We launched in 3 weeks.",
+          "author": "Jessica Wu",
+          "role": "Founder",
+          "product": "ClientHub"
+        },
+        "stackChoice": {
+          "heading": "Work With Any Developer",
+          "description": "Both stacks are popular. Easy to find freelancers who know them.",
+          "options": [
+            {
+              "name": "MERN Stack",
+              "description": "Popular, lots of freelancers know this",
+              "link": "/mern-saas-starter-kit"
+            },
+            {
+              "name": "Next.js",
+              "description": "Modern, trendy, growing freelancer pool",
+              "link": "/nextjs-saas-starter-kit"
+            }
+          ]
+        },
+        "cta": {
+          "heading": "Launch Your Vision Without Technical Baggage",
+          "subheading": "Work smarter with developers, not harder.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/for/startup-founders",
+        "/for/freelance-developers",
+        "/solutions/launch-saas-fast",
+        "/pricing"
+      ]
+    }
+  ]
+}

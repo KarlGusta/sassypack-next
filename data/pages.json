@@ -1,0 +1,273 @@
+{
+  "pages": [
+    {
+      "id": "home",
+      "slug": "/",
+      "template": "Home",
+      "meta": {
+        "title": "SassyPack | MERN & Next.js SaaS Starter Kit",
+        "description": "Launch your SaaS in hours with SassyPack. Pre-built authentication, payments, dashboards, and APIs for MERN and Next.js.",
+        "keywords": [
+          "saas starter kit",
+          "mern saas boilerplate",
+          "nextjs saas template",
+          "saas boilerplate"
+        ],
+        "canonical": "https://sassypack.com/"
+      }
+    },
+    {
+      "id": "mern-saas-starter-kit",
+      "slug": "/mern-saas-starter-kit",
+      "template": "TemplateA",
+      "meta": {
+        "title": "MERN SaaS Starter Kit | Production-Ready in Hours",
+        "description": "Launch your SaaS with our MERN stack starter kit. MongoDB, Express, React, Node.js with pre-built auth, payments, and dashboards. Save weeks of development.",
+        "keywords": [
+          "mern saas starter kit",
+          "mern stack boilerplate",
+          "mern saas template",
+          "mongodb express react node saas",
+          "mern starter kit production ready"
+        ],
+        "canonical": "https://sassypack.com/mern-saas-starter-kit"
+      },
+      "content": {
+        "h1": "MERN SaaS Starter Kit | Production-Ready in Hours",
+        "hero": {
+          "heading": "Launch Your MERN SaaS in Hours, Not Weeks",
+          "subheading": "Production-ready MERN stack with authentication, payments, and dashboards built in. Start building features, not infrastructure.",
+          "cta": {
+            "text": "Get Started Free",
+            "link": "/pricing"
+          }
+        },
+        "whatsIncluded": {
+          "heading": "What's Included",
+          "features": [
+            "Complete MERN stack setup (MongoDB, Express, React, Node.js)",
+            "Pre-built JWT authentication & user management",
+            "Stripe & PayPal payment integration",
+            "Admin dashboard with analytics",
+            "RESTful API structure",
+            "UI component library (React)",
+            "Role-based access control",
+            "Production-ready deployment configs"
+          ]
+        },
+        "timeSavings": {
+          "heading": "Time Savings",
+          "comparison": {
+            "custom": "4-6 weeks",
+            "sassypack": "2-4 hours"
+          },
+          "description": "Skip the boilerplate. Start with a production-ready foundation and launch faster."
+        },
+        "techStack": {
+          "heading": "Technical Stack",
+          "technologies": [
+            "MongoDB (Database)",
+            "Express.js (Backend)",
+            "React (Frontend)",
+            "Node.js (Runtime)",
+            "JWT (Authentication)",
+            "Stripe API (Payments)",
+            "Mongoose (ORM)"
+          ]
+        },
+        "builtInFeatures": {
+          "heading": "Built-In Features",
+          "items": [
+            {
+              "title": "Authentication",
+              "description": "JWT-based auth with refresh tokens, password reset, email verification.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Payments",
+              "description": "Stripe integration with subscription management and webhooks.",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Dashboards",
+              "description": "Admin and user dashboards with charts, tables, and analytics.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "API Structure",
+              "description": "RESTful API with middleware, error handling, and validation.",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "productionReady": {
+          "heading": "Production Ready",
+          "points": [
+            "Security best practices (helmet, CORS, rate limiting)",
+            "Horizontal scaling with MongoDB replica sets",
+            "Error logging and monitoring hooks",
+            "Environment-based configuration",
+            "Docker support for containerization"
+          ]
+        },
+        "pricing": {
+          "heading": "Simple Pricing",
+          "cta": {
+            "text": "View All Plans",
+            "link": "/pricing"
+          }
+        },
+        "finalCTA": {
+          "heading": "Start Building Your SaaS Today",
+          "subheading": "Get instant access to the complete MERN stack starter kit.",
+          "cta": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "internalLinks": [
+        "/features/authentication",
+        "/features/payment-integration",
+        "/features/dashboard-templates",
+        "/features/api-structure",
+        "/for/indie-developers",
+        "/pricing"
+      ]
+    },
+    {
+      "id": "nextjs-saas-starter-kit",
+      "slug": "/nextjs-saas-starter-kit",
+      "template": "TemplateA",
+      "meta": {
+        "title": "Next.js SaaS Starter Kit | Production-Ready in Hours",
+        "description": "Launch your SaaS with our Next.js starter kit. React, TypeScript, API routes with pre-built auth, payments, and dashboards. Save weeks of development.",
+        "keywords": [
+          "nextjs saas starter kit",
+          "next.js saas boilerplate",
+          "nextjs saas template",
+          "next.js starter kit saas",
+          "react saas starter"
+        ],
+        "canonical": "https://sassypack.com/nextjs-saas-starter-kit"
+      },
+      "content": {
+        "h1": "Next.js SaaS Starter Kit | Production-Ready in Hours",
+        "hero": {
+          "heading": "Launch Your Next.js SaaS in Hours, Not Weeks",
+          "subheading": "Production-ready Next.js with authentication, payments, and dashboards built in. Start building features, not infrastructure.",
+          "cta": {
+            "text": "Get Started Free",
+            "link": "/pricing"
+          }
+        },
+        "whatsIncluded": {
+          "heading": "What's Included",
+          "features": [
+            "Complete Next.js 14+ setup with App Router",
+            "Pre-built NextAuth.js authentication",
+            "Stripe payment integration with webhooks",
+            "Admin dashboard with server components",
+            "API routes with middleware",
+            "UI component library (shadcn/ui)",
+            "TypeScript throughout",
+            "Vercel deployment ready"
+          ]
+        },
+        "timeSavings": {
+          "heading": "Time Savings",
+          "comparison": {
+            "custom": "4-6 weeks",
+            "sassypack": "2-4 hours"
+          },
+          "description": "Skip the boilerplate. Start with a production-ready foundation and launch faster."
+        },
+        "techStack": {
+          "heading": "Technical Stack",
+          "technologies": [
+            "Next.js 14+ (Framework)",
+            "React 18+ (UI)",
+            "TypeScript (Language)",
+            "Prisma (ORM)",
+            "NextAuth.js (Authentication)",
+            "Stripe API (Payments)",
+            "Tailwind CSS (Styling)"
+          ]
+        },
+        "builtInFeatures": {
+          "heading": "Built-In Features",
+          "items": [
+            {
+              "title": "Authentication",
+              "description": "NextAuth.js with OAuth, magic links, and session management.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Payments",
+              "description": "Stripe integration with subscription management and webhooks.",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Dashboards",
+              "description": "Server-rendered dashboards with real-time data.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "API Routes",
+              "description": "Type-safe API routes with validation and error handling.",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "productionReady": {
+          "heading": "Production Ready",
+          "points": [
+            "Edge-ready with Vercel deployment",
+            "Server-side rendering & static generation",
+            "Image optimization built-in",
+            "Type safety with TypeScript",
+            "SEO optimized with metadata API"
+          ]
+        },
+        "pricing": {
+          "heading": "Simple Pricing",
+          "cta": {
+            "text": "View All Plans",
+            "link": "/pricing"
+          }
+        },
+        "finalCTA": {
+          "heading": "Start Building Your SaaS Today",
+          "subheading": "Get instant access to the complete Next.js starter kit.",
+          "cta": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "internalLinks": [
+        "/features/authentication",
+        "/features/payment-integration",
+        "/features/dashboard-templates",
+        "/features/api-structure",
+        "/for/indie-developers",
+        "/pricing"
+      ]
+    },
+    {
+      "id": "pricing",
+      "slug": "/pricing",
+      "template": "Pricing",
+      "meta": {
+        "title": "Pricing | SassyPack SaaS Starter Kit",
+        "description": "Simple, transparent pricing for SassyPack. Choose MERN or Next.js starter kit. One-time payment, lifetime access, free updates.",
+        "keywords": [
+          "saas starter kit pricing",
+          "mern boilerplate price",
+          "nextjs starter cost"
+        ],
+        "canonical": "https://sassypack.collabtower.com/pricing"
+      }
+    }
+  ]
+}
