@@ -5,7 +5,7 @@
       "slug": "/",
       "template": "Home",
       "meta": {
-        "title": "SassyPack | MERN & Next.js SaaS Starter Kit",
+        "title": "Next.js starter kit & Next.js SaaS Starter Kit",
         "description": "Launch your SaaS in hours with SassyPack. Pre-built authentication, payments, dashboards, and APIs for MERN and Next.js.",
         "keywords": [
           "saas starter kit",

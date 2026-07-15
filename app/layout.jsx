@@ -6,7 +6,7 @@ import Footer from "@/components/layout/Footer";
 import Analytics from "@/components/layout/Analytics";
 
 export const metadata = {
-  title: "SassyPack | MERN & Next.js SaaS Starter Kit",
+  title: "Next.js starter kit & Next.js SaaS Starter Kit",
   description:
     "Launch your SaaS in hours with SassyPack. Pre-built authentication, payments, dashboards, and APIs for MERN and Next.js.",
 };
