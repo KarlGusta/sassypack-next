@@ -39,7 +39,7 @@
     "title": "The Architect’s Debt: Why Your Custom MERN SaaS Boilerplate is Killing Your Velocity",
     "date": "2026-02-23",
     "category": "App Architecture and Workflows",
-    "description": "Stop wasting months on boilerplate. Learn how to overcome the Architect’s Debt by using a production-ready MERN + Next.js starter kit to ship your SaaS 10× faster."
+    "description": "Stop wasting months on boilerplate. Learn how to overcome the Architect’s Debt by using a production-ready Next.js starter kit to ship your SaaS 10× faster."
   },
   {
     "slug": "mastering-saas-billing-stripe-paystack-guide-2026",
@@ -1650,25 +1650,25 @@
     "slug": "sassypack-vs-shipfast",
     "title": "SassyPack vs ShipFast: The MERN & Next.js Starter Kit That Actually Saves You Weeks",
     "date": "2025-11-27",
-    "description": "Compare SassyPack and ShipFast. See why SassyPack is the complete MERN + Next.js starter kit with auth, payments, dashboards, UI, and deployment ready from day one."
+    "description": "Compare SassyPack and ShipFast. See why SassyPack is the complete Next.js starter kit with auth, payments, dashboards, UI, and deployment ready from day one."
   },
   {
     "slug": "sassypack-vs-makerkit-2",
     "title": "SassyPack vs MakerKit: The MERN & Next.js Starter Kit That Actually Saves You Weeks",
     "date": "2025-11-27",
-    "description": "Compare SassyPack and MakerKit. See why SassyPack is the complete MERN + Next.js starter kit with auth, payments, dashboards, UI, and deployment ready from day one."
+    "description": "Compare SassyPack and MakerKit. See why SassyPack is the complete Next.js starter kit with auth, payments, dashboards, UI, and deployment ready from day one."
   },
   {
     "slug": "sassypack-vs-supastarter-2",
     "title": "SassyPack vs Supastarter: The MERN & Next.js Starter Kit That Actually Saves You Weeks",
     "date": "2025-11-27",
-    "description": "Compare SassyPack and Supastarter. See why SassyPack is the complete MERN + Next.js starter kit with auth, payments, dashboards, UI, and deployment ready from day one."
+    "description": "Compare SassyPack and Supastarter. See why SassyPack is the complete Next.js starter kit with auth, payments, dashboards, UI, and deployment ready from day one."
   },
   {
     "slug": "sassypack-vs-nextjs-starters",
     "title": "SassyPack vs Next.js Starters: The MERN & Next.js Starter Kit That Actually Saves You Weeks",
     "date": "2025-11-27",
-    "description": "Compare SassyPack and Next.js Starters. See why SassyPack is the complete MERN + Next.js starter kit with auth, payments, dashboards, UI, and deployment ready from day one."
+    "description": "Compare SassyPack and Next.js Starters. See why SassyPack is the complete Next.js starter kit with auth, payments, dashboards, UI, and deployment ready from day one."
   },
   {
     "slug": "saas-monetization-payment-integration-guide",

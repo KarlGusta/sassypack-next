@@ -102,7 +102,7 @@ export default function LandingPage() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <div className="inline-flex items-center rounded-lg border border-[#E5E7EB] bg-white px-3 py-2 text-sm font-semibold text-[#4B5563] shadow-sm">
-              MERN + Next.js starter kit
+              Next.js starter kit
             </div>
 
             <h1 className="mt-7 max-w-4xl text-5xl font-semibold tracking-tight text-[#111827] md:text-7xl">
