@@ -1,149 +1,75 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { ArrowRight } from "lucide-react";
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const router = useRouter();
+  const [scrolled, setScrolled] = useState(false);
+
+  const navItems = [
+    { label: "Why it saves time", href: "#why" },
+    { label: "What's inside", href: "#inside" },
+    { label: "Pricing", href: "#pricing" },
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const goHome = () => {
+    router.push("/");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const goToSection = (href) => {
+    router.push(`/${href}`);
+    window.setTimeout(() => {
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    }, 0);
+  };
 
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-indigo-600">SassyPack</span>
-            </Link>
-          </div>
+    <header
+      className={`fixed left-0 right-0 top-0 z-50 px-4 transition-all duration-300 ${
+        scrolled ? "py-3" : "py-4"
+      }`}
+    >
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-lg border border-[#E5E7EB] bg-white/90 px-4 py-3 shadow-sm backdrop-blur md:px-5">
+        <button
+          type="button"
+          onClick={goHome}
+          className="text-left text-xl font-semibold tracking-tight text-[#111827] transition hover:text-[#6366F1]"
+        >
+          SassyPack
+        </button>
 
-          <div className="hidden md:flex items-center space-x-8">
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-indigo-600 font-medium flex items-center">
-                Stacks
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <Link href="/mern-saas-starter-kit" className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                  MERN Stack
-                </Link>
-                <Link href="/nextjs-saas-starter-kit" className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                  Next.js
-                </Link>
-              </div>
-            </div>
-
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-indigo-600 font-medium flex items-center">
-                Features
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className="absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <Link href="/features/authentication" className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                  Authentication
-                </Link>
-                <Link href="/features/payment-integration" className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                  Payments
-                </Link>
-                <Link href="/features/dashboard-templates" className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                  Dashboards
-                </Link>
-                <Link href="/features/api-structure" className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                  API Structure
-                </Link>
-              </div>
-            </div>
-
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-indigo-600 font-medium flex items-center">
-                For
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className="absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <Link href="/for/indie-developers" className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                  Indie Developers
-                </Link>
-                <Link href="/for/startup-founders" className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                  Startup Founders
-                </Link>
-                <Link href="/for/dev-agencies" className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                  Agencies
-                </Link>
-                <Link href="/for/freelance-developers" className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                  Freelancers
-                </Link>
-              </div>
-            </div>
-
-            <Link href="/pricing" className="text-gray-700 hover:text-indigo-600 font-medium">
-              Pricing
-            </Link>
-          </div>
-
-          <div className="hidden md:flex items-center">
-            <Link
-              href="/pricing"
-              className="bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-indigo-700 transition-colors"
-            >
-              Get Started
-            </Link>
-          </div>
-
-          <div className="md:hidden">
+        <nav className="hidden items-center gap-1 rounded-lg border border-[#E5E7EB] bg-[#F8FAFC] p-1 lg:flex">
+          {navItems.map((item) => (
             <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-700 hover:text-indigo-600"
+              key={item.href}
+              type="button"
+              onClick={() => goToSection(item.href)}
+              className="rounded-md px-3 py-2 text-sm font-medium text-[#4B5563] transition hover:bg-white hover:text-[#111827] hover:shadow-sm"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {mobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
+              {item.label}
             </button>
-          </div>
-        </div>
+          ))}
+        </nav>
 
-        {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
-            <div className="flex flex-col space-y-4">
-              <Link href="/mern-saas-starter-kit" className="text-gray-700 hover:text-indigo-600 font-medium">
-                MERN Stack
-              </Link>
-              <Link href="/nextjs-saas-starter-kit" className="text-gray-700 hover:text-indigo-600 font-medium">
-                Next.js
-              </Link>
-              <Link href="/features/authentication" className="text-gray-700 hover:text-indigo-600">
-                Authentication
-              </Link>
-              <Link href="/features/payment-integration" className="text-gray-700 hover:text-indigo-600">
-                Payments
-              </Link>
-              <Link href="/for/indie-developers" className="text-gray-700 hover:text-indigo-600">
-                Indie Developers
-              </Link>
-              <Link href="/for/startup-founders" className="text-gray-700 hover:text-indigo-600">
-                Startup Founders
-              </Link>
-              <Link href="/pricing" className="text-gray-700 hover:text-indigo-600 font-medium">
-                Pricing
-              </Link>
-              <Link
-                href="/pricing"
-                className="bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-indigo-700 text-center"
-              >
-                Get Started
-              </Link>
-            </div>
-          </div>
-        )}
-      </nav>
+        <Link
+          href="/pricing"
+          className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#FFE711] px-4 py-2.5 text-sm font-semibold text-[#111827] transition hover:bg-[#FFE711]"
+        >
+          Get the kit <ArrowRight size={16} />
+        </Link>
+      </div>
     </header>
   );
 }
