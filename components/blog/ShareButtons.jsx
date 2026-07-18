@@ -1,6 +1,6 @@
 "use client";
 
-import { Twitter, Link as LinkIcon } from "lucide-react";
+import { X, Link as LinkIcon } from "lucide-react";
 
 export default function ShareButtons({ title }) {
   const handleCopyLink = () => {
@@ -27,7 +27,7 @@ export default function ShareButtons({ title }) {
         className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#111827] text-white transition hover:bg-[#1F2937]"
         aria-label="Share on X"
       >
-        <Twitter size={18} />
+        <X size={18} />
       </button>
       <button
         type="button"
