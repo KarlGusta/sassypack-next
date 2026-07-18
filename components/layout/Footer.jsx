@@ -11,7 +11,7 @@ const linkGroups = [
       { name: "What's Inside", href: "/whats-inside" },
       { name: "Pricing", href: "/pricing" },
       { name: "Free Tools", href: "/free-tools" },
-      { name: "Tools & Resources", href: "/tools-resources" },
+      { name: "Resources", href: "/resources" },
       { name: "Blog", href: "/blog" },
       { name: "Help Center", href: "/faq" },
     ],

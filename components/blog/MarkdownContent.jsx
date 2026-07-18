@@ -24,6 +24,35 @@ const markdownComponents = {
       </a>
     );
   },
+  pre: ({ children, ...props }) => (
+    <pre
+      {...props}
+      className="overflow-x-auto rounded-lg border border-[#E5E7EB] bg-[#111827] p-4 text-[#F8FAFC]"
+    >
+      {children}
+    </pre>
+  ),
+  code: ({ className, children, ...props }) => {
+    // Fenced code blocks get a "language-xxx" className from remark; inline code doesn't.
+    const isBlock = Boolean(className);
+
+    if (isBlock) {
+      return (
+        <code {...props} className={`${className || ""} text-[#F8FAFC]`}>
+          {children}
+        </code>
+      );
+    }
+
+    return (
+      <code
+        {...props}
+        className="rounded bg-[#F8FAFC] px-1.5 py-0.5 text-[#111827]"
+      >
+        {children}
+      </code>
+    );
+  },
 };
 
 export default function MarkdownContent({ content }) {
@@ -35,8 +64,6 @@ export default function MarkdownContent({ content }) {
       prose-p:leading-8 prose-p:text-[#374151]
       prose-a:text-[#6366F1] prose-a:no-underline hover:prose-a:underline
       prose-strong:text-[#111827]
-      prose-code:rounded prose-code:bg-[#F8FAFC] prose-code:px-1.5 prose-code:py-0.5 prose-code:text-[#111827]
-      prose-pre:rounded-lg prose-pre:border prose-pre:border-[#E5E7EB] prose-pre:bg-[#111827] prose-pre:text-[#F8FAFC]
       prose-img:rounded-lg prose-img:border prose-img:border-[#E5E7EB]"
     >
       <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
