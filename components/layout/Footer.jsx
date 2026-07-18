@@ -1,61 +1,161 @@
 import Link from "next/link";
+import { ArrowRight, ExternalLink, Mail, ShieldCheck, X, Zap } from "lucide-react";
+
+const primaryCheckoutUrl = "https://karlgusta.gumroad.com/l/mlixgb?wanted=true";
+
+const linkGroups = [
+  {
+    title: "Product",
+    links: [
+      { name: "Why SassyPack", href: "/why" },
+      { name: "What's Inside", href: "/whats-inside" },
+      { name: "Pricing", href: "/pricing" },
+      { name: "Free Tools", href: "/free-tools" },
+      { name: "Tools & Resources", href: "/tools-resources" },
+      { name: "Blog", href: "/blog" },
+      { name: "Help Center", href: "/faq" },
+    ],
+  },
+  {
+    title: "Browse",
+    links: [
+      { name: "Features", href: "/features" },
+      { name: "Solutions", href: "/solutions" },
+      { name: "Audiences", href: "/for" },
+      { name: "Comparisons", href: "/vs" },
+      { name: "Stacks", href: "/stacks" },
+      { name: "Use Cases", href: "/use-cases" },
+    ],
+  },
+  {
+    title: "Comparisons",
+    links: [
+      { name: "vs ShipFast", href: "/blog/sassypack-vs-shipfast" },
+      { name: "vs MakerKit", href: "/blog/sassypack-vs-makerkit-2" },
+      { name: "vs Supastarter", href: "/blog/sassypack-vs-supastarter-2" },
+      { name: "vs Next.js Starters", href: "/blog/sassypack-vs-nextjs-starters" },
+    ],
+  },
+  {
+    title: "Connect",
+    links: [
+      { name: "Email Support", href: "mailto:esimitkarlgusta@gmail.com", icon: Mail, external: true },
+      { name: "Follow on X", href: "https://x.com/UseSassyPack", icon: X, external: true },
+      { name: "Gumroad Store", href: primaryCheckoutUrl, icon: ExternalLink, external: true },
+      { name: "Privacy Policy", href: "/privacy" },
+    ],
+  },
+];
+
+function FooterLink({ link }) {
+  const Icon = link.icon;
+  const className =
+    "flex items-center gap-2 text-sm font-medium text-[#4B5563] transition hover:text-[#111827]";
+
+  const content = (
+    <>
+      {Icon && <Icon size={15} className="text-[#6B7280]" />}
+      {link.name}
+    </>
+  );
+
+  if (link.external) {
+    return (
+      <a
+        href={link.href}
+        target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+        rel={link.href.startsWith("mailto:") ? undefined : "noreferrer"}
+        className={className}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={link.href} className={className}>
+      {content}
+    </Link>
+  );
+}
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-white font-semibold mb-4">Stacks</h3>
-            <ul className="space-y-2">
-              <li><Link href="/mern-saas-starter-kit" className="hover:text-white transition-colors">MERN Stack</Link></li>
-              <li><Link href="/nextjs-saas-starter-kit" className="hover:text-white transition-colors">Next.js</Link></li>
-              <li><Link href="/mern-stack-saas-boilerplate" className="hover:text-white transition-colors">MERN Boilerplate</Link></li>
-              <li><Link href="/nextjs-saas-starter-kit" className="hover:text-white transition-colors">Next.js Template</Link></li>
-            </ul>
+    <footer className="border-t border-[#E5E7EB] bg-[#F8FAFC] px-6 py-16 text-[#111827]">
+      <div className="mx-auto max-w-6xl">
+        <div className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="rounded-lg border border-[#E5E7EB] bg-white p-8 shadow-sm">
+            <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+              <div>
+                <p className="text-2xl font-semibold tracking-tight">SassyPack</p>
+                <p className="mt-4 max-w-xl text-sm leading-6 text-[#4B5563]">
+                  The focused SaaS boilerplate for founders who want the launch plumbing handled before the real product work begins.
+                </p>
+              </div>
+              <div className="inline-flex w-fit items-center gap-2 rounded-lg border border-[#D1FAE5] bg-[#ECFDF5] px-3 py-2 text-sm font-semibold text-[#047857]">
+                <ShieldCheck size={16} />
+                Production ready
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/pricing"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#FF7F4A] px-5 py-3 text-sm font-semibold text-[#111827] transition hover:bg-[#FF7F4A]"
+              >
+                Get SassyPack <ArrowRight size={16} />
+              </Link>
+              <a
+                href="https://sassypack.collabtower.com"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#D1D5DB] bg-white px-5 py-3 text-sm font-semibold text-[#111827] transition hover:border-[#111827]"
+              >
+                <Zap size={16} />
+                Built with SassyPack
+              </a>
+            </div>
           </div>
 
-          <div>
-            <h3 className="text-white font-semibold mb-4">Features</h3>
-            <ul className="space-y-2">
-              <li><Link href="/features/authentication" className="hover:text-white transition-colors">Authentication</Link></li>
-              <li><Link href="/features/payment-integration" className="hover:text-white transition-colors">Payments</Link></li>
-              <li><Link href="/features/dashboard-templates" className="hover:text-white transition-colors">Dashboards</Link></li>
-              <li><Link href="/features/api-structure" className="hover:text-white transition-colors">API Structure</Link></li>
-              <li><Link href="/features/ui-components" className="hover:text-white transition-colors">UI Components</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white font-semibold mb-4">For</h3>
-            <ul className="space-y-2">
-              <li><Link href="/for/indie-developers" className="hover:text-white transition-colors">Indie Developers</Link></li>
-              <li><Link href="/for/startup-founders" className="hover:text-white transition-colors">Startup Founders</Link></li>
-              <li><Link href="/for/dev-agencies" className="hover:text-white transition-colors">Agencies</Link></li>
-              <li><Link href="/for/freelance-developers" className="hover:text-white transition-colors">Freelancers</Link></li>
-              <li><Link href="/for/non-technical-founders" className="hover:text-white transition-colors">Non-Technical Founders</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white font-semibold mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
-              <li><Link href="/demo" className="hover:text-white transition-colors">Demo</Link></li>
-              <li><Link href="/vs/custom-build" className="hover:text-white transition-colors">vs Custom Build</Link></li>
-              <li><Link href="/vs/other-starter-kits" className="hover:text-white transition-colors">vs Other Kits</Link></li>
-            </ul>
+          <div className="rounded-lg border border-[#E5E7EB] bg-white p-8 shadow-sm">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#6366F1]">Quick access</p>
+            <p className="mt-3 text-sm leading-6 text-[#4B5563]">
+              Jump into the parts buyers usually check before choosing a starter kit.
+            </p>
+            <div className="mt-6 grid grid-cols-2 gap-3">
+              {["Pricing", "FAQ", "Features", "Free Tools"].map((label) => (
+                <Link
+                  key={label}
+                  href={"/" + label.toLowerCase().replace(" ", "-")}
+                  className="rounded-lg border border-[#E5E7EB] bg-[#F8FAFC] px-3 py-2 text-sm font-medium text-[#4B5563] transition hover:border-[#CBD5E1] hover:bg-white hover:text-[#111827]"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <Link href="/" className="text-2xl font-bold text-white">SassyPack</Link>
-            <p className="text-sm mt-1">Launch your SaaS in hours, not months.</p>
-          </div>
-          <div className="text-sm">© {currentYear} SassyPack. All rights reserved.</div>
+        <div className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          {linkGroups.map((group) => (
+            <div key={group.title} className="rounded-lg border border-[#E5E7EB] bg-white p-6 shadow-sm">
+              <h3 className="text-sm font-semibold text-[#111827]">{group.title}</h3>
+              <ul className="mt-5 space-y-3">
+                {group.links.map((link) => (
+                  <li key={group.title + "-" + link.name}>
+                    <FooterLink link={link} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-8 flex flex-col gap-3 border-t border-[#E5E7EB] pt-6 text-sm font-medium text-[#6B7280] md:flex-row md:items-center md:justify-between">
+          <p>© {currentYear} SassyPack. All rights reserved.</p>
+          <p>One-time purchase · Lifetime updates · Source code included</p>
         </div>
       </div>
     </footer>
