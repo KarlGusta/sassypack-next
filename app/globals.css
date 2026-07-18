@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@plugin "@tailwindcss/typography";
 
 @theme {
   /* TODO: port brand colors/fonts from client/tailwind.config.js here */

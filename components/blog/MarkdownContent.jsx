@@ -35,8 +35,8 @@ export default function MarkdownContent({ content }) {
       prose-p:leading-8 prose-p:text-[#374151]
       prose-a:text-[#6366F1] prose-a:no-underline hover:prose-a:underline
       prose-strong:text-[#111827]
-      prose-code:rounded prose-code:bg-[#F8FAFC] prose-code:px-1.5 prose-code:py-0.5
-      prose-pre:rounded-lg prose-pre:border prose-pre:border-[#E5E7EB]
+      prose-code:rounded prose-code:bg-[#F8FAFC] prose-code:px-1.5 prose-code:py-0.5 prose-code:text-[#111827]
+      prose-pre:rounded-lg prose-pre:border prose-pre:border-[#E5E7EB] prose-pre:bg-[#111827] prose-pre:text-[#F8FAFC]
       prose-img:rounded-lg prose-img:border prose-img:border-[#E5E7EB]"
     >
       <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
