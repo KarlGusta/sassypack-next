@@ -47,6 +47,16 @@ const linkGroups = [
   },
 ];
 
+// Other products built by the creator.
+const creatorProjects = [
+  { name: "AdPurity", href: "https://adpurity.collabtower.com/" },
+  { name: "Adentra", href: "https://adentra.collabtower.com/" },
+  { name: "Zero to SaaS", href: "https://zero-to-saas.collabtower.com/" },
+  { name: "Hireva", href: "https://hireva.collabtower.com/" },
+  { name: "Nexora", href: "https://nexora.collabtower.com/" },
+  { name: "Operanta", href: "https://operanta.collabtower.com/" },
+];
+
 function FooterLink({ link }) {
   const Icon = link.icon;
   const className =
@@ -91,7 +101,7 @@ export default function Footer() {
               <div>
                 <p className="text-2xl font-semibold tracking-tight">SassyPack</p>
                 <p className="mt-4 max-w-xl text-sm leading-6 text-[#4B5563]">
-                  The focused SaaS boilerplate for founders who want the launch plumbing handled before the real product work begins.
+                  SassyPack | Next.js starter kitho want the launch plumbing handled before the real product work begins.
                 </p>
               </div>
               <div className="inline-flex w-fit items-center gap-2 rounded-lg border border-[#D1FAE5] bg-[#ECFDF5] px-3 py-2 text-sm font-semibold text-[#047857]">
@@ -151,6 +161,29 @@ export default function Footer() {
               </ul>
             </div>
           ))}
+        </div>
+
+        <div className="mt-5 rounded-lg border border-[#E5E7EB] bg-white p-6 shadow-sm">
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#6366F1]">
+              More from the creator
+            </h3>
+            <p className="text-sm text-[#6B7280]">Other products built with SassyPack.</p>
+          </div>
+          <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+            {creatorProjects.map((project) => (
+              <a
+                key={project.name}
+                href={project.href}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-between gap-2 rounded-lg border border-[#E5E7EB] bg-[#F8FAFC] px-3 py-2 text-sm font-medium text-[#4B5563] transition hover:border-[#CBD5E1] hover:bg-white hover:text-[#111827]"
+              >
+                {project.name}
+                <ExternalLink size={13} className="shrink-0 text-[#9CA3AF]" />
+              </a>
+            ))}
+          </div>
         </div>
 
         <div className="mt-8 flex flex-col gap-3 border-t border-[#E5E7EB] pt-6 text-sm font-medium text-[#6B7280] md:flex-row md:items-center md:justify-between">
