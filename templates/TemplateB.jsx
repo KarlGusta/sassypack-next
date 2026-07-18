@@ -41,11 +41,11 @@ export default function TemplateB({ data }) {
               {content.technicalDetails.heading}
             </h2>
 
-            {content.technicalDetails.mern && (
+            {content.technicalDetails.Nextjs && (
               <div className="mb-8">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">MERN Stack Implementation</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Nextjs Stack Implementation</h3>
                 <ul className="space-y-2">
-                  {content.technicalDetails.mern.map((item, index) => (
+                  {content.technicalDetails.Nextjs.map((item, index) => (
                     <li key={index} className="flex items-start text-gray-700">
                       <span className="text-indigo-600 mr-3 mt-1">•</span>
                       <span>{item}</span>

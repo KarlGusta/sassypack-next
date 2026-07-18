@@ -161,7 +161,7 @@
             "Email verification and password reset flows included",
             "Role-based permissions (admin, user, team member)",
             "Security best practices: rate limiting, CORS, helmet.js",
-            "Works with both MERN and Next.js stacks"
+            "Works with both Nextjs and Next.js stacks"
           ]
         },
         "whatYouGet": {
@@ -225,7 +225,7 @@
       "relatedPages": [
         "/features/authentication",
         "/features/user-management",
-        "/mern-stack/authentication",
+        "/Nextjs-stack/authentication",
         "/nextjs/authentication-setup"
       ]
     },
@@ -278,7 +278,7 @@
             "Webhook handlers for all subscription events",
             "Automatic failed payment recovery",
             "Customer portal for self-service management",
-            "Works with both MERN and Next.js"
+            "Works with both Nextjs and Next.js"
           ]
         },
         "whatYouGet": {
@@ -342,7 +342,7 @@
       "relatedPages": [
         "/features/payment-integration",
         "/use-cases/subscription-service",
-        "/mern-stack/payment-integration"
+        "/Nextjs-stack/payment-integration"
       ]
     },
     {

@@ -18,7 +18,7 @@ const bricolage = localFont({
 export const metadata = {
   title: "SassyPack | Next.js starter kit",
   description:
-    "Launch your SaaS in hours with SassyPack. Pre-built authentication, payments, dashboards, and APIs for MERN and Next.js.",
+    "Launch your SaaS in hours with SassyPack. Pre-built authentication, payments, dashboards, and APIs for Nextjs and Next.js.",
 };
 
 export default function RootLayout({ children }) {

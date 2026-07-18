@@ -3,19 +3,19 @@ import { stackGroups, getEntryFromGroup, getStaticParamsForGroup, buildMetadata 
 import PageWrapper from "@/components/PageWrapper";
 
 export async function generateStaticParams() {
-  return getStaticParamsForGroup(stackGroups.mernStack);
+  return getStaticParamsForGroup(stackGroups.NextjsStack);
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const entry = getEntryFromGroup(stackGroups.mernStack, slug);
+  const entry = getEntryFromGroup(stackGroups.NextjsStack, slug);
   if (!entry) return {};
   return buildMetadata(entry.meta);
 }
 
-export default async function MernStackPage({ params }) {
+export default async function NextjsStackPage({ params }) {
   const { slug } = await params;
-  const entry = getEntryFromGroup(stackGroups.mernStack, slug);
+  const entry = getEntryFromGroup(stackGroups.NextjsStack, slug);
 
   if (!entry) {
     return (

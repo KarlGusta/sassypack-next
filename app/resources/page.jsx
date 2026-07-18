@@ -111,8 +111,8 @@ const guides = [
 
 const comparisons = [
   { title: "Compare Next.js Starter Kits", href: "/vs" },
-  { title: "MERN Stack SaaS Boilerplate", href: "/mern-stack-saas-boilerplate" },
-  { title: "MERN SaaS Starter Kit", href: "/mern-saas-starter-kit" },
+  { title: "Nextjs Stack SaaS Boilerplate", href: "/Nextjs-stack-saas-boilerplate" },
+  { title: "Nextjs SaaS Starter Kit", href: "/Nextjs-saas-starter-kit" },
 ];
 
 const learningPaths = [

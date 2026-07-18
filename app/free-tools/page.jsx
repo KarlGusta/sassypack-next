@@ -108,11 +108,11 @@ const tools = [
   },
   {
     title: "SaaS Tech Stack Recommender",
-    desc: "Choose budget, complexity, and audience to get a MERN vs Next.js recommendation with database and deployment guidance.",
+    desc: "Choose budget, complexity, and audience to get a Nextjs vs Next.js recommendation with database and deployment guidance.",
     href: "/free-tools/saas-tech-stack-recommender",
     icon: Layers,
     color: "bg-[#FEBBCE]",
-    tags: ["MERN vs Next.js", "Database choice", "Deployment setup"],
+    tags: ["Nextjs vs Next.js", "Database choice", "Deployment setup"],
     seo: "best tech stack for SaaS",
   },
 ];

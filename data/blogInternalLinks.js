@@ -80,9 +80,9 @@ const INTERNAL_LINK_RULES = [
     ],
   },
   {
-    slug: "building-saas-apps-with-mern-stack",
+    slug: "building-saas-apps-with-Nextjs-stack",
     phrases: [
-      "MERN stack",
+      "Nextjs stack",
       "MongoDB Express React Node",
       "MongoDB backend",
       "Express backend",

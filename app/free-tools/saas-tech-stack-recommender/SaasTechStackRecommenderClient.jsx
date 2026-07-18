@@ -70,8 +70,8 @@ const getStackRecommendation = ({ budget, complexity, audience }) => {
         auth: audience === "enterprise" ? "Auth.js or Clerk with SSO-ready account modeling" : "Auth.js, Clerk, or custom JWT cookies",
       }
     : {
-        name: "MERN SaaS stack",
-        verdict: "Choose MERN",
+        name: "Nextjs SaaS stack",
+        verdict: "Choose Nextjs",
         why: "It is fast to prototype when the product is mostly an authenticated dashboard and you do not need a large SEO content surface on day one.",
         frontend: "React with Vite or a lightweight SPA shell",
         backend: "Node.js and Express API with clear auth, billing, and dashboard modules",
@@ -154,7 +154,7 @@ const getStackRecommendation = ({ budget, complexity, audience }) => {
   const tradeoffs = useNext
     ? [
         "Better for SEO pages, pricing pages, server rendering, and full-stack SaaS routes.",
-        "Can feel heavier than MERN if you only need a private dashboard MVP.",
+        "Can feel heavier than Nextjs if you only need a private dashboard MVP.",
         "Works best when you keep server actions, route handlers, and background jobs clearly separated.",
       ]
     : [
@@ -164,7 +164,7 @@ const getStackRecommendation = ({ budget, complexity, audience }) => {
       ];
 
   const alternate = useNext
-    ? "Pick MERN instead if this is a private internal dashboard, budget is very tight, and SEO is not important yet."
+    ? "Pick Nextjs instead if this is a private internal dashboard, budget is very tight, and SEO is not important yet."
     : "Pick Next.js instead if marketing pages, docs, pricing SEO, or server-rendered onboarding become important.";
 
   return {
@@ -238,7 +238,7 @@ export default function SaasTechStackRecommenderClient() {
               Find the best tech stack for your SaaS.
             </h1>
             <p className="mt-6 max-w-2xl text-xl font-bold leading-relaxed text-[#111827]/70">
-              Pick your budget, product complexity, and audience to compare MERN vs Next.js and get a practical database and deployment recommendation.
+              Pick your budget, product complexity, and audience to compare Nextjs vs Next.js and get a practical database and deployment recommendation.
             </p>
           </div>
         </div>
@@ -328,7 +328,7 @@ export default function SaasTechStackRecommenderClient() {
                   <div className="flex h-11 w-11 items-center justify-center rounded-2xl border-2 border-black bg-[#C6F6D5]">
                     <CheckCircle2 size={21} />
                   </div>
-                  <h2 className="text-2xl font-black">MERN vs Next.js notes</h2>
+                  <h2 className="text-2xl font-black">Nextjs vs Next.js notes</h2>
                 </div>
                 <div className="space-y-3">
                   {recommendation.tradeoffs.map((item) => (

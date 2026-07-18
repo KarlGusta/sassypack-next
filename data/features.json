@@ -43,7 +43,7 @@
         },
         "technicalDetails": {
           "heading": "Technical Implementation",
-          "mern": [
+          "Nextjs": [
             "Express middleware for protected routes",
             "MongoDB user schema with encrypted passwords",
             "JWT token generation and validation",
@@ -82,7 +82,7 @@
       },
       "relatedPages": [
         "/solutions/skip-authentication-setup",
-        "/mern-stack/authentication",
+        "/Nextjs-stack/authentication",
         "/nextjs/authentication-setup",
         "/features/user-management"
       ]
@@ -130,7 +130,7 @@
         },
         "technicalDetails": {
           "heading": "Technical Implementation",
-          "mern": [
+          "Nextjs": [
             "Express webhook endpoints with signature verification",
             "MongoDB subscription schema synced with Stripe",
             "Payment status tracking and user gating",
@@ -169,7 +169,7 @@
       },
       "relatedPages": [
         "/solutions/avoid-payment-integration-headaches",
-        "/mern-stack/payment-integration",
+        "/Nextjs-stack/payment-integration",
         "/nextjs/payment-integration",
         "/use-cases/subscription-service"
       ]
@@ -217,7 +217,7 @@
         },
         "technicalDetails": {
           "heading": "Technical Implementation",
-          "mern": [
+          "Nextjs": [
             "React components with hooks for data fetching",
             "Chart.js for visualizations",
             "Tailwind CSS for styling",
@@ -257,7 +257,7 @@
       "relatedPages": [
         "/features/analytics",
         "/features/ui-components",
-        "/mern-stack/boilerplate",
+        "/Nextjs-stack/boilerplate",
         "/nextjs/saas-template"
       ]
     },
@@ -268,7 +268,7 @@
       "template": "TemplateB",
       "meta": {
         "title": "Production-Ready API Structure | SassyPack Starter Kit",
-        "description": "RESTful API with middleware, error handling, validation, and documentation. Built for scalability and security. MERN and Next.js supported.",
+        "description": "RESTful API with middleware, error handling, validation, and documentation. Built for scalability and security. Nextjs and Next.js supported.",
         "keywords": [
           "restful api boilerplate",
           "api structure template",
@@ -304,7 +304,7 @@
         },
         "technicalDetails": {
           "heading": "Technical Implementation",
-          "mern": [
+          "Nextjs": [
             "Express router with modular route files",
             "Controller pattern for business logic",
             "Mongoose models with validation",
@@ -343,7 +343,7 @@
       },
       "relatedPages": [
         "/solutions/scalable-saas-architecture",
-        "/mern-stack/boilerplate",
+        "/Nextjs-stack/boilerplate",
         "/nextjs/api-routes"
       ]
     },
@@ -390,7 +390,7 @@
         },
         "technicalDetails": {
           "heading": "Technical Implementation",
-          "mern": [
+          "Nextjs": [
             "MongoDB user and team schemas",
             "Middleware for role-based route protection",
             "Email invitations with unique tokens",
@@ -476,7 +476,7 @@
         },
         "technicalDetails": {
           "heading": "Technical Implementation",
-          "mern": [
+          "Nextjs": [
             "Event tracking middleware",
             "MongoDB analytics collection",
             "API endpoints for analytics queries",
@@ -563,7 +563,7 @@
         },
         "technicalDetails": {
           "heading": "Technical Implementation",
-          "mern": [
+          "Nextjs": [
             "React functional components with hooks",
             "Tailwind CSS for styling",
             "Storybook for component documentation",
@@ -603,7 +603,7 @@
       "relatedPages": [
         "/features/dashboard-templates",
         "/nextjs/saas-template",
-        "/mern-stack/boilerplate"
+        "/Nextjs-stack/boilerplate"
       ]
     },
     {
@@ -649,7 +649,7 @@
         },
         "technicalDetails": {
           "heading": "Technical Implementation",
-          "mern": [
+          "Nextjs": [
             "Dockerfile and docker-compose.yml",
             "PM2 for process management",
             "Nginx reverse proxy config",
@@ -690,7 +690,7 @@
       },
       "relatedPages": [
         "/solutions/production-ready-saas",
-        "/mern-stack/boilerplate",
+        "/Nextjs-stack/boilerplate",
         "/nextjs/saas-template"
       ]
     }

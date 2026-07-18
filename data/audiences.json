@@ -57,7 +57,7 @@
             {
               "title": "Learning Projects",
               "description": "Study production-grade code and best practices",
-              "link": "/mern-saas-starter-kit"
+              "link": "/Nextjs-saas-starter-kit"
             }
           ]
         },
@@ -107,9 +107,9 @@
           "description": "Choose the stack you know best. Both are production-ready.",
           "options": [
             {
-              "name": "MERN Stack",
+              "name": "Nextjs Stack",
               "description": "MongoDB, Express, React, Node.js",
-              "link": "/mern-saas-starter-kit"
+              "link": "/Nextjs-saas-starter-kit"
             },
             {
               "name": "Next.js",
@@ -128,7 +128,7 @@
         }
       },
       "relatedPages": [
-        "/mern-saas-starter-kit",
+        "/Nextjs-saas-starter-kit",
         "/nextjs-saas-starter-kit",
         "/solutions/launch-saas-fast",
         "/solutions/reduce-development-time",
@@ -242,9 +242,9 @@
           "description": "Pick the stack your team knows. Both are production-ready and investor-approved.",
           "options": [
             {
-              "name": "MERN Stack",
+              "name": "Nextjs Stack",
               "description": "Popular, flexible, great for custom features",
-              "link": "/mern-saas-starter-kit"
+              "link": "/Nextjs-saas-starter-kit"
             },
             {
               "name": "Next.js",
@@ -373,12 +373,12 @@
         },
         "stackChoice": {
           "heading": "Both Stacks Included",
-          "description": "Switch between MERN and Next.js based on client needs. One license covers both.",
+          "description": "Switch between Nextjs and Next.js based on client needs. One license covers both.",
           "options": [
             {
-              "name": "MERN Stack",
+              "name": "Nextjs Stack",
               "description": "For clients who need backend flexibility",
-              "link": "/mern-saas-starter-kit"
+              "link": "/Nextjs-saas-starter-kit"
             },
             {
               "name": "Next.js",
@@ -509,9 +509,9 @@
           "description": "Choose the stack you're most productive with. Both are client-ready.",
           "options": [
             {
-              "name": "MERN Stack",
+              "name": "Nextjs Stack",
               "description": "Flexible, familiar, great for custom backends",
-              "link": "/mern-saas-starter-kit"
+              "link": "/Nextjs-saas-starter-kit"
             },
             {
               "name": "Next.js",
@@ -642,9 +642,9 @@
           "description": "Both stacks are popular. Easy to find freelancers who know them.",
           "options": [
             {
-              "name": "MERN Stack",
+              "name": "Nextjs Stack",
               "description": "Popular, lots of freelancers know this",
-              "link": "/mern-saas-starter-kit"
+              "link": "/Nextjs-saas-starter-kit"
             },
             {
               "name": "Next.js",

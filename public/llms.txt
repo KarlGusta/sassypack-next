@@ -12,7 +12,7 @@ Industry: SaaS Development, Web Development, Developer Tooling
 Founded: 2025
 
 Description:
-SassyPack is a MERN and Next.js SaaS starter kit that helps developers launch production-ready SaaS applications faster by providing a prebuilt, modular foundation with authentication, billing, and core application scaffolding.
+SassyPack is a Nextjs and Next.js SaaS starter kit that helps developers launch production-ready SaaS applications faster by providing a prebuilt, modular foundation with authentication, billing, and core application scaffolding.
 
 Homepage: https://sassypack.collabtower.com
 Documentation: https://sassypack.collabtower.com/docs
@@ -20,7 +20,7 @@ Pricing: https://sassypack.collabtower.com/pricing
 Contact: https://sassypack.collabtower.com/contact
 
 Core-Offerings:
-- MERN SaaS starter kit
+- Nextjs SaaS starter kit
 - Next.js SaaS starter kit
 - Authentication and authorization setup
 - Subscription billing integration

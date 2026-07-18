@@ -7,7 +7,7 @@
       "template": "TemplateD",
       "meta": {
         "title": "Build B2B SaaS with SassyPack | Team & Enterprise Features",
-        "description": "Launch B2B SaaS with team management, role-based access, admin tools, and enterprise features. MERN or Next.js starter included.",
+        "description": "Launch B2B SaaS with team management, role-based access, admin tools, and enterprise features. Nextjs or Next.js starter included.",
         "keywords": [
           "b2b saas starter kit",
           "enterprise saas template",
@@ -108,9 +108,9 @@
           "description": "Both stacks support B2B requirements.",
           "options": [
             {
-              "name": "MERN Stack",
+              "name": "Nextjs Stack",
               "description": "Flexible backend for complex business logic",
-              "link": "/mern-saas-starter-kit"
+              "link": "/Nextjs-saas-starter-kit"
             },
             {
               "name": "Next.js",
@@ -139,7 +139,7 @@
       "template": "TemplateD",
       "meta": {
         "title": "Build Marketplace Apps with SassyPack | Multi-User Platform",
-        "description": "Launch two-sided marketplaces with user authentication, seller accounts, payment processing, and admin tools. MERN or Next.js included.",
+        "description": "Launch two-sided marketplaces with user authentication, seller accounts, payment processing, and admin tools. Nextjs or Next.js included.",
         "keywords": [
           "marketplace saas starter",
           "two-sided marketplace",
@@ -240,9 +240,9 @@
           "description": "Both stacks support marketplace features.",
           "options": [
             {
-              "name": "MERN Stack",
+              "name": "Nextjs Stack",
               "description": "Great for complex marketplace logic and APIs",
-              "link": "/mern-saas-starter-kit"
+              "link": "/Nextjs-saas-starter-kit"
             },
             {
               "name": "Next.js",
@@ -372,9 +372,9 @@
           "description": "Both stacks support subscription billing.",
           "options": [
             {
-              "name": "MERN Stack",
+              "name": "Nextjs Stack",
               "description": "Flexible for custom billing logic",
-              "link": "/mern-saas-starter-kit"
+              "link": "/Nextjs-saas-starter-kit"
             },
             {
               "name": "Next.js",
@@ -524,12 +524,12 @@
         },
         "stackChoice": {
           "heading": "Both Stacks Included",
-          "description": "Switch between MERN and Next.js per client needs.",
+          "description": "Switch between Nextjs and Next.js per client needs.",
           "options": [
             {
-              "name": "MERN Stack",
+              "name": "Nextjs Stack",
               "description": "For clients who need backend flexibility",
-              "link": "/mern-saas-starter-kit"
+              "link": "/Nextjs-saas-starter-kit"
             },
             {
               "name": "Next.js",

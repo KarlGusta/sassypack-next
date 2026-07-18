@@ -6,10 +6,10 @@
       "template": "Home",
       "meta": {
         "title": "SassyPack | Next.js starter kit",
-        "description": "Launch your SaaS in hours with SassyPack. Pre-built authentication, payments, dashboards, and APIs for MERN and Next.js.",
+        "description": "Launch your SaaS in hours with SassyPack. Pre-built authentication, payments, dashboards, and APIs for Nextjs and Next.js.",
         "keywords": [
           "saas starter kit",
-          "mern saas boilerplate",
+          "Nextjs saas boilerplate",
           "nextjs saas template",
           "saas boilerplate"
         ],
@@ -17,26 +17,26 @@
       }
     },
     {
-      "id": "mern-saas-starter-kit",
-      "slug": "/mern-saas-starter-kit",
+      "id": "Nextjs-saas-starter-kit",
+      "slug": "/Nextjs-saas-starter-kit",
       "template": "TemplateA",
       "meta": {
-        "title": "MERN SaaS Starter Kit | Production-Ready in Hours",
-        "description": "Launch your SaaS with our MERN stack starter kit. MongoDB, Express, React, Node.js with pre-built auth, payments, and dashboards. Save weeks of development.",
+        "title": "Nextjs SaaS Starter Kit | Production-Ready in Hours",
+        "description": "Launch your SaaS with our Nextjs stack starter kit. MongoDB, Express, React, Node.js with pre-built auth, payments, and dashboards. Save weeks of development.",
         "keywords": [
-          "mern saas starter kit",
-          "mern stack boilerplate",
-          "mern saas template",
+          "Nextjs saas starter kit",
+          "Nextjs stack boilerplate",
+          "Nextjs saas template",
           "mongodb express react node saas",
-          "mern starter kit production ready"
+          "Nextjs starter kit production ready"
         ],
-        "canonical": "https://sassypack.com/mern-saas-starter-kit"
+        "canonical": "https://sassypack.com/Nextjs-saas-starter-kit"
       },
       "content": {
-        "h1": "MERN SaaS Starter Kit | Production-Ready in Hours",
+        "h1": "Nextjs SaaS Starter Kit | Production-Ready in Hours",
         "hero": {
-          "heading": "Launch Your MERN SaaS in Hours, Not Weeks",
-          "subheading": "Production-ready MERN stack with authentication, payments, and dashboards built in. Start building features, not infrastructure.",
+          "heading": "Launch Your Nextjs SaaS in Hours, Not Weeks",
+          "subheading": "Production-ready Nextjs stack with authentication, payments, and dashboards built in. Start building features, not infrastructure.",
           "cta": {
             "text": "Get Started Free",
             "link": "/pricing"
@@ -45,7 +45,7 @@
         "whatsIncluded": {
           "heading": "What's Included",
           "features": [
-            "Complete MERN stack setup (MongoDB, Express, React, Node.js)",
+            "Complete Nextjs stack setup (MongoDB, Express, React, Node.js)",
             "Pre-built JWT authentication & user management",
             "Stripe & PayPal payment integration",
             "Admin dashboard with analytics",
@@ -119,7 +119,7 @@
         },
         "finalCTA": {
           "heading": "Start Building Your SaaS Today",
-          "subheading": "Get instant access to the complete MERN stack starter kit.",
+          "subheading": "Get instant access to the complete Nextjs stack starter kit.",
           "cta": {
             "text": "Get Started",
             "link": "/pricing"
@@ -260,10 +260,10 @@
       "template": "Pricing",
       "meta": {
         "title": "Pricing | SassyPack SaaS Starter Kit",
-        "description": "Simple, transparent pricing for SassyPack. Choose MERN or Next.js starter kit. One-time payment, lifetime access, free updates.",
+        "description": "Simple, transparent pricing for SassyPack. Choose Nextjs or Next.js starter kit. One-time payment, lifetime access, free updates.",
         "keywords": [
           "saas starter kit pricing",
-          "mern boilerplate price",
+          "Nextjs boilerplate price",
           "nextjs starter cost"
         ],
         "canonical": "https://sassypack.collabtower.com/pricing"

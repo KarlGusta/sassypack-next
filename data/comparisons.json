@@ -232,9 +232,9 @@
           "categories": [
             {
               "category": "Stack Options",
-              "sassypack": "MERN + Next.js (both included)",
+              "sassypack": "Nextjs + Next.js (both included)",
               "competitor1": "Next.js only",
-              "competitor2": "MERN only",
+              "competitor2": "Nextjs only",
               "winner": "sassypack"
             },
             {
@@ -342,7 +342,7 @@
           "sassypack": {
             "description": "Production-ready code with everything you need to launch.",
             "included": [
-              "Complete MERN and Next.js implementations",
+              "Complete Nextjs and Next.js implementations",
               "Authentication with multiple providers",
               "Payment processing with subscription management",
               "Admin and user dashboards",
@@ -377,7 +377,7 @@
             },
             {
               "title": "Stack Flexibility",
-              "description": "Choose MERN or Next.js, both included in one license."
+              "description": "Choose Nextjs or Next.js, both included in one license."
             },
             {
               "title": "Production Focus",
@@ -437,14 +437,14 @@
           "categories": [
             {
               "category": "Best For",
-              "sassypack": "Developers who want both MERN and Next.js options",
+              "sassypack": "Developers who want both Nextjs and Next.js options",
               "shipfast": "Next.js developers who need speed",
               "saasrock": "Teams wanting pre-built admin",
               "divjoy": "No-code friendly visual builder"
             },
             {
               "category": "Stacks Supported",
-              "sassypack": "MERN + Next.js",
+              "sassypack": "Nextjs + Next.js",
               "shipfast": "Next.js only",
               "saasrock": "Remix only",
               "divjoy": "React, Next.js, Gatsby"
@@ -504,11 +504,11 @@
                 "Active community"
               ],
               "cons": [
-                "Next.js only (no MERN option)",
+                "Next.js only (no Nextjs option)",
                 "Basic admin features",
                 "Per-project licensing"
               ],
-              "bestFor": "Next.js developers who don't need MERN"
+              "bestFor": "Next.js developers who don't need Nextjs"
             },
             {
               "name": "SaaSRock",
@@ -542,7 +542,7 @@
             {
               "name": "SassyPack",
               "pros": [
-                "Both MERN and Next.js included",
+                "Both Nextjs and Next.js included",
                 "Most complete feature set",
                 "One-time payment, unlimited projects",
                 "Production-grade code",
@@ -561,7 +561,7 @@
           "reasons": [
             {
               "title": "Stack Flexibility",
-              "description": "Only boilerplate that includes both MERN and Next.js. Choose per project."
+              "description": "Only boilerplate that includes both Nextjs and Next.js. Choose per project."
             },
             {
               "title": "Complete Feature Set",
@@ -583,7 +583,7 @@
         },
         "cta": {
           "heading": "Get the Most Complete SaaS Boilerplate",
-          "subheading": "MERN + Next.js. All features. One price.",
+          "subheading": "Nextjs + Next.js. All features. One price.",
           "button": {
             "text": "View SassyPack",
             "link": "/"

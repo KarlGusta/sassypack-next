@@ -1,36 +1,36 @@
 {
   "stacks": [
     {
-      "id": "mern-stack-boilerplate",
-      "slug": "/mern-stack/boilerplate",
-      "name": "MERN Stack Boilerplate",
+      "id": "Nextjs-stack-boilerplate",
+      "slug": "/Nextjs-stack/boilerplate",
+      "name": "Nextjs Stack Boilerplate",
       "template": "TemplateA",
       "meta": {
-        "title": "MERN Stack Boilerplate | Production-Ready Template",
-        "description": "Complete MERN stack boilerplate with MongoDB, Express, React, Node.js. Authentication, payments, dashboards, and API structure included.",
+        "title": "Nextjs Stack Boilerplate | Production-Ready Template",
+        "description": "Complete Nextjs stack boilerplate with MongoDB, Express, React, Node.js. Authentication, payments, dashboards, and API structure included.",
         "keywords": [
-          "mern stack boilerplate",
+          "Nextjs stack boilerplate",
           "mongodb express react node template",
-          "mern saas code",
-          "full stack mern starter",
-          "mern production template"
+          "Nextjs saas code",
+          "full stack Nextjs starter",
+          "Nextjs production template"
         ],
-        "canonical": "https://sassypack.collabtower.com/mern-stack/boilerplate"
+        "canonical": "https://sassypack.collabtower.com/Nextjs-stack/boilerplate"
       },
       "content": {
-        "h1": "MERN Stack Boilerplate | Production-Ready",
+        "h1": "Nextjs Stack Boilerplate | Production-Ready",
         "hero": {
-          "heading": "Complete MERN Stack Foundation",
+          "heading": "Complete Nextjs Stack Foundation",
           "subheading": "MongoDB, Express, React, Node.js with authentication, payments, and dashboards. Production-ready code, not tutorials.",
           "cta": {
-            "text": "Get MERN Stack",
+            "text": "Get Nextjs Stack",
             "link": "/pricing"
           }
         },
         "whatsIncluded": {
           "heading": "What's Included",
           "features": [
-            "Complete MERN stack setup (MongoDB, Express.js, React, Node.js)",
+            "Complete Nextjs stack setup (MongoDB, Express.js, React, Node.js)",
             "JWT authentication with refresh tokens",
             "Express middleware for auth, validation, error handling",
             "MongoDB schemas with Mongoose",
@@ -109,7 +109,7 @@
         },
         "cta": {
           "heading": "Get The Next.js Stack Boilerplate",
-          "subheading": "Production-ready MERN code included in SassyPack.",
+          "subheading": "Production-ready Nextjs code included in SassyPack.",
           "button": {
             "text": "Get Started",
             "link": "/pricing"
@@ -117,41 +117,41 @@
         }
       },
       "relatedPages": [
-        "/mern-saas-starter-kit",
-        "/mern-stack/authentication",
-        "/mern-stack/payment-integration",
+        "/Nextjs-saas-starter-kit",
+        "/Nextjs-stack/authentication",
+        "/Nextjs-stack/payment-integration",
         "/features/api-structure"
       ]
     },
     {
-      "id": "mern-stack-authentication",
-      "slug": "/mern-stack/authentication",
-      "name": "MERN Stack Authentication",
+      "id": "Nextjs-stack-authentication",
+      "slug": "/Nextjs-stack/authentication",
+      "name": "Nextjs Stack Authentication",
       "template": "TemplateB",
       "meta": {
-        "title": "MERN Stack Authentication | JWT & User Management",
-        "description": "Pre-built MERN authentication with JWT, refresh tokens, password reset, and email verification. Express middleware and MongoDB schemas included.",
+        "title": "Nextjs Stack Authentication | JWT & User Management",
+        "description": "Pre-built Nextjs authentication with JWT, refresh tokens, password reset, and email verification. Express middleware and MongoDB schemas included.",
         "keywords": [
-          "mern authentication",
-          "jwt authentication mern",
+          "Nextjs authentication",
+          "jwt authentication Nextjs",
           "express authentication middleware",
           "mongodb user authentication",
-          "mern stack login system"
+          "Nextjs stack login system"
         ],
-        "canonical": "https://sassypack.collabtower.com/mern-stack/authentication"
+        "canonical": "https://sassypack.collabtower.com/Nextjs-stack/authentication"
       },
       "content": {
-        "h1": "MERN Stack Authentication",
+        "h1": "Nextjs Stack Authentication",
         "hero": {
-          "subheading": "Complete JWT authentication system for MERN stack applications.",
+          "subheading": "Complete JWT authentication system for Nextjs stack applications.",
           "cta": {
-            "text": "Get MERN Auth",
+            "text": "Get Nextjs Auth",
             "link": "/pricing"
           }
         },
         "problem": {
           "heading": "The Challenge",
-          "description": "Building secure authentication in MERN requires JWT token management, Express middleware, MongoDB user schemas, password hashing, session handling, and security best practices. It takes weeks to get right."
+          "description": "Building secure authentication in Nextjs requires JWT token management, Express middleware, MongoDB user schemas, password hashing, session handling, and security best practices. It takes weeks to get right."
         },
         "solution": {
           "heading": "What's Included",
@@ -192,38 +192,38 @@
         "pricing": {
           "heading": "Included in SassyPack",
           "cta": {
-            "text": "Get MERN Stack",
+            "text": "Get Nextjs Stack",
             "link": "/pricing"
           }
         }
       },
       "relatedPages": [
         "/features/authentication",
-        "/mern-stack/boilerplate",
+        "/Nextjs-stack/boilerplate",
         "/solutions/skip-authentication-setup"
       ]
     },
     {
-      "id": "mern-stack-payment-integration",
-      "slug": "/mern-stack/payment-integration",
-      "name": "MERN Stack Payment Integration",
+      "id": "Nextjs-stack-payment-integration",
+      "slug": "/Nextjs-stack/payment-integration",
+      "name": "Nextjs Stack Payment Integration",
       "template": "TemplateB",
       "meta": {
-        "title": "MERN Stack Payment Integration | Stripe & PayPal",
-        "description": "Pre-built Stripe and PayPal integration for MERN. Express webhook handlers, MongoDB subscription schemas, and payment flows included.",
+        "title": "Nextjs Stack Payment Integration | Stripe & PayPal",
+        "description": "Pre-built Stripe and PayPal integration for Nextjs. Express webhook handlers, MongoDB subscription schemas, and payment flows included.",
         "keywords": [
-          "mern stripe integration",
-          "stripe mern stack",
+          "Nextjs stripe integration",
+          "stripe Nextjs stack",
           "express payment integration",
           "mongodb subscription schema",
-          "mern payment webhooks"
+          "Nextjs payment webhooks"
         ],
-        "canonical": "https://sassypack.collabtower.com/mern-stack/payment-integration"
+        "canonical": "https://sassypack.collabtower.com/Nextjs-stack/payment-integration"
       },
       "content": {
-        "h1": "MERN Stack Payment Integration",
+        "h1": "Nextjs Stack Payment Integration",
         "hero": {
-          "subheading": "Stripe and PayPal integration built for MERN applications.",
+          "subheading": "Stripe and PayPal integration built for Nextjs applications.",
           "cta": {
             "text": "Get Payment Setup",
             "link": "/pricing"
@@ -231,7 +231,7 @@
         },
         "problem": {
           "heading": "The Challenge",
-          "description": "Integrating Stripe with MERN requires Express endpoints for checkout, webhook handlers with signature verification, MongoDB subscription tracking, failed payment logic, and secure API key management."
+          "description": "Integrating Stripe with Nextjs requires Express endpoints for checkout, webhook handlers with signature verification, MongoDB subscription tracking, failed payment logic, and secure API key management."
         },
         "solution": {
           "heading": "What's Included",
@@ -268,14 +268,14 @@
         "pricing": {
           "heading": "Included in SassyPack",
           "cta": {
-            "text": "Get MERN Stack",
+            "text": "Get Nextjs Stack",
             "link": "/pricing"
           }
         }
       },
       "relatedPages": [
         "/features/payment-integration",
-        "/mern-stack/boilerplate",
+        "/Nextjs-stack/boilerplate",
         "/solutions/avoid-payment-integration-headaches"
       ]
     },
