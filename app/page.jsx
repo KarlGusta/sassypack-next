@@ -40,10 +40,10 @@ const insideItems = [
 ];
 
 const plans = [
-  { name: "Starter", price: "$49", desc: "For solo developers launching fast." },
-  { name: "Pro", price: "$99", desc: "Best for serious indie founders." },
-  { name: "Team / Extended", price: "$199", desc: "For teams and multiple products." },
-  { name: "Done For You", price: "Custom", desc: "We set it up for you." },
+  { name: "Starter", price: "$49", desc: "For solo developers launching fast.", link: "https://karlgusta.gumroad.com/l/zgkhq?wanted=true" },
+  { name: "Pro", price: "$99", desc: "Best for serious indie founders.", link: "https://karlgusta.gumroad.com/l/rqzmvd?wanted=true" },
+  { name: "Team / Extended", price: "$199", desc: "For teams and multiple products.", link: "https://karlgusta.gumroad.com/l/txwnl?wanted=true" },
+  { name: "Done For You", price: "Custom", desc: "We set it up for you.", link: "https://karlgusta.gumroad.com/l/ewoxke?wanted=true" },
 ];
 
 const projects = [
@@ -214,9 +214,14 @@ export default function LandingPage() {
                   <p className="mt-4 text-4xl font-semibold tracking-tight text-[#111827]">{plan.price}</p>
                   <p className="mt-4 text-sm leading-6 text-[#6B7280]">{plan.desc}</p>
                 </div>
-                <Link href="/pricing" className={`${primaryButtonClass} mt-6 w-full`}>
-                  View {plan.name}
-                </Link>
+                <a
+                  href={plan.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${primaryButtonClass} mt-6 w-full`}
+                >
+                  Get {plan.name}
+                </a>
               </div>
             ))}
           </div>
