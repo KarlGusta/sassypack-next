@@ -42,8 +42,8 @@ const insideItems = [
 const plans = [
   { name: "Starter", price: "$49", desc: "For solo developers launching fast.", link: "https://karlgusta.gumroad.com/l/zgkhq?wanted=true" },
   { name: "Pro", price: "$99", desc: "Best for serious indie founders.", link: "https://karlgusta.gumroad.com/l/rqzmvd?wanted=true" },
-  { name: "Team / Extended", price: "$199", desc: "For teams and multiple products.", link: "https://karlgusta.gumroad.com/l/txwnl?wanted=true" },
-  { name: "Done For You", price: "Custom", desc: "We set it up for you.", link: "https://karlgusta.gumroad.com/l/ewoxke?wanted=true" },
+  { name: "Team", price: "$249", desc: "For teams and multiple products.", link: "https://karlgusta.gumroad.com/l/txwnl?wanted=true" },
+  { name: "Setup Assist", price: "$399", desc: "We set it up for you.", link: "https://karlgusta.gumroad.com/l/ewoxke?wanted=true" },
 ];
 
 const projects = [
