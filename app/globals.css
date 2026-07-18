@@ -6,3 +6,31 @@
   /* TODO: port brand colors/fonts from client/tailwind.config.js here */
   --font-sans: "Bricolage Grotesque", sans-serif;
 }
+
+/* Force uniform text color across blog content */
+.prose * {
+  color: inherit !important;
+}
+.prose {
+  color: #1a1a1a; /* set your desired single color here */
+}
+
+/* Monochrome blog: one ink color for everything, code included */
+.prose {
+  color: #18181B;
+}
+.prose * {
+  color: inherit !important;
+}
+.prose pre {
+  background-color: #F4F4F5 !important;
+  border: 1px solid #E4E4E7;
+}
+.prose code {
+  background-color: #F4F4F5 !important;
+}
+.prose a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #A1A1AA;
+}
