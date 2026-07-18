@@ -101,7 +101,7 @@ export default function Footer() {
               <div>
                 <p className="text-2xl font-semibold tracking-tight">SassyPack</p>
                 <p className="mt-4 max-w-xl text-sm leading-6 text-[#4B5563]">
-                  SassyPack | Next.js starter kitho want the launch plumbing handled before the real product work begins.
+                  SassyPack | Next.js starter kit that helps you launch your SaaS in hours with pre-built authentication, payments, dashboards, and APIs for and Next.js.
                 </p>
               </div>
               <div className="inline-flex w-fit items-center gap-2 rounded-lg border border-[#D1FAE5] bg-[#ECFDF5] px-3 py-2 text-sm font-semibold text-[#047857]">
