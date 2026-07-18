@@ -7,7 +7,7 @@ const faqItems = [
   {
     question: "What is SassyPack built with?",
     answer:
-      "SassyPack is built using a modern stack: React, Tailwind CSS, and Next.js/Vite. It includes integrations for Clerk, Auth.js, and Stripe.",
+      "SassyPack is built using a modern stack: Tailwind CSS, and Next.js. It includes integrations for Clerk, Auth.js, and Stripe.",
   },
   {
     question: "Is this a one-time purchase?",
