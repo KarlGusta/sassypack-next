@@ -40,10 +40,10 @@ const insideItems = [
 ];
 
 const plans = [
-  { name: "Starter", price: "$129", desc: "Perfect for solo developers." },
-  { name: "Pro", price: "$199", desc: "Advanced tools for small teams." },
-  { name: "Team", price: "$349", desc: "Collaboration-ready kit." },
-  { name: "Concierge", price: "$999", desc: "Done-for-you full setup." },
+  { name: "Starter", price: "$49", desc: "For solo developers launching fast." },
+  { name: "Pro", price: "$99", desc: "Best for serious indie founders." },
+  { name: "Team / Extended", price: "$199", desc: "For teams and multiple products." },
+  { name: "Done For You", price: "Custom", desc: "We set it up for you." },
 ];
 
 const projects = [
