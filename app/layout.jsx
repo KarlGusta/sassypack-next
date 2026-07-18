@@ -1,9 +1,19 @@
+import localFont from "next/font/local";
+
+
 import { Suspense } from "react";
 import "./globals.css";
 import "aos/dist/aos.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Analytics from "@/components/layout/Analytics";
+
+const bricolage = localFont({
+  src: "./fonts/BricolageGrotesque.ttf",
+  variable: "--font-bricolage",
+  display: "swap",
+});
+
 
 export const metadata = {
   title: "SassyPack | Next.js starter kit",
@@ -13,7 +23,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={bricolage.variable}>
       <body className="min-h-screen flex flex-col" suppressHydrationWarning>
         <Suspense fallback={null}><Analytics /></Suspense>
         <Header />

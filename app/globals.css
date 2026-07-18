@@ -1,3 +1,7 @@
+body {
+  font-family: var(--font-bricolage), sans-serif;
+}
+
 @import "tailwindcss";
 @plugin "daisyui";
 @plugin "@tailwindcss/typography";
