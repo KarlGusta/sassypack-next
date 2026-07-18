@@ -55,6 +55,40 @@ const projects = [
   { name: "WP Stability", desc: "WordPress maintenance.", logo: "/logos/wpstability.png", link: "https://wpstability.collabtower.com" },
 ];
 
+// Simple, minimal monogram marks in each platform's brand color.
+// Swap these for the official SVG/PNG logo assets (e.g. from each
+// platform's press/brand kit) before shipping to production.
+const featuredOn = [
+  {
+    name: "Hacker News",
+    link: "#",
+    bg: "#FF6600",
+    fg: "#111827",
+    label: "Y",
+  },
+  {
+    name: "Product Hunt",
+    link: "#",
+    bg: "#DA552F",
+    fg: "#FFFFFF",
+    label: "P",
+  },
+  {
+    name: "X",
+    link: "#",
+    bg: "#000000",
+    fg: "#FFFFFF",
+    label: "X",
+  },
+  {
+    name: "Reddit",
+    link: "#",
+    bg: "#FF4500",
+    fg: "#FFFFFF",
+    label: "r/",
+  },
+];
+
 const faqItems = [
   {
     question: "What is SassyPack built with?",
@@ -143,6 +177,33 @@ export default function LandingPage() {
         </div>
       </section>
 
+      <section id="featured-on" className="border-t border-[#E5E7EB] bg-white px-6 py-10">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-[#9CA3AF]">
+            Featured on
+          </p>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+            {featuredOn.map((item) => (
+              <a
+                key={item.name}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 rounded-lg border border-[#E5E7EB] bg-white px-4 py-3 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+              >
+                <span
+                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-sm font-bold"
+                  style={{ backgroundColor: item.bg, color: item.fg }}
+                >
+                  {item.label}
+                </span>
+                <span className="text-sm font-semibold text-[#111827]">{item.name}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="why" className="scroll-mt-20 border-t border-[#E5E7EB] bg-white px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-2xl">
@@ -196,7 +257,7 @@ export default function LandingPage() {
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div className="max-w-2xl">
               <p className={sectionLabelClass}>Pricing</p>
-              <h2 className={sectionTitleClass}>Simple plans, no subscription math.</h2>
+              <h2 className={sectionTitleClass}>SassyPack | Next.js starter kit</h2>
             </div>
             <p className="max-w-md text-base leading-7 text-[#4B5563]">Choose the plan that fits your launch path.</p>
           </div>
