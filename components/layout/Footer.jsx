@@ -30,10 +30,10 @@ const linkGroups = [
   {
     title: "Comparisons",
     links: [
-      { name: "vs ShipFast", href: "/blog/sassypack-vs-shipfast" },
-      { name: "vs MakerKit", href: "/blog/sassypack-vs-makerkit-2" },
-      { name: "vs Supastarter", href: "/blog/sassypack-vs-supastarter-2" },
-      { name: "vs Next.js Starters", href: "/blog/sassypack-vs-nextjs-starters" },
+      { name: "SassyPack vs ShipFast", href: "/blog/sassypack-vs-shipfast" },
+      { name: "SassyPack vs MakerKit", href: "/blog/sassypack-vs-makerkit-2" },
+      { name: "SassyPack vs Supastarter", href: "/blog/sassypack-vs-supastarter-2" },
+      { name: "SassyPack vs Next.js Starters", href: "/blog/sassypack-vs-nextjs-starters" },
     ],
   },
   {
