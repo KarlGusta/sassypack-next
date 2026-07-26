@@ -175,6 +175,94 @@
         "/features/payment-integration",
         "/for/startup-founders"
       ]
+    },
+    {
+      "id": "real-estate",
+      "slug": "/industries/real-estate",
+      "name": "Real Estate",
+      "template": "TemplateA",
+      "meta": {
+        "title": "SaaS Boilerplate for Real Estate Startups | SassyPack",
+        "description": "Build your real estate or proptech SaaS faster with SassyPack. Pre-built auth, listing and client dashboards, billing, and a clean API layer ready to customize.",
+        "keywords": [
+          "saas boilerplate real estate",
+          "proptech saas starter kit",
+          "real estate saas template",
+          "property management boilerplate",
+          "real estate startup boilerplate"
+        ],
+        "canonical": "https://sassypack.collabtower.com/industries/real-estate"
+      },
+      "content": {
+        "h1": "SaaS Boilerplate Built for Real Estate Startups",
+        "hero": {
+          "heading": "Ship Your Proptech Product Without Rebuilding the Basics",
+          "subheading": "Auth, listing and client dashboards, billing, and a clean API layer, pre-built so your team can focus on the real estate workflow, not infrastructure.",
+          "cta": {
+            "text": "Get the kit",
+            "link": "/pricing"
+          }
+        },
+        "whatsIncluded": {
+          "heading": "What's Included for Real Estate Teams",
+          "features": [
+            "Authentication for agents, landlords, and clients",
+            "Role-based access for brokerages, agents, and tenants",
+            "Dashboard templates for listing and client management",
+            "Stripe billing ready for subscription or per-listing pricing",
+            "Structured API layer for listings, leads, and documents",
+            "50+ UI components for forms, tables, and listing pages"
+          ]
+        },
+        "builtInFeatures": {
+          "heading": "Built to Support Property Platforms",
+          "items": [
+            {
+              "title": "Authentication",
+              "description": "Separate roles for agents, landlords, and clients, ready to customize.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Admin & User Dashboards",
+              "description": "Manage listings, leads, and clients with pre-built dashboard templates.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Payment Integration",
+              "description": "Stripe-based billing ready for subscription plans or per-listing fees.",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Production-Ready API",
+              "description": "A structured API layer for listings, leads, and document data.",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "productionReady": {
+          "heading": "Ready for Real-World Real Estate Products",
+          "points": [
+            "Environment-variable driven configuration for secrets and keys",
+            "Encrypted session handling by default",
+            "Clean separation between API, dashboard, and public-facing pages",
+            "Deployment configs for Vercel and Docker"
+          ]
+        },
+        "cta": {
+          "heading": "Start Building Your Real Estate SaaS",
+          "subheading": "Get instant access and launch in hours, not months.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/authentication",
+        "/features/dashboard-templates",
+        "/features/payment-integration",
+        "/for/startup-founders"
+      ]
     }
   ]
 }
