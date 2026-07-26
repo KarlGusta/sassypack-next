@@ -263,6 +263,182 @@
         "/features/payment-integration",
         "/for/startup-founders"
       ]
+    },
+    {
+      "id": "hr",
+      "slug": "/industries/hr",
+      "name": "HR",
+      "template": "TemplateA",
+      "meta": {
+        "title": "SaaS Boilerplate for HR Startups | SassyPack",
+        "description": "Build your HR tech SaaS faster with SassyPack. Pre-built auth, employee dashboards, billing, and a clean API layer ready to customize.",
+        "keywords": [
+          "saas boilerplate hr",
+          "hr tech saas starter kit",
+          "hr saas template",
+          "employee management boilerplate",
+          "hr startup boilerplate"
+        ],
+        "canonical": "https://sassypack.collabtower.com/industries/hr"
+      },
+      "content": {
+        "h1": "SaaS Boilerplate Built for HR Startups",
+        "hero": {
+          "heading": "Ship Your HR Tech Product Without Rebuilding the Basics",
+          "subheading": "Auth, employee and admin dashboards, billing, and a clean API layer, pre-built so your team can focus on the HR workflow, not infrastructure.",
+          "cta": {
+            "text": "Get the kit",
+            "link": "/pricing"
+          }
+        },
+        "whatsIncluded": {
+          "heading": "What's Included for HR Teams",
+          "features": [
+            "Authentication for employees, managers, and admins",
+            "Role-based access for HR staff, managers, and employees",
+            "Dashboard templates for employee and team management",
+            "Stripe billing ready for per-seat or subscription pricing",
+            "Structured API layer for employee, payroll, and time-off data",
+            "50+ UI components for forms, tables, and reports"
+          ]
+        },
+        "builtInFeatures": {
+          "heading": "Built to Support HR Platforms",
+          "items": [
+            {
+              "title": "Authentication",
+              "description": "Separate roles for employees, managers, and admins, ready to customize.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Admin & User Dashboards",
+              "description": "Manage employees, teams, and requests with pre-built dashboard templates.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Payment Integration",
+              "description": "Stripe-based billing ready for per-seat or subscription pricing.",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Production-Ready API",
+              "description": "A structured API layer for employee records, payroll, and time-off data.",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "productionReady": {
+          "heading": "Ready for Real-World HR Products",
+          "points": [
+            "Environment-variable driven configuration for secrets and keys",
+            "Encrypted session handling by default",
+            "Clean separation between API, dashboard, and public-facing pages",
+            "Deployment configs for Vercel and Docker"
+          ]
+        },
+        "cta": {
+          "heading": "Start Building Your HR SaaS",
+          "subheading": "Get instant access and launch in hours, not months.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/authentication",
+        "/features/dashboard-templates",
+        "/features/payment-integration",
+        "/for/startup-founders"
+      ]
+    },
+    {
+      "id": "ecommerce",
+      "slug": "/industries/ecommerce",
+      "name": "E-commerce",
+      "template": "TemplateA",
+      "meta": {
+        "title": "SaaS Boilerplate for E-commerce Startups | SassyPack",
+        "description": "Build your e-commerce or retail tech SaaS faster with SassyPack. Pre-built auth, seller and order dashboards, billing, and a clean API layer ready to customize.",
+        "keywords": [
+          "saas boilerplate ecommerce",
+          "ecommerce saas starter kit",
+          "retail tech saas template",
+          "online store boilerplate",
+          "ecommerce startup boilerplate"
+        ],
+        "canonical": "https://sassypack.collabtower.com/industries/ecommerce"
+      },
+      "content": {
+        "h1": "SaaS Boilerplate Built for E-commerce Startups",
+        "hero": {
+          "heading": "Ship Your E-commerce Product Without Rebuilding the Basics",
+          "subheading": "Auth, seller and order dashboards, billing, and a clean API layer, pre-built so your team can focus on the storefront and checkout experience, not infrastructure.",
+          "cta": {
+            "text": "Get the kit",
+            "link": "/pricing"
+          }
+        },
+        "whatsIncluded": {
+          "heading": "What's Included for E-commerce Teams",
+          "features": [
+            "Authentication for shoppers, sellers, and admins",
+            "Role-based access for storefronts, vendors, and staff",
+            "Dashboard templates for order and inventory management",
+            "Stripe billing ready for one-time checkout or subscription boxes",
+            "Structured API layer for products, orders, and inventory",
+            "50+ UI components for product pages, carts, and tables"
+          ]
+        },
+        "builtInFeatures": {
+          "heading": "Built to Support Online Storefronts",
+          "items": [
+            {
+              "title": "Authentication",
+              "description": "Separate roles for shoppers, sellers, and admins, ready to customize.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Admin & User Dashboards",
+              "description": "Manage orders, inventory, and vendors with pre-built dashboard templates.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Payment Integration",
+              "description": "Stripe-based billing ready for checkout, subscriptions, or marketplace payouts.",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Production-Ready API",
+              "description": "A structured API layer for products, orders, and inventory data.",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "productionReady": {
+          "heading": "Ready for Real-World E-commerce Products",
+          "points": [
+            "Environment-variable driven configuration for secrets and keys",
+            "Encrypted session handling by default",
+            "Clean separation between API, dashboard, and public-facing pages",
+            "Deployment configs for Vercel and Docker"
+          ]
+        },
+        "cta": {
+          "heading": "Start Building Your E-commerce SaaS",
+          "subheading": "Get instant access and launch in hours, not months.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/authentication",
+        "/features/dashboard-templates",
+        "/features/payment-integration",
+        "/for/startup-founders"
+      ]
     }
   ]
 }
