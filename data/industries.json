@@ -1,0 +1,180 @@
+{
+  "industries": [
+    {
+      "id": "healthcare",
+      "slug": "/industries/healthcare",
+      "name": "Healthcare",
+      "template": "TemplateA",
+      "meta": {
+        "title": "SaaS Boilerplate for Healthcare Startups | SassyPack",
+        "description": "Build your healthcare or healthtech SaaS faster with SassyPack. Pre-built auth, secure dashboards, billing, and API structure ready for compliance review.",
+        "keywords": [
+          "saas boilerplate healthcare",
+          "healthcare saas starter kit",
+          "healthtech saas template",
+          "hipaa conscious saas boilerplate",
+          "healthcare startup boilerplate"
+        ],
+        "canonical": "https://sassypack.collabtower.com/industries/healthcare"
+      },
+      "content": {
+        "h1": "SaaS Boilerplate Built for Healthcare Startups",
+        "hero": {
+          "heading": "Ship Your Healthtech Product Without Rebuilding the Basics",
+          "subheading": "Auth, patient/client dashboards, billing, and a clean API layer, pre-built so your team can focus on the parts of the product that are actually healthcare-specific.",
+          "cta": {
+            "text": "Get the kit",
+            "link": "/pricing"
+          }
+        },
+        "whatsIncluded": {
+          "heading": "What's Included for Healthcare Teams",
+          "features": [
+            "Secure authentication and session handling out of the box",
+            "Role-based access for care teams, staff, and patients",
+            "Dashboard templates for patient and client management",
+            "Stripe billing ready for subscription-based health plans",
+            "Structured, auditable API layer",
+            "50+ UI components for forms, tables, and records"
+          ]
+        },
+        "builtInFeatures": {
+          "heading": "Built to Support Compliance-Minded Products",
+          "items": [
+            {
+              "title": "Authentication",
+              "description": "Session and auth handling designed to be reviewed and hardened for regulated environments.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Admin & User Dashboards",
+              "description": "Manage patients, clients, or care teams with pre-built dashboard templates.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Payment Integration",
+              "description": "Stripe-based billing ready for subscription or per-visit healthcare pricing models.",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Production-Ready API",
+              "description": "A structured API layer that's easy to document and hand to a compliance reviewer.",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "productionReady": {
+          "heading": "Ready for Real-World Healthcare Products",
+          "points": [
+            "Environment-variable driven configuration for secrets and keys",
+            "Encrypted session handling by default",
+            "Clean separation between API, dashboard, and public-facing pages",
+            "Deployment configs for Vercel and Docker"
+          ]
+        },
+        "cta": {
+          "heading": "Start Building Your Healthcare SaaS",
+          "subheading": "Get instant access and launch in hours, not months.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/authentication",
+        "/features/dashboard-templates",
+        "/features/payment-integration",
+        "/for/startup-founders"
+      ]
+    },
+    {
+      "id": "education",
+      "slug": "/industries/education",
+      "name": "Education",
+      "template": "TemplateA",
+      "meta": {
+        "title": "SaaS Boilerplate for Education Startups | SassyPack",
+        "description": "Build your ed-tech or education SaaS faster with SassyPack. Pre-built auth, student and course dashboards, billing, and a clean API layer ready to customize.",
+        "keywords": [
+          "saas boilerplate education",
+          "edtech saas starter kit",
+          "lms saas template",
+          "course platform boilerplate",
+          "education startup boilerplate"
+        ],
+        "canonical": "https://sassypack.collabtower.com/industries/education"
+      },
+      "content": {
+        "h1": "SaaS Boilerplate Built for Education Startups",
+        "hero": {
+          "heading": "Ship Your Ed-Tech Product Without Rebuilding the Basics",
+          "subheading": "Auth, student and course dashboards, billing, and a clean API layer, pre-built so your team can focus on the learning experience, not infrastructure.",
+          "cta": {
+            "text": "Get the kit",
+            "link": "/pricing"
+          }
+        },
+        "whatsIncluded": {
+          "heading": "What's Included for Education Teams",
+          "features": [
+            "Authentication for students, instructors, and admins",
+            "Role-based access for classrooms, cohorts, and staff",
+            "Dashboard templates for course and student management",
+            "Stripe billing ready for course sales or subscription tuition",
+            "Structured API layer for content, progress, and grading data",
+            "50+ UI components for forms, tables, and course content"
+          ]
+        },
+        "builtInFeatures": {
+          "heading": "Built to Support Learning Platforms",
+          "items": [
+            {
+              "title": "Authentication",
+              "description": "Separate roles for students, instructors, and admins, ready to customize.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Admin & User Dashboards",
+              "description": "Manage students, courses, and cohorts with pre-built dashboard templates.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Payment Integration",
+              "description": "Stripe-based billing ready for one-time course purchases or recurring tuition.",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Production-Ready API",
+              "description": "A structured API layer for course content, enrollment, and progress tracking.",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "productionReady": {
+          "heading": "Ready for Real-World Education Products",
+          "points": [
+            "Environment-variable driven configuration for secrets and keys",
+            "Encrypted session handling by default",
+            "Clean separation between API, dashboard, and public-facing pages",
+            "Deployment configs for Vercel and Docker"
+          ]
+        },
+        "cta": {
+          "heading": "Start Building Your Education SaaS",
+          "subheading": "Get instant access and launch in hours, not months.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/authentication",
+        "/features/dashboard-templates",
+        "/features/payment-integration",
+        "/for/startup-founders"
+      ]
+    }
+  ]
+}

@@ -25,6 +25,7 @@ const linkGroups = [
       { name: "Comparisons", href: "/vs" },
       { name: "Stacks", href: "/stacks" },
       { name: "Use Cases", href: "/use-cases" },
+      { name: "Industries", href: "/industries" },
     ],
   },
   {

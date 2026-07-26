@@ -5,6 +5,7 @@ import audiencesData from "@/data/audiences.json";
 import comparisonsData from "@/data/comparisons.json";
 import stacksData from "@/data/stacks.json";
 import usecasesData from "@/data/usecases.json";
+import industriesData from "@/data/industries.json";
 
 const hostname = "https://sassypack.collabtower.com";
 
@@ -48,6 +49,9 @@ export default function sitemap() {
     if (item.slug) entries.push(toEntry(item.slug));
   });
   (usecasesData.usecases || []).forEach(function (item) {
+    if (item.slug) entries.push(toEntry(item.slug));
+  });
+  (industriesData.industries || []).forEach(function (item) {
     if (item.slug) entries.push(toEntry(item.slug));
   });
 
