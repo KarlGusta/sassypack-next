@@ -180,7 +180,7 @@ export default function LandingPage() {
       <section id="featured-on" className="border-t border-[#E5E7EB] bg-white px-6 py-10">
         <div className="mx-auto max-w-6xl">
           <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-[#9CA3AF]">
-            Featured on
+            As Seen On
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             {featuredOn.map((item) => (
