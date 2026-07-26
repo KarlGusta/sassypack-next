@@ -4,8 +4,7 @@ import localFont from "next/font/local";
 import { Suspense } from "react";
 import "./globals.css";
 import "aos/dist/aos.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import SiteChrome from "@/components/layout/SiteChrome";
 import Analytics from "@/components/layout/Analytics";
 
 const bricolage = localFont({
@@ -26,9 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={bricolage.variable}>
       <body className="min-h-screen flex flex-col" suppressHydrationWarning>
         <Suspense fallback={null}><Analytics /></Suspense>
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );
