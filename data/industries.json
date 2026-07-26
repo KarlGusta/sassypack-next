@@ -439,6 +439,182 @@
         "/features/payment-integration",
         "/for/startup-founders"
       ]
+    },
+    {
+      "id": "restaurants",
+      "slug": "/industries/restaurants",
+      "name": "Restaurants",
+      "template": "TemplateA",
+      "meta": {
+        "title": "SaaS Boilerplate for Restaurant Tech Startups | SassyPack",
+        "description": "Build your restaurant tech SaaS faster with SassyPack. Pre-built auth, ordering and staff dashboards, billing, and a clean API layer ready to customize.",
+        "keywords": [
+          "saas boilerplate restaurant",
+          "restaurant tech saas starter kit",
+          "restaurant saas template",
+          "restaurant management boilerplate",
+          "restaurant startup boilerplate"
+        ],
+        "canonical": "https://sassypack.collabtower.com/industries/restaurants"
+      },
+      "content": {
+        "h1": "SaaS Boilerplate Built for Restaurant Tech Startups",
+        "hero": {
+          "heading": "Ship Your Restaurant Tech Product Without Rebuilding the Basics",
+          "subheading": "Auth, ordering and staff dashboards, billing, and a clean API layer, pre-built so your team can focus on the dining and ordering experience, not infrastructure.",
+          "cta": {
+            "text": "Get the kit",
+            "link": "/pricing"
+          }
+        },
+        "whatsIncluded": {
+          "heading": "What's Included for Restaurant Teams",
+          "features": [
+            "Authentication for diners, staff, and admins",
+            "Role-based access for owners, managers, and staff",
+            "Dashboard templates for order and reservation management",
+            "Stripe billing ready for online ordering or subscription plans",
+            "Structured API layer for menus, orders, and reservations",
+            "50+ UI components for menus, order flows, and tables"
+          ]
+        },
+        "builtInFeatures": {
+          "heading": "Built to Support Restaurant Platforms",
+          "items": [
+            {
+              "title": "Authentication",
+              "description": "Separate roles for diners, staff, and admins, ready to customize.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Admin & User Dashboards",
+              "description": "Manage orders, reservations, and menus with pre-built dashboard templates.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Payment Integration",
+              "description": "Stripe-based billing ready for online ordering or subscription-based plans.",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Production-Ready API",
+              "description": "A structured API layer for menus, orders, and reservation data.",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "productionReady": {
+          "heading": "Ready for Real-World Restaurant Products",
+          "points": [
+            "Environment-variable driven configuration for secrets and keys",
+            "Encrypted session handling by default",
+            "Clean separation between API, dashboard, and public-facing pages",
+            "Deployment configs for Vercel and Docker"
+          ]
+        },
+        "cta": {
+          "heading": "Start Building Your Restaurant SaaS",
+          "subheading": "Get instant access and launch in hours, not months.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/authentication",
+        "/features/dashboard-templates",
+        "/features/payment-integration",
+        "/for/startup-founders"
+      ]
+    },
+    {
+      "id": "nonprofits",
+      "slug": "/industries/nonprofits",
+      "name": "Nonprofits",
+      "template": "TemplateA",
+      "meta": {
+        "title": "SaaS Boilerplate for Nonprofit Tech Startups | SassyPack",
+        "description": "Build your nonprofit tech SaaS faster with SassyPack. Pre-built auth, donor and volunteer dashboards, billing, and a clean API layer ready to customize.",
+        "keywords": [
+          "saas boilerplate nonprofit",
+          "nonprofit tech saas starter kit",
+          "donor management saas template",
+          "fundraising platform boilerplate",
+          "nonprofit startup boilerplate"
+        ],
+        "canonical": "https://sassypack.collabtower.com/industries/nonprofits"
+      },
+      "content": {
+        "h1": "SaaS Boilerplate Built for Nonprofit Tech Startups",
+        "hero": {
+          "heading": "Ship Your Nonprofit Tech Product Without Rebuilding the Basics",
+          "subheading": "Auth, donor and volunteer dashboards, billing, and a clean API layer, pre-built so your team can focus on the mission, not infrastructure.",
+          "cta": {
+            "text": "Get the kit",
+            "link": "/pricing"
+          }
+        },
+        "whatsIncluded": {
+          "heading": "What's Included for Nonprofit Teams",
+          "features": [
+            "Authentication for donors, volunteers, and staff",
+            "Role-based access for organizers, staff, and volunteers",
+            "Dashboard templates for donor and campaign management",
+            "Stripe billing ready for one-time or recurring donations",
+            "Structured API layer for donations, campaigns, and volunteers",
+            "50+ UI components for donation flows, forms, and tables"
+          ]
+        },
+        "builtInFeatures": {
+          "heading": "Built to Support Mission-Driven Platforms",
+          "items": [
+            {
+              "title": "Authentication",
+              "description": "Separate roles for donors, volunteers, and staff, ready to customize.",
+              "link": "/features/authentication"
+            },
+            {
+              "title": "Admin & User Dashboards",
+              "description": "Manage donors, campaigns, and volunteers with pre-built dashboard templates.",
+              "link": "/features/dashboard-templates"
+            },
+            {
+              "title": "Payment Integration",
+              "description": "Stripe-based billing ready for one-time gifts or recurring donation plans.",
+              "link": "/features/payment-integration"
+            },
+            {
+              "title": "Production-Ready API",
+              "description": "A structured API layer for donation, campaign, and volunteer data.",
+              "link": "/features/api-structure"
+            }
+          ]
+        },
+        "productionReady": {
+          "heading": "Ready for Real-World Nonprofit Products",
+          "points": [
+            "Environment-variable driven configuration for secrets and keys",
+            "Encrypted session handling by default",
+            "Clean separation between API, dashboard, and public-facing pages",
+            "Deployment configs for Vercel and Docker"
+          ]
+        },
+        "cta": {
+          "heading": "Start Building Your Nonprofit SaaS",
+          "subheading": "Get instant access and launch in hours, not months.",
+          "button": {
+            "text": "Get Started",
+            "link": "/pricing"
+          }
+        }
+      },
+      "relatedPages": [
+        "/features/authentication",
+        "/features/dashboard-templates",
+        "/features/payment-integration",
+        "/for/startup-founders"
+      ]
     }
   ]
 }
