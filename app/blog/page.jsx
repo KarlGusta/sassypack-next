@@ -163,14 +163,21 @@ export default function BlogListPage() {
                         {post.category}
                       </span>
                     </div>
+                    {hasPostUpdate(post) ? (
+                      <div className="absolute right-4 top-4">
+                        <span className="inline-flex items-center gap-1.5 rounded-lg bg-white/95 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-[#111827] shadow-sm">
+                          <RefreshCw size={12} />
+                          Updated on {formatBlogDate(getPostModifiedDate(post), { month: "short" })}
+                        </span>
+                      </div>
+                    ) : null}
                   </div>
 
                   <div className="flex flex-1 flex-col p-6">
                     <div className="mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#6B7280]">
-                      {hasPostUpdate(post) ? <RefreshCw size={14} /> : <Calendar size={14} />}
-                      <time dateTime={getPostModifiedDate(post)}>
-                        {hasPostUpdate(post) ? "Updated on " : ""}
-                        {formatBlogDate(getPostModifiedDate(post), { month: "short" })}
+                      <Calendar size={14} />
+                      <time dateTime={post.date}>
+                        {formatBlogDate(post.date, { month: "short" })}
                       </time>
                     </div>
 
