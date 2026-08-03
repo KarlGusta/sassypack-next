@@ -60,13 +60,14 @@ export function OrganizationJsonLd() {
 }
 
 export function ArticleJsonLd({ post, url }) {
+  const modifiedDate = post.updated || post.date;
   const data = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: modifiedDate,
     author: {
       "@type": "Person",
       name: author.name,

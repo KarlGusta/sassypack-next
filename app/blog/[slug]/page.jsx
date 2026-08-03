@@ -8,6 +8,7 @@ import {
 } from "@/data/blogInternalLinks";
 import { getHubPath, getHubsForPost } from "@/data/blogHubs";
 import { NOINDEX_SLUGS } from "@/lib/blogNoindexSlugs";
+import { formatBlogDate, getPostModifiedDate, hasPostUpdate } from "@/lib/blogDates";
 import MarkdownContent from "@/components/blog/MarkdownContent";
 import ShareButtons from "@/components/blog/ShareButtons";
 import AuthorCard from "@/components/AuthorCard";
@@ -19,6 +20,7 @@ import {
   Calendar,
   ChevronRight,
   Clock,
+  RefreshCw,
 } from "lucide-react";
 
 const primaryButtonClass =
@@ -54,6 +56,7 @@ export async function generateMetadata({ params }) {
   }
 
   const canonicalUrl = `https://sassypack.collabtower.com/blog/${slug}`;
+  const modifiedDate = getPostModifiedDate(post);
   const shouldNoindex = NOINDEX_SLUGS.has(slug);
 
   return {
@@ -69,6 +72,8 @@ export async function generateMetadata({ params }) {
       url: canonicalUrl,
       type: "article",
       authors: [author.name],
+      publishedTime: post.date,
+      modifiedTime: modifiedDate,
     },
     twitter: {
       card: "summary_large_image",
@@ -90,7 +95,7 @@ export default async function BlogPostPage({ params }) {
         <div className={`${cardClass} mx-auto max-w-2xl p-8 text-center`}>
           <h2 className="text-4xl font-semibold tracking-tight">Post not found</h2>
           <p className="mt-4 text-base leading-7 text-[#4B5563]">
-            The article you are looking for has moved or doesn't exist.
+            The article you are looking for has moved or doesn&apos;t exist.
           </p>
           <Link href="/blog" className={`${primaryButtonClass} mt-8`}>
             <ArrowLeft size={18} /> Back to Blog
@@ -112,6 +117,8 @@ export default async function BlogPostPage({ params }) {
   const contextualLinkRules = getContextualLinkRules(post.slug, sortedBlogPosts);
   const articleContent = addContextualLinksToMarkdown(post.content, contextualLinkRules);
   const canonicalUrl = `https://sassypack.collabtower.com/blog/${slug}`;
+  const modifiedDate = getPostModifiedDate(post);
+  const hasUpdatedDate = hasPostUpdate(post);
 
   return (
     <main className="min-h-screen bg-[#F8FAFC] px-6 pb-20 pt-28 text-[#111827] lg:pt-36">
@@ -152,13 +159,19 @@ export default async function BlogPostPage({ params }) {
             <div className="flex items-center gap-2">
               <Calendar size={17} />
               <time dateTime={post.date} itemProp="datePublished">
-                {new Date(post.date).toLocaleDateString(undefined, {
-                  month: "long",
-                  day: "numeric",
-                  year: "numeric",
-                })}
+                Published on {formatBlogDate(post.date)}
               </time>
             </div>
+            {hasUpdatedDate ? (
+              <div className="flex items-center gap-2">
+                <RefreshCw size={17} />
+                <time dateTime={modifiedDate} itemProp="dateModified">
+                  Updated on {formatBlogDate(modifiedDate)}
+                </time>
+              </div>
+            ) : (
+              <meta itemProp="dateModified" content={modifiedDate} />
+            )}
             <div className="flex items-center gap-2">
               <Clock size={17} />
               <span>5 min read</span>
@@ -203,11 +216,7 @@ export default async function BlogPostPage({ params }) {
                   {previousPost.title}
                 </span>
                 <span className="mt-4 text-sm font-medium text-[#6B7280]">
-                  {new Date(previousPost.date).toLocaleDateString(undefined, {
-                    month: "long",
-                    day: "numeric",
-                    year: "numeric",
-                  })}
+                  {formatBlogDate(previousPost.date)}
                 </span>
               </Link>
             ) : (
@@ -226,11 +235,7 @@ export default async function BlogPostPage({ params }) {
                   {nextPost.title}
                 </span>
                 <span className="mt-4 text-sm font-medium text-[#6B7280]">
-                  {new Date(nextPost.date).toLocaleDateString(undefined, {
-                    month: "long",
-                    day: "numeric",
-                    year: "numeric",
-                  })}
+                  {formatBlogDate(nextPost.date)}
                 </span>
               </Link>
             ) : null}
@@ -271,10 +276,7 @@ export default async function BlogPostPage({ params }) {
                 <div className="flex items-center justify-between gap-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#6B7280]">
                   <span className="truncate">{item.category}</span>
                   <span>
-                    {new Date(item.date).toLocaleDateString(undefined, {
-                      month: "short",
-                      day: "numeric",
-                    })}
+                    {formatBlogDate(item.date, { month: "short", year: undefined })}
                   </span>
                 </div>
                 <h3 className="mt-4 text-xl font-semibold leading-tight text-[#111827] transition group-hover:text-[#6366F1]">

@@ -5,7 +5,8 @@ import Link from "next/link";
 import { blogPosts } from "@/lib/blogPosts";
 import { blogHubs, getHubPath } from "@/data/blogHubs";
 import { getUniqueSortedBlogPosts } from "@/data/blogInternalLinks";
-import { Search, Tag, Calendar, ArrowRight, BookOpen, Layers } from "lucide-react";
+import { formatBlogDate, getPostModifiedDate, hasPostUpdate } from "@/lib/blogDates";
+import { Search, Tag, Calendar, ArrowRight, BookOpen, Layers, RefreshCw } from "lucide-react";
 
 const primaryButtonClass =
   "inline-flex items-center justify-center gap-2 rounded-lg bg-[#FF7F4A] px-5 py-3 text-sm font-semibold text-[#111827] transition hover:bg-[#FF7F4A]";
@@ -166,12 +167,11 @@ export default function BlogListPage() {
 
                   <div className="flex flex-1 flex-col p-6">
                     <div className="mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#6B7280]">
-                      <Calendar size={14} />
-                      {new Date(post.date).toLocaleDateString(undefined, {
-                        month: "short",
-                        day: "numeric",
-                        year: "numeric",
-                      })}
+                      {hasPostUpdate(post) ? <RefreshCw size={14} /> : <Calendar size={14} />}
+                      <time dateTime={getPostModifiedDate(post)}>
+                        {hasPostUpdate(post) ? "Updated on " : ""}
+                        {formatBlogDate(getPostModifiedDate(post), { month: "short" })}
+                      </time>
                     </div>
 
                     <h3 className="text-2xl font-semibold leading-tight text-[#111827] transition group-hover:text-[#6366F1]">
