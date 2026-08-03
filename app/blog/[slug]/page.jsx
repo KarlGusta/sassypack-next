@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { blogPosts } from "@/lib/blogPosts";
 import {
   addContextualLinksToMarkdown,
@@ -9,11 +10,13 @@ import { getHubPath, getHubsForPost } from "@/data/blogHubs";
 import { NOINDEX_SLUGS } from "@/lib/blogNoindexSlugs";
 import MarkdownContent from "@/components/blog/MarkdownContent";
 import ShareButtons from "@/components/blog/ShareButtons";
+import AuthorCard from "@/components/AuthorCard";
+import { ArticleJsonLd } from "@/components/JsonLd";
+import { author } from "@/data/author";
 import {
   ArrowLeft,
   ArrowRight,
   Calendar,
-  User,
   ChevronRight,
   Clock,
 } from "lucide-react";
@@ -56,6 +59,8 @@ export async function generateMetadata({ params }) {
   return {
     title: `${post.title} | SassyPack`,
     description: post.description,
+    authors: [{ name: author.name, url: author.url }],
+    creator: author.name,
     alternates: { canonical: canonicalUrl },
     robots: shouldNoindex ? "noindex, follow" : "index, follow",
     openGraph: {
@@ -63,11 +68,14 @@ export async function generateMetadata({ params }) {
       description: post.description,
       url: canonicalUrl,
       type: "article",
+      authors: [author.name],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      creator: "@thekarlesi",
+      site: "@UseSassyPack",
     },
   };
 }
@@ -103,9 +111,12 @@ export default async function BlogPostPage({ params }) {
   const postHubs = getHubsForPost(post, sortedBlogPosts);
   const contextualLinkRules = getContextualLinkRules(post.slug, sortedBlogPosts);
   const articleContent = addContextualLinksToMarkdown(post.content, contextualLinkRules);
+  const canonicalUrl = `https://sassypack.collabtower.com/blog/${slug}`;
 
   return (
     <main className="min-h-screen bg-[#F8FAFC] px-6 pb-20 pt-28 text-[#111827] lg:pt-36">
+      <ArticleJsonLd post={post} url={canonicalUrl} />
+
       <nav className="mx-auto mb-8 flex max-w-4xl items-center gap-2 text-sm font-medium text-[#6B7280]">
         <Link href="/" className="transition hover:text-[#111827]">Home</Link>
         <ChevronRight size={14} />
@@ -114,31 +125,39 @@ export default async function BlogPostPage({ params }) {
         <span className="truncate text-[#111827]">{post.category}</span>
       </nav>
 
-      <article className="mx-auto max-w-4xl">
+      <article className="mx-auto max-w-4xl" itemScope itemType="https://schema.org/Article">
         <header className={`${cardClass} p-6 md:p-10`}>
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#6366F1]">
             {post.category}
           </p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-6xl">
+          <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-6xl" itemProp="headline">
             {post.title}
           </h1>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 border-t border-[#E5E7EB] pt-6 text-sm font-medium text-[#6B7280]">
-            <div className="flex items-center gap-2 text-[#111827]">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#FFE711] text-[#111827]">
-                <User size={16} />
+            <div className="flex items-center gap-3 text-[#111827]" itemProp="author" itemScope itemType="https://schema.org/Person">
+              <Image
+                src={author.image}
+                alt={author.imageAlt}
+                width={36}
+                height={36}
+                className="rounded-lg border border-[#E5E7EB] object-cover"
+              />
+              <div>
+                <span className="font-semibold" itemProp="name">{author.name}</span>
+                <span className="block text-xs font-medium text-[#6B7280]">{author.jobTitle}</span>
               </div>
-              <span>Karl Gusta</span>
+              <meta itemProp="url" content={author.url} />
             </div>
             <div className="flex items-center gap-2">
               <Calendar size={17} />
-              <span>
+              <time dateTime={post.date} itemProp="datePublished">
                 {new Date(post.date).toLocaleDateString(undefined, {
                   month: "long",
                   day: "numeric",
                   year: "numeric",
                 })}
-              </span>
+              </time>
             </div>
             <div className="flex items-center gap-2">
               <Clock size={17} />
@@ -147,8 +166,12 @@ export default async function BlogPostPage({ params }) {
           </div>
         </header>
 
-        <div className={`${cardClass} mt-6 p-6 md:p-10`}>
+        <div className={`${cardClass} mt-6 p-6 md:p-10`} itemProp="articleBody">
           <MarkdownContent content={articleContent} />
+        </div>
+
+        <div className="mt-6">
+          <AuthorCard variant="full" />
         </div>
 
         {postHubs.length > 0 && (

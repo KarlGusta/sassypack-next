@@ -1,7 +1,24 @@
 import Link from "next/link";
-import { ArrowRight, ExternalLink, Mail, ShieldCheck, X, Zap } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, ExternalLink, Github, Linkedin, Mail, ShieldCheck, Zap } from "lucide-react";
+import { author } from "@/data/author";
 
 const primaryCheckoutUrl = "https://karlgusta.gumroad.com/l/mlixgb?wanted=true";
+
+function XIcon({ size = 15, className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.2 2.25h7.54l4.261 5.678L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
+    </svg>
+  );
+}
 
 const linkGroups = [
   {
@@ -40,8 +57,8 @@ const linkGroups = [
   {
     title: "Connect",
     links: [
-      { name: "Email Support", href: "mailto:esimitkarlgusta@gmail.com", icon: Mail, external: true },
-      { name: "Follow on X", href: "https://x.com/UseSassyPack", icon: X, external: true },
+      { name: "Email Support", href: `mailto:${author.email}`, icon: Mail, external: true },
+      { name: "Follow SassyPack on X", href: "https://x.com/UseSassyPack", icon: XIcon, external: true },
       { name: "Gumroad Store", href: primaryCheckoutUrl, icon: ExternalLink, external: true },
       { name: "Privacy Policy", href: "/privacy" },
     ],
@@ -102,7 +119,7 @@ export default function Footer() {
               <div>
                 <p className="text-2xl font-semibold tracking-tight">SassyPack</p>
                 <p className="mt-4 max-w-xl text-sm leading-6 text-[#4B5563]">
-                  SassyPack | Next.js starter kit that helps you launch your SaaS in hours with pre-built authentication, payments, dashboards, and APIs for and Next.js.
+                  SassyPack is a Next.js starter kit that helps you launch your SaaS in hours with pre-built authentication, payments, dashboards, and APIs. Built by {author.name}.
                 </p>
               </div>
               <div className="inline-flex w-fit items-center gap-2 rounded-lg border border-[#D1FAE5] bg-[#ECFDF5] px-3 py-2 text-sm font-semibold text-[#047857]">
@@ -165,6 +182,54 @@ export default function Footer() {
         </div>
 
         <div className="mt-5 rounded-lg border border-[#E5E7EB] bg-white p-6 shadow-sm">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+            <div className="flex items-start gap-4">
+              <Image
+                src={author.image}
+                alt={author.imageAlt}
+                width={56}
+                height={56}
+                className="rounded-lg border border-[#E5E7EB] object-cover"
+              />
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#6366F1]">
+                  Built by {author.name}
+                </h3>
+                <p className="mt-2 max-w-md text-sm leading-6 text-[#4B5563]">
+                  {author.shortBio}
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <a
+                    href={author.socials.twitter.url}
+                    target="_blank"
+                    rel="noopener noreferrer me"
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-[#E5E7EB] bg-[#F8FAFC] px-2.5 py-1 text-xs font-semibold text-[#4B5563] transition hover:border-[#CBD5E1] hover:bg-white hover:text-[#111827]"
+                  >
+                    <XIcon size={12} /> {author.socials.twitter.handle}
+                  </a>
+                  <a
+                    href={author.socials.linkedin.url}
+                    target="_blank"
+                    rel="noopener noreferrer me"
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-[#E5E7EB] bg-[#F8FAFC] px-2.5 py-1 text-xs font-semibold text-[#4B5563] transition hover:border-[#CBD5E1] hover:bg-white hover:text-[#111827]"
+                  >
+                    <Linkedin size={12} /> LinkedIn
+                  </a>
+                  <a
+                    href={author.socials.github.url}
+                    target="_blank"
+                    rel="noopener noreferrer me"
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-[#E5E7EB] bg-[#F8FAFC] px-2.5 py-1 text-xs font-semibold text-[#4B5563] transition hover:border-[#CBD5E1] hover:bg-white hover:text-[#111827]"
+                  >
+                    <Github size={12} /> {author.socials.github.handle}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-5 rounded-lg border border-[#E5E7EB] bg-white p-6 shadow-sm">
           <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#6366F1]">
               More from the creator
@@ -188,7 +253,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col gap-3 border-t border-[#E5E7EB] pt-6 text-sm font-medium text-[#6B7280] md:flex-row md:items-center md:justify-between">
-          <p>© {currentYear} SassyPack. All rights reserved.</p>
+          <p>© {currentYear} SassyPack. Built by {author.name}. All rights reserved.</p>
           <p>One-time purchase · Lifetime updates · Source code included</p>
         </div>
       </div>

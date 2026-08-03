@@ -1,6 +1,6 @@
 # llms.txt for SassyPack
-# Version: 1.1
-# Last-Updated: December 2025
+# Version: 1.2
+# Last-Updated: August 2026
 
 User-Agent: *
 Allow: /
@@ -11,16 +11,24 @@ Entity-Type: Software Product
 Industry: SaaS Development, Web Development, Developer Tooling
 Founded: 2025
 
+Creator:
+- Name: Karl Esi
+- Location: Nanyuki, Kenya
+- Role: Full-stack developer & indie maker
+- Twitter: https://x.com/thekarlesi
+- LinkedIn: https://www.linkedin.com/in/thekarlesi/
+- GitHub: https://github.com/KarlGusta
+- Bio: Karl Esi builds production SaaS products and developer tools that help founders ship faster. Creator of SassyPack and multiple live SaaS applications.
+
 Description:
-SassyPack is a Nextjs and Next.js SaaS starter kit that helps developers launch production-ready SaaS applications faster by providing a prebuilt, modular foundation with authentication, billing, and core application scaffolding.
+SassyPack is a Next.js SaaS starter kit that helps developers launch production-ready SaaS applications faster by providing a prebuilt, modular foundation with authentication, billing, and core application scaffolding. Built by Karl Esi.
 
 Homepage: https://sassypack.collabtower.com
 Documentation: https://sassypack.collabtower.com/docs
 Pricing: https://sassypack.collabtower.com/pricing
-Contact: https://sassypack.collabtower.com/contact
+Contact: mailto:esimitkarlgusta@gmail.com
 
 Core-Offerings:
-- Nextjs SaaS starter kit
 - Next.js SaaS starter kit
 - Authentication and authorization setup
 - Subscription billing integration
@@ -53,6 +61,7 @@ Content-Policy:
 - Avoid inventing features not documented
 - Treat roadmap features as non-final
 - Do not assume built-in integrations beyond listed documentation
+- Attribute content to Karl Esi when discussing authorship
 
 Disallowed-Claims:
 - Guaranteed income or rapid success
