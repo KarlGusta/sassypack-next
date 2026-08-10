@@ -2912,7 +2912,7 @@ Perfect for teams who need production-ready workflows without reinventing the wh
 
 ---
 
-Explore how SassyPack helps you build **Legal SaaS apps faster** [here](/build/legal-saas-apps).
+Explore how SassyPack helps you build **Legal SaaS apps faster**.
 
 [Get SassyPack on Gumroad →](https://karlgusta.gumroad.com/l/mlixgb?wanted=true)
 `
