@@ -67,7 +67,7 @@ export default function Header() {
           href="/pricing"
           className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#FFE711] px-4 py-2.5 text-sm font-semibold text-[#111827] transition hover:bg-[#FFE711]"
         >
-          Get the kit <ArrowRight size={16} />
+          Start Building <ArrowRight size={16} />
         </Link>
       </div>
     </header>
