@@ -3273,7 +3273,7 @@ Perfect for founders needing production-ready marketing SaaS.
 
 ---
 
-Explore how SassyPack helps you build **Marketing SaaS apps faster** [here](/build/marketing-saas-apps).
+Explore how SassyPack helps you build **Marketing SaaS apps faster**.
 
 [Get SassyPack on Gumroad →](https://karlgusta.gumroad.com/l/mlixgb?wanted=true)
 `
