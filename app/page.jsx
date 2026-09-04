@@ -134,7 +134,7 @@ export default function LandingPage() {
     <main className="min-h-screen bg-[#F8FAFC] text-[#111827]">
       <section id="top" className="px-6 pb-16 pt-28 lg:pb-20 lg:pt-36">
         <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div>
+          <div data-aos="fade-up">
             <div className="inline-flex items-center rounded-lg border border-[#E5E7EB] bg-white px-3 py-2 text-sm font-semibold text-[#4B5563] shadow-sm">
               Next.js starter kit
             </div>
@@ -166,8 +166,8 @@ export default function LandingPage() {
               ["Setup time", "30 min", "From clone to local app"],
               ["Included modules", "9", "Auth, billing, SEO, analytics"],
               ["Used by", "6+", "Production SaaS projects"],
-            ].map(([label, value, detail]) => (
-              <div key={label} className={cardClass}>
+            ].map(([label, value, detail], i) => (
+              <div key={label} className={cardClass} data-aos="fade-up" data-aos-delay={i * 100}>
                 <p className="text-sm font-medium text-[#6B7280]">{label}</p>
                 <p className="mt-3 text-4xl font-semibold tracking-tight text-[#111827]">{value}</p>
                 <p className="mt-2 text-sm leading-6 text-[#4B5563]">{detail}</p>
@@ -178,7 +178,7 @@ export default function LandingPage() {
       </section>
 
       <section id="featured-on" className="border-t border-[#E5E7EB] bg-white px-6 py-10">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl" data-aos="fade-up">
           <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-[#9CA3AF]">
             As Seen On
           </p>
@@ -206,15 +206,15 @@ export default function LandingPage() {
 
       <section id="why" className="scroll-mt-20 border-t border-[#E5E7EB] bg-white px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl" data-aos="fade-up">
             <p className={sectionLabelClass}>Why SassyPack</p>
             <h2 className={sectionTitleClass}>A focused foundation for building revenue features.</h2>
             <p className={sectionTextClass}>Save time, skip boilerplate, and focus on features that matter.</p>
           </div>
 
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature) => (
-              <div key={feature.title} className={cardClass}>
+            {features.map((feature, i) => (
+              <div key={feature.title} className={cardClass} data-aos="fade-up" data-aos-delay={i * 80}>
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#EEF2FF] text-[#4F46E5]">
                   <feature.icon size={20} />
                 </div>
@@ -229,15 +229,20 @@ export default function LandingPage() {
       <section id="inside" className="scroll-mt-20 border-t border-[#E5E7EB] bg-[#F8FAFC] px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
-            <div>
+            <div data-aos="fade-right">
               <p className={sectionLabelClass}>What's Inside</p>
               <h2 className={sectionTitleClass}>Production essentials, already wired together.</h2>
               <p className={sectionTextClass}>Everything you need for a clean SaaS launch surface.</p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              {insideItems.map((item) => (
-                <div key={item.name} className="flex items-start gap-4 rounded-lg border border-[#E5E7EB] bg-white p-5 shadow-sm">
+              {insideItems.map((item, i) => (
+                <div
+                  key={item.name}
+                  className="flex items-start gap-4 rounded-lg border border-[#E5E7EB] bg-white p-5 shadow-sm"
+                  data-aos="fade-up"
+                  data-aos-delay={i * 60}
+                >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#F9FAFB] text-[#111827]">
                     <item.icon size={20} />
                   </div>
@@ -254,7 +259,7 @@ export default function LandingPage() {
 
       <section id="pricing" className="scroll-mt-20 border-t border-[#E5E7EB] bg-white px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between" data-aos="fade-up">
             <div className="max-w-2xl">
               <p className={sectionLabelClass}>Pricing</p>
               <h2 className={sectionTitleClass}>SassyPack | Next.js starter kit</h2>
@@ -269,6 +274,8 @@ export default function LandingPage() {
                 className={`rounded-lg border bg-white p-6 shadow-sm ${
                   index === 1 ? "border-[#6366F1] ring-2 ring-[#6366F1]/10" : "border-[#E5E7EB]"
                 }`}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <div className="flex min-h-[168px] flex-col">
                   <h3 className="text-base font-semibold text-[#111827]">{plan.name}</h3>
@@ -291,7 +298,7 @@ export default function LandingPage() {
 
       <section id="usedby" className="border-t border-[#E5E7EB] bg-[#F8FAFC] px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <div className="text-center">
+          <div className="text-center" data-aos="fade-up">
             <p className={sectionLabelClass}>Proven in Production</p>
             <h2 className={sectionTitleClass}>Used to launch real products.</h2>
             <p className={`${sectionTextClass} mx-auto max-w-2xl`}>
@@ -300,13 +307,15 @@ export default function LandingPage() {
           </div>
 
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => (
+            {projects.map((project, i) => (
               <a
                 key={project.name}
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-lg border border-[#E5E7EB] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-[#CBD5E1] hover:shadow-md"
+                data-aos="fade-up"
+                data-aos-delay={i * 80}
               >
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-[#E5E7EB] bg-[#F9FAFB] p-2">
@@ -325,14 +334,19 @@ export default function LandingPage() {
 
       <section id="faq" className="scroll-mt-20 border-t border-[#E5E7EB] bg-white px-6 py-20">
         <div className="mx-auto max-w-3xl">
-          <div className="text-center">
+          <div className="text-center" data-aos="fade-up">
             <p className={sectionLabelClass}>FAQ</p>
             <h2 className={sectionTitleClass}>Answers before you buy.</h2>
           </div>
 
           <div className="mt-10 space-y-3">
             {faqItems.map((item, index) => (
-              <div key={item.question} className="overflow-hidden rounded-lg border border-[#E5E7EB] bg-white shadow-sm">
+              <div
+                key={item.question}
+                className="overflow-hidden rounded-lg border border-[#E5E7EB] bg-white shadow-sm"
+                data-aos="fade-up"
+                data-aos-delay={index * 60}
+              >
                 <button
                   className="flex w-full items-center justify-between gap-4 p-5 text-left text-base font-semibold text-[#111827]"
                   onClick={() => toggleFAQ(index)}
@@ -360,7 +374,7 @@ export default function LandingPage() {
       </section>
 
       <section className="border-t border-[#E5E7EB] bg-[#F8FAFC] px-6 py-20 text-center">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-3xl" data-aos="fade-up">
           <p className={sectionLabelClass}>Ready to launch</p>
           <h2 className={sectionTitleClass}>Ship your SaaS today, the fast way.</h2>
           <p className={`${sectionTextClass} mx-auto max-w-2xl`}>
