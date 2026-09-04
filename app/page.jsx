@@ -55,9 +55,6 @@ const projects = [
   { name: "WP Stability", desc: "WordPress maintenance.", logo: "/logos/wpstability.png", link: "https://wpstability.collabtower.com" },
 ];
 
-// Simple, minimal monogram marks in each platform's brand color.
-// Swap these for the official SVG/PNG logo assets (e.g. from each
-// platform's press/brand kit) before shipping to production.
 const featuredOn = [
   {
     name: "Hacker News",
@@ -114,6 +111,71 @@ const faqItems = [
   },
 ];
 
+const floatingCards = [
+  {
+    id: "auth",
+    title: "Auth ready",
+    subtitle: "Clerk · Auth.js",
+    position: "hidden lg:flex top-[14%] left-[2%] xl:left-[5%] -rotate-3",
+  },
+  {
+    id: "billing",
+    title: "Stripe billing",
+    subtitle: "Subscriptions wired",
+    position: "hidden lg:flex top-[42%] left-[0%] xl:left-[2%] rotate-2",
+  },
+  {
+    id: "setup",
+    title: "Setup time",
+    subtitle: "~30 minutes",
+    position: "hidden lg:flex bottom-[20%] left-[3%] xl:left-[6%] -rotate-2",
+  },
+  {
+    id: "seo",
+    title: "SEO blog",
+    subtitle: "OG · sitemap · meta",
+    position: "hidden lg:flex top-[14%] right-[2%] xl:right-[5%] rotate-3",
+  },
+  {
+    id: "analytics",
+    title: "Analytics",
+    subtitle: "PostHog included",
+    position: "hidden lg:flex top-[42%] right-[0%] xl:right-[2%] -rotate-2",
+  },
+  {
+    id: "ship",
+    title: "Ship faster",
+    subtitle: "Skip weeks of boilerplate",
+    position: "hidden lg:flex bottom-[20%] right-[3%] xl:right-[6%] rotate-2",
+  },
+];
+
+const tabletCards = [
+  { id: "auth-t", title: "Auth ready", subtitle: "Clerk · Auth.js" },
+  { id: "billing-t", title: "Stripe billing", subtitle: "Subscriptions wired" },
+  { id: "setup-t", title: "Setup time", subtitle: "~30 minutes" },
+];
+
+const stackModules = [
+  { label: "Auth", status: "Ready", color: "#22C55E" },
+  { label: "Billing", status: "Ready", color: "#22C55E" },
+  { label: "Dashboard", status: "Ready", color: "#22C55E" },
+  { label: "Blog / SEO", status: "Ready", color: "#22C55E" },
+  { label: "Analytics", status: "Ready", color: "#22C55E" },
+  { label: "Protected routes", status: "Ready", color: "#22C55E" },
+];
+
+function FloatingCard({ title, subtitle, className = "" }) {
+  return (
+    <div
+      className={`pointer-events-none absolute z-10 flex flex-col gap-0.5 rounded-xl border border-[#E5E7EB] bg-white/90 px-3.5 py-2.5 shadow-[0_8px_30px_rgba(17,24,39,0.06)] backdrop-blur-sm ${className}`}
+    >
+      <span className="text-[11px] font-bold tracking-tight text-[#111827]">{title}</span>
+      <span className="text-[11px] font-medium text-[#6B7280]">{subtitle}</span>
+    </div>
+  );
+}
+
 const sectionLabelClass = "text-sm font-semibold uppercase tracking-[0.18em] text-[#6366F1]";
 const sectionTitleClass = "mt-3 text-3xl font-semibold tracking-tight text-[#111827] md:text-5xl";
 const sectionTextClass = "mt-4 text-base leading-7 text-[#4B5563] md:text-lg";
@@ -132,45 +194,117 @@ export default function LandingPage() {
 
   return (
     <main className="min-h-screen bg-[#F8FAFC] text-[#111827]">
-      <section id="top" className="px-6 pb-16 pt-28 lg:pb-20 lg:pt-36">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div data-aos="fade-up">
-            <div className="inline-flex items-center rounded-lg border border-[#E5E7EB] bg-white px-3 py-2 text-sm font-semibold text-[#4B5563] shadow-sm">
-              Next.js starter kit
-            </div>
+      {/* ── Premium centered hero ── */}
+      <section id="top" className="relative overflow-hidden px-6 pb-16 pt-28 lg:pb-24 lg:pt-36">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute left-1/2 top-[16%] h-[420px] w-[min(90vw,720px)] -translate-x-1/2 rounded-full bg-[#6366F1]/[0.06] blur-3xl"
+        />
 
-            <h1 className="mt-7 max-w-4xl text-5xl font-semibold tracking-tight text-[#111827] md:text-7xl">
-              Launch SaaS faster. <span className="text-[#6366F1]">Skip the setup.</span>
-            </h1>
+        <div className="relative mx-auto w-full max-w-6xl">
+          {floatingCards.map((card) => (
+            <FloatingCard
+              key={card.id}
+              title={card.title}
+              subtitle={card.subtitle}
+              className={card.position}
+            />
+          ))}
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#4B5563] md:text-xl">
-              Auth, billing, dashboards, analytics, and blog are ready. Build what customers actually pay for today.
+          <div className="relative z-20 mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.12em] text-[#6366F1]">
+              Next.js starter kit for indie founders
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/pricing" className={primaryButtonClass}>
+            <h1 className="mt-5 text-[2.15rem] font-semibold leading-[1.12] tracking-tight text-[#111827] sm:text-5xl md:text-[3.5rem] md:leading-[1.08]">
+              Launch SaaS faster.{" "}
+              <span className="relative inline-block text-[#6366F1]">
+                Skip the setup.
+                <span
+                  aria-hidden
+                  className="absolute -bottom-1 left-0 right-0 h-[3px] rounded-full bg-[#6366F1]/25 md:-bottom-1.5 md:h-1"
+                />
+              </span>
+            </h1>
+
+            <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-[#4B5563] sm:text-lg sm:leading-8">
+              Auth, billing, dashboards, analytics, and blog are ready. Build what
+              customers actually pay for today — not another week of boilerplate.
+            </p>
+
+            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                href="/pricing"
+                className={`${primaryButtonClass} w-full px-7 py-3.5 shadow-[0_10px_30px_rgba(255,127,74,0.28)] sm:w-auto`}
+              >
                 Get the starter kit <ArrowRight size={18} />
               </Link>
-              <a href="#inside" className={secondaryButtonClass}>
-                See what's inside
+              <a href="#inside" className={`${secondaryButtonClass} w-full px-7 py-3.5 sm:w-auto`}>
+                See what&apos;s inside
               </a>
             </div>
 
-            <p className="mt-5 text-sm font-medium text-[#6B7280]">
+            <p className="mt-3 text-xs font-medium text-[#6B7280]">
               One-time purchase · Lifetime updates · Source code included
             </p>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-            {[
-              ["Setup time", "30 min", "From clone to local app"],
-              ["Included modules", "9", "Auth, billing, SEO, analytics"],
-              ["Used by", "6+", "Production SaaS projects"],
-            ].map(([label, value, detail], i) => (
-              <div key={label} className={cardClass} data-aos="fade-up" data-aos-delay={i * 100}>
-                <p className="text-sm font-medium text-[#6B7280]">{label}</p>
-                <p className="mt-3 text-4xl font-semibold tracking-tight text-[#111827]">{value}</p>
-                <p className="mt-2 text-sm leading-6 text-[#4B5563]">{detail}</p>
+          {/* Product visual: starter kit readiness panel */}
+          <div className="relative z-20 mx-auto mt-12 max-w-2xl md:mt-14">
+            <div className="overflow-hidden rounded-2xl border border-[#E5E7EB] bg-white shadow-[0_20px_60px_rgba(17,24,39,0.08)]">
+              <div className="flex items-center gap-2 border-b border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3">
+                <span className="h-2.5 w-2.5 rounded-full bg-[#F87171]" />
+                <span className="h-2.5 w-2.5 rounded-full bg-[#FBBF24]" />
+                <span className="h-2.5 w-2.5 rounded-full bg-[#34D399]" />
+                <span className="ml-3 text-xs font-medium text-[#9CA3AF]">
+                  sassypack · production modules
+                </span>
+              </div>
+
+              <div className="grid gap-0 sm:grid-cols-2">
+                {stackModules.map((mod) => (
+                  <div
+                    key={mod.label}
+                    className="flex items-center justify-between border-b border-[#F3F4F6] px-5 py-4 last:border-b-0 sm:odd:border-r sm:[&:nth-last-child(-n+2)]:border-b-0"
+                  >
+                    <div>
+                      <p className="text-sm font-semibold text-[#111827]">{mod.label}</p>
+                      <p className="mt-0.5 text-xs text-[#6B7280]">Included out of the box</p>
+                    </div>
+                    <span
+                      className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-bold"
+                      style={{
+                        backgroundColor: `${mod.color}18`,
+                        color: mod.color,
+                      }}
+                    >
+                      <span
+                        className="h-1.5 w-1.5 rounded-full"
+                        style={{ backgroundColor: mod.color }}
+                      />
+                      {mod.status}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="border-t border-[#E5E7EB] bg-[#F9FAFB] px-5 py-3.5">
+                <p className="text-center text-xs font-medium text-[#6B7280]">
+                  Clone → configure env → ship. No weeks of scaffolding.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Tablet: compact product signals */}
+          <div className="relative z-20 mx-auto mt-8 hidden max-w-2xl grid-cols-3 gap-3 md:grid lg:hidden">
+            {tabletCards.map((card) => (
+              <div
+                key={card.id}
+                className="rounded-xl border border-[#E5E7EB] bg-white/90 px-3 py-2.5 text-center shadow-[0_4px_16px_rgba(17,24,39,0.04)]"
+              >
+                <p className="text-[11px] font-bold text-[#111827]">{card.title}</p>
+                <p className="mt-0.5 text-[11px] font-medium text-[#6B7280]">{card.subtitle}</p>
               </div>
             ))}
           </div>
@@ -230,7 +364,7 @@ export default function LandingPage() {
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
             <div data-aos="fade-right">
-              <p className={sectionLabelClass}>What's Inside</p>
+              <p className={sectionLabelClass}>What&apos;s Inside</p>
               <h2 className={sectionTitleClass}>Production essentials, already wired together.</h2>
               <p className={sectionTextClass}>Everything you need for a clean SaaS launch surface.</p>
             </div>
